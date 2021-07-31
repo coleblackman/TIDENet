@@ -35,7 +35,7 @@ If the die area and Caravel harness seems capable of supporting models larger th
 ![Tools](https://user-images.githubusercontent.com/76919968/127719155-3585117d-af65-4d23-961d-7011a44594ee.png)
 
 
-TensorFlow will be used for prototyping the particular network architecture used and obtaining expected accuracies for the model since we are most familiar with TensorFlow. Tensorflow has the MNIST database in a convenient reference. DNNWeaver [10] ![Uploading Tools (1).png…]()
+TensorFlow will be used for prototyping the particular network architecture used and obtaining expected accuracies for the model since we are most familiar with TensorFlow. Tensorflow has the MNIST database in a convenient reference. DNNWeaver [10]
 uses the Caffe format to specify model architectures, so we will translate the model architecture into Caffe and supply our own parameters for the model calculated from training. DNNWeaver then uses this model architecture to produce Verilog to be hardened, which we will adapt to Caravel. If we determine Caravel suitable for larger models, we will use Darkflow to interface with get the weights of pretrained models from Darknet. Darkflow is already a dependency of DNNWeaver for importing weights.
 
 ![Hardening process](https://user-images.githubusercontent.com/20258533/127681956-1283058e-9603-4bfb-97cd-02227f20dafa.png)
