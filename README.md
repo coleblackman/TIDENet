@@ -1,5 +1,8 @@
 # TIDENet: TinyML Image Detection on the Edge with Neural Networks
 
+![TIDENet](https://user-images.githubusercontent.com/20258533/127727938-ccdee7c5-3582-4c0c-a487-ed6c02af17ac.png)
+
+
 TinyML Image Detection on the Edge with neural networks, or TIDENet, is an ASIC written in Verilog using DNNWeaver 2.0, the Google SkyWater PDK, OpenLANE, and Caravel. We plan to demonstrate the use of ASICs as devices capable of full machine learning inference.
 
 ---
