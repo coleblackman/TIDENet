@@ -48,7 +48,7 @@ The diagram above shows the information and development workflow for TIDENet. Th
 ---
 
 ### Team members
-Cole Blackman (Undergraduate), Justin Zhang (Undergraduate), M. Ceylan Morgul (Ph. D student)
+Cole Blackman (Undergraduate), Justin Zhang (Undergraduate), M. Ceylan Morgul (Ph.D. student)
 
 ---
 [1] Isenkul, M., Sakar, B., & Kursun, O. (2014, May). Improved spiral test using digitized graphics tablet for monitoring Parkinson’s disease. In Proc. of the Int’l Conf. on e-Health and Telemedicine (pp. 171-5).
