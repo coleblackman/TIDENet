@@ -50,6 +50,8 @@ The diagram above shows the information and development workflow for TIDENet. Th
 ### Team members
 Cole Blackman (Undergraduate), Justin Zhang (Undergraduate), M. Ceylan Morgul (Ph.D. student)
 
+All are members of the High Performance Low Power (HPLP) laboratory at the University of Virginia (UVA) at Charlottesville, Virginia.
+
 ---
 [1] Isenkul, M., Sakar, B., & Kursun, O. (2014, May). Improved spiral test using digitized graphics tablet for monitoring Parkinson’s disease. In Proc. of the Int’l Conf. on e-Health and Telemedicine (pp. 171-5).
 
