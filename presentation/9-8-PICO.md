@@ -43,5 +43,22 @@ ZEN team: Cole Blackman, Justin Zhang, Ceylan Morgul
 
 ---
 
+# Working with Caravel
+
+---
+
 # Current Status
+
+---
+
+# Upcoming Challenges
+
+SRAM, I/O, Memory
+
+---
+ 
+# Merging Projects
+ 
+ 
+
 
