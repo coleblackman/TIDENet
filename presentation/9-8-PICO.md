@@ -42,3 +42,6 @@ ZEN team: Cole Blackman, Justin Zhang, Ceylan Morgul
 ![PICO block diagram](https://user-images.githubusercontent.com/76919968/132144140-786caaf0-c8ea-4e30-964c-65ccac410de3.png)
 
 ---
+
+# Current Status
+
