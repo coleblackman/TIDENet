@@ -48,7 +48,7 @@ https://www.researchgate.net/figure/Example-of-a-discrete-convolution-a-and-equi
  
 ---
 
-![PICO block diagram (2)](https://user-images.githubusercontent.com/76919968/132286022-8e8ea7c5-a06e-4796-923d-a1154a351fda.png)
+![PICO block diagram (3)](https://user-images.githubusercontent.com/76919968/132286569-b479b156-30ce-482d-9c53-fb4f06fb155f.png)
 
 ---
 
