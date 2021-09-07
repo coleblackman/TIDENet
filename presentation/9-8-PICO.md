@@ -62,7 +62,7 @@ https://www.researchgate.net/figure/Example-of-a-discrete-convolution-a-and-equi
 
 # Current Status
 
-- Writing HDL (Verilog) for use with OpenLANE/Caravel stack (OpenROAD, etc)
+Writing HDL (Verilog) for use with OpenLANE/Caravel stack (OpenROAD, etc)
 - Making registers
 - Implementing convolution and bias
 
