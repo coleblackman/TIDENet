@@ -56,11 +56,13 @@ https://www.researchgate.net/figure/Example-of-a-discrete-convolution-a-and-equi
 
 - Hardened sample project and other project on shuttle
 - Gained familiarity with OpenLane config file
+- SHA256 on Caravel: https://github.com/coleblackman/caravel-SHA256-zenhplp
 
 ---
 
 # Current Status
 
+- Writing HDL (Verilog) for use with OpenLANE/Caravel stack (OpenROAD, etc)
 - Making registers
 - Implementing convolution and bias
 
