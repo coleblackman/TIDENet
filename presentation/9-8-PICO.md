@@ -7,7 +7,7 @@ _class: invert
 **TIDENET**
 
 ## Team members
-Cole Blackman (Undergraduate), Justin Zhang (Undergraduate), M. Ceylan Morgul (Ph.D. student)*ECE HPLP Lab UVA 2021*
+Cole Blackman (Undergraduate), Justin Zhang (Undergraduate), M. Ceylan Morgul (Ph.D. student) *HPLP Lab UVA 2021*
 
 ![w:500px](https://user-images.githubusercontent.com/20258533/127727938-ccdee7c5-3582-4c0c-a487-ed6c02af17ac.png)
 
@@ -26,25 +26,18 @@ Cole Blackman (Undergraduate), Justin Zhang (Undergraduate), M. Ceylan Morgul (P
 - Pixel location matters
 
 ![CNN](https://user-images.githubusercontent.com/76919968/132143480-6ea2af5e-8f0c-40e3-8271-009d65dcbf4f.jpg)
-<figcaption align = "center">Stochastic Reconstruction of an Oolitic Limestone by Generative Adversarial Networks - Scientific Figure on ResearchGate. Available from: https://www.researchgate.net/figure/Example-of-a-discrete-convolution-a-and-equivalent-transposed-convolution-operation-b_fig2_321719286 [accessed 5 Sep, 2021]</figcaption>
+
+https://www.researchgate.net/figure/Example-of-a-discrete-convolution-a-and-equivalent-transposed-convolution-operation-b_fig2_321719286
 
 ---
 
-# Applications: images are the future
+# ASICs: real-time ML inference on images
 - Facial recognition (ex. security camera)
 - Self-driving cars
-- Real-time medical image analysis
+- Medical image analysis
 
 ![yolo](https://user-images.githubusercontent.com/76919968/132144205-42cd1954-6038-482e-81fc-13b7d5edf219.png)
 <figcaption align = "center">https://towardsdatascience.com/yolo-you-only-look-once-17f9280a47b0</figcaption>
-
----
-
-
-### Applications
-- ASICs are useful for fast machine learning inference, especially in the field of biomedical engineering
-
-- Dedicated device (ASIC) to analyze images, especially in real-time
 
 ---
 
@@ -55,28 +48,30 @@ Cole Blackman (Undergraduate), Justin Zhang (Undergraduate), M. Ceylan Morgul (P
  
 ---
 
-![PICO block diagram](https://user-images.githubusercontent.com/76919968/132144140-786caaf0-c8ea-4e30-964c-65ccac410de3.png)
+![PICO block diagram (2)](https://user-images.githubusercontent.com/76919968/132286022-8e8ea7c5-a06e-4796-923d-a1154a351fda.png)
 
 ---
 
 # Working with Caravel
 
-- Research and experience with 
+- Hardened sample project and other project on shuttle
+- Gained familiarity with OpenLane config file
 
 ---
 
 # Current Status
 
+- Making registers
+- Implementing convolution and bias
+
 ---
 
 # Upcoming Challenges
 
-SRAM, I/O, Memory
+- Efficient use of IO and memory
+- Implementing floating-point operations
 
 ---
  
 # Merging Projects
- 
- 
-
 
