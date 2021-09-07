@@ -55,8 +55,7 @@ https://www.researchgate.net/figure/Example-of-a-discrete-convolution-a-and-equi
 # Working with Caravel
 
 - Hardened sample project and other project on shuttle
-- Gained familiarity with OpenLane config file
-- SHA256 on Caravel: https://github.com/coleblackman/caravel-SHA256-zenhplp
+- Gained familiarity with the OpenLane config file
 
 ---
 
