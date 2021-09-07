@@ -5,8 +5,9 @@ _class: invert
 ---
 
 **TIDENET**
-ZEN team: Cole Blackman, Justin Zhang, Ceylan Morgul
-*ECE HPLP Lab UVA 2021*
+
+## Team members
+Cole Blackman (Undergraduate), Justin Zhang (Undergraduate), M. Ceylan Morgul (Ph.D. student)*ECE HPLP Lab UVA 2021*
 
 ![w:500px](https://user-images.githubusercontent.com/20258533/127727938-ccdee7c5-3582-4c0c-a487-ed6c02af17ac.png)
 
@@ -39,11 +40,28 @@ ZEN team: Cole Blackman, Justin Zhang, Ceylan Morgul
 
 ---
 
+
+### Applications
+- ASICs are useful for fast machine learning inference, especially in the field of biomedical engineering
+
+- Dedicated device (ASIC) to analyze images, especially in real-time
+
+---
+
+### Design goals
+ - Adapt the FPGA tool DNNWeaver 2.0 to ASIC design
+ - Run LeNet-1 and demonstrate same behavior (accuracy, performance, etc.) as on non-ASIC
+ - Outperform the FPGA version for this application on a Zynq 7, with lower power and faster inference
+ 
+---
+
 ![PICO block diagram](https://user-images.githubusercontent.com/76919968/132144140-786caaf0-c8ea-4e30-964c-65ccac410de3.png)
 
 ---
 
 # Working with Caravel
+
+- Research and experience with 
 
 ---
 
