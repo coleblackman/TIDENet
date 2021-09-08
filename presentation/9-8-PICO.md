@@ -4,10 +4,14 @@ theme: uncover
 _class: invert
 ---
 
-**TIDENET**
 
 ## Team members
-Cole Blackman (Undergraduate), Justin Zhang (Undergraduate), M. Ceylan Morgul (Ph.D. student) *HPLP Lab UVA 2021*
+Cole Blackman & Justin Zhang (Undergraduate)
+
+M. Ceylan Morgul (Ph.D. student, advising)
+
+*HPLP Lab University of Virginia 2021*
+![image](https://user-images.githubusercontent.com/20258533/132440156-72691dba-3ad1-4468-9824-892897403f57.png)
 
 ![w:500px](https://user-images.githubusercontent.com/20258533/127727938-ccdee7c5-3582-4c0c-a487-ed6c02af17ac.png)
 
@@ -49,6 +53,10 @@ https://www.researchgate.net/figure/Example-of-a-discrete-convolution-a-and-equi
 ---
 
 ![PICO block diagram (2)](https://user-images.githubusercontent.com/76919968/132286606-ae47cba1-d824-47df-a565-3926b8e84c14.png)
+
+---
+
+![image](https://user-images.githubusercontent.com/20258533/132440279-08fb68db-cf6e-464a-bfef-de6f25a1ab3f.png)
 
 ---
 
