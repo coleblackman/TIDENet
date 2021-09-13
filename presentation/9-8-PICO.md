@@ -8,7 +8,7 @@ _class: invert
 
 Cole Blackman & Justin Zhang (soph. undergraduates)
 
-M. Ceylan Morgul (Ph.D. candidate)
+M. Ceylan Morgul (Ph.D. student)
 
 *HPLP Lab, University of Virginia*
 
