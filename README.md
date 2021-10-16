@@ -3,7 +3,7 @@
 ![TIDENet](https://user-images.githubusercontent.com/20258533/127727938-ccdee7c5-3582-4c0c-a487-ed6c02af17ac.png)
 
 
-TinyML Image Detection on the Edge with neural networks, or TIDENet, is an ASIC written in Verilog using DNNWeaver 2.0, the Google SkyWater PDK, OpenLANE, and Caravel. We plan to demonstrate the use of ASICs as devices capable of full machine learning inference.
+TinyML Image Detection on the Edge with neural networks, or TIDENet, is an ASIC written in Verilog using DNNBuilder, the Google SkyWater PDK, OpenLANE, and Caravel. We plan to demonstrate the use of ASICs as devices capable of full machine learning inference.
 
 ---
 
@@ -26,12 +26,12 @@ As machine learning research accelerates, application-specific ICs will see thei
 ### TIDENet
 Due to the nature of the Caravel and the Skywater SKY130 PDK in particular, we will first design a proof-of-concept ASIC that runs inference on the MNIST handwritten digit dataset using a modernized LeNet-1 (max pooling instead of average pooling, Adam optimizer, etc.). 
 
-This dataset is one of the simplest image datasets, consisting of 28x28 grayscale pixels, and LeNet is one of the simplest forms of a CNN while still yielding 98+% accuracy on MNIST. There are only 2600 parameters, so it should be compatible with Caravel’s memory requirements. 
+This dataset is one of the simplest image datasets, consisting of 28x28 grayscale pixels, and LeNet is one of the simplest forms of a CNN while still yielding 98+% accuracy on MNIST. There are only 2600 parameters, so it is compatible with Caravel’s memory requirements. 
 
 If the die area and Caravel harness seems capable of supporting models larger than LeNet, or if we determine that external memory can mitigate these restrictions, we will implement SqueezeNet for image classification [8] or the You Only Look Once (YOLO) Real-Time Object Detection algorithm [9].
 
 ### Design goals
- - Adapt the FPGA tool DNNWeaver 2.0 to ASIC design
+ - Adapt the FPGA tool DNNBuilder to ASIC design
  - Run LeNet-1 and demonstrate same behavior (accuracy, performance, etc.) as on non-ASIC
  - Outperform the FPGA version for this application on a Zynq 7, with lower power and faster inference
 
