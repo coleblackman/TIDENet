@@ -7,6 +7,11 @@ TinyML Image Detection on the Edge with neural networks, or TIDENet, is an ASIC 
 
 ---
 
+## Overview
+
+This is a University of Virginia HPLP (High Performance Low Power) lab 
+
+
 We have made the shift from DNNWeaver 2.0 to DNNBuilder for our initial Verilog neural net generation. We first generated multiple complete neural network FPGA projects with DNNBuiilder, using different neural networks specified in Caffe for comparison. We determined that the LeNET-5 FPGA project was the best candidate for conversion to ASIC Verilog.
 
 ![Tools](https://user-images.githubusercontent.com/76919968/127719155-3585117d-af65-4d23-961d-7011a44594ee.png)
@@ -21,3 +26,7 @@ The diagram above shows the information and development workflow for TIDENet. Th
 
 ### Team members
 Cole Blackman (Undergraduate), Justin Zhang (Undergraduate), M. Ceylan Morgul (Ph.D. student)
+
+---
+
+X. Zhang et al., "DNNBuilder: an Automated Tool for Building High-Performance DNN Hardware Accelerators for FPGAs," 2018 IEEE/ACM International Conference on Computer-Aided Design (ICCAD), 2018, pp. 1-8, doi: 10.1145/3240765.3240801.
