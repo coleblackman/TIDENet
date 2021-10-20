@@ -7,6 +7,7 @@ TinyML Image Detection on the Edge with neural networks, or TIDENet, is an ASIC 
 
 ---
 
+We have made the shift from DNNWeaver 2.0 to DNNBuilder for our initial Verilog neural net generation. We first generated multiple complete neural network FPGA projects with DNNBuiilder, using different neural networks specified in Caffe for comparison. We determined that the LeNET-5 FPGA project was the best candidate for conversion to ASIC Verilog.
 
 ![Tools](https://user-images.githubusercontent.com/76919968/127719155-3585117d-af65-4d23-961d-7011a44594ee.png)
 
