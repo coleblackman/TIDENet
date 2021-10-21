@@ -9,7 +9,20 @@ TinyML Image Detection on the Edge with neural networks, or TIDENet, is an ASIC 
 
 ## Overview
 
-This is a University of Virginia HPLP (High Performance Low Power) lab 
+This is a University of Virginia HPLP (High Performance Low Power) lab project specifying an ASIC designed for the CIFAR-10 dataset (32x32). This project is being submitted for consideration of inclusion into the SSCS Open-Source Design Contest (PICO) for 2021. 
+
+Contest Homepage:
+https://sscs.ieee.org/about/solid-state-circuits-directions/sscs-pico-design-contest
+
+## Repository overview
+
+## Metrics
+
+### Accuracy estimates
+
+### CIFAR-10 Quantized Model
+
+The structure of the CIFAR-10 dataset neural network model we are using was written by teams at IBM and The University of Illinois at Urbana-Champaign. 
 
 
 We have made the shift from DNNWeaver 2.0 to DNNBuilder for our initial Verilog neural net generation. We first generated multiple complete neural network FPGA projects with DNNBuiilder, using different neural networks specified in Caffe for comparison. We determined that the LeNET-5 FPGA project was the best candidate for conversion to ASIC Verilog.
