@@ -38,7 +38,7 @@ https://github.com/IBM/AccDNN
 
 DNNBuilder is a tool for generating FPGA HDL from neural network descriptions written in Caffe. It includes several pretrained models out of the box, including a YOLO model, CIFAR-10, a quantized CIFAR-10 model, and more. DNNBuilder's authors found the YOLO model running on a Xilinx ZC706 FPGA to be 75.5% accurate.
 
-We have made the shift from DNNWeaver 2.0 to DNNBuilder for our initial Verilog neural net generation. We first generated multiple complete neural network FPGA projects with DNNBuiilder, using different neural networks specified in Caffe for comparison. We determined that the CIFAR-10 FPGA project was the best candidate for conversion to an ASIC on the caravel platform because of die area constraints (less than $10mm^2$ are allocated for our design). 
+We have made the shift from DNNWeaver 2.0 to DNNBuilder for our initial Verilog neural net generation. We first generated multiple complete neural network FPGA projects with DNNBuiilder, using different neural networks specified in Caffe for comparison. We determined that the CIFAR-10 FPGA project was the best candidate for conversion to an ASIC on the caravel platform because of die area constraints (less than 10mm^2 are allocated for our design). 
 
 Much of the technology from DNNBuilder is carried over to TIDENet, such as the column-based cache scheme (to buffer input data) as well as the architecture of the computational engine. More on this can be found on the DNNBuilder paper on the IEEE IEEEexplore site: DNNBuilder: an Automated Tool for Building High-Performance DNN Hardware Accelerators for FPGAs.
 
