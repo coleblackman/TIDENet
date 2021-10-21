@@ -11,7 +11,12 @@ TinyML Image Detection on the Edge with neural networks, or TIDENet, is an ASIC 
 
 This is a University of Virginia HPLP (High Performance Low Power) lab project specifying an ASIC designed for the CIFAR-10 dataset (32x32). This project is being submitted for consideration of inclusion into the SSCS Open-Source Design Contest (PICO) for 2021. 
 
-Using DNNBuilder, we generated FPGA-oriented HDL for a pretrained neural network describing the CIFAR-10 dataset. We then took this HDL and modified it for compatibility with the caravel harness (efabless Caravel chip on Google/Skywater 130nm Open PDK). Pending selection in the competition, this HDL project will be combined with projects by teams at Brigham Young University at Provo and Oregon State University.
+Using DNNBuilder, we generated FPGA-oriented HDL for a pretrained neural network describing the CIFAR-10 dataset. We then took this HDL and modified it for compatibility with the caravel harness (efabless Caravel chip on Google/Skywater 130nm Open PDK). Pending selection in the competition, this HDL project will be combined with projects by teams at Brigham Young University at Provo and Oregon State University for tapeout.
+
+#### Process flow
+
+![Hardening process](https://user-images.githubusercontent.com/20258533/138198781-d7f36baf-8559-451b-9ce3-3cf3cea4b0cb.jpeg)
+
 
 Contest Homepage:
 https://sscs.ieee.org/about/solid-state-circuits-directions/sscs-pico-design-contest
@@ -45,12 +50,6 @@ We used OpenRAM to generate SRAM volatile memory registers for each layer.
 # Ceylan can you add more information here about OPENRAM
 
 
-
-![Tools](https://user-images.githubusercontent.com/76919968/127719155-3585117d-af65-4d23-961d-7011a44594ee.png)
-
-
-
-![Hardening process](https://user-images.githubusercontent.com/20258533/127681956-1283058e-9603-4bfb-97cd-02227f20dafa.png)
 
 
 ---
