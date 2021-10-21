@@ -6,7 +6,12 @@
 TinyML Image Detection on the Edge with neural networks, or TIDENet, is an ASIC accelerator for processing the CIFAR-10 dataset, written in Verilog using DNNBuilder, the Google SkyWater PDK, OpenLANE, and Caravel. We plan to demonstrate the use of ASICs as devices capable of full machine learning inference.
 
 ---
-
+## Roadmap
+## IO
+## Mention you have it on FPGA verification
+## Show pictures of each step (DNNBuilder output, etc)
+## Show synthesis output showing that as we are working we are running synthesis in parallel
+## Mention that you went
 ## Overview
 
 This is a University of Virginia HPLP (High Performance Low Power) lab project specifying an ASIC designed for the CIFAR-10 dataset (32x32). This project is being submitted for consideration of inclusion into the SSCS Open-Source Design Contest (PICO) for 2021. 
