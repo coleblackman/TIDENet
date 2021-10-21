@@ -11,6 +11,8 @@ TinyML Image Detection on the Edge with neural networks, or TIDENet, is an ASIC 
 
 This is a University of Virginia HPLP (High Performance Low Power) lab project specifying an ASIC designed for the CIFAR-10 dataset (32x32). This project is being submitted for consideration of inclusion into the SSCS Open-Source Design Contest (PICO) for 2021. 
 
+Using DNNBuilder, we generated FPGA-oriented HDL for a pretrained neural network describing the CIFAR-10 dataset. We then took this HDL and modified it for compatibility with the caravel harness (efabless Caravel chip on Google/Skywater 130nm Open PDK). Pending selection in the competition, this HDL project will be combined with projects by teams at Brigham Young University at Provo and Oregon State University.
+
 Contest Homepage:
 https://sscs.ieee.org/about/solid-state-circuits-directions/sscs-pico-design-contest
 
@@ -25,7 +27,17 @@ https://sscs.ieee.org/about/solid-state-circuits-directions/sscs-pico-design-con
 The structure of the CIFAR-10 dataset neural network model we are using was written by teams at IBM and The University of Illinois at Urbana-Champaign. 
 
 
-We have made the shift from DNNWeaver 2.0 to DNNBuilder for our initial Verilog neural net generation. We first generated multiple complete neural network FPGA projects with DNNBuiilder, using different neural networks specified in Caffe for comparison. We determined that the LeNET-5 FPGA project was the best candidate for conversion to ASIC Verilog.
+## DNNBuilder (also referred to as AccDNN)
+
+https://github.com/IBM/AccDNN
+
+DNNBuilder is a tool for generating FPGA HDL from neural network descriptions written in Caffe. It includes several pretrained models out of the box, including a YOLO model, CIFAR-10, a quantized CIFAR-10 model, and more. DNNBuilder's authors found the YOLO model running on a Xilinx ZC706 FPGA to be 75.5% accurate.
+
+We have made the shift from DNNWeaver 2.0 to DNNBuilder for our initial Verilog neural net generation. We first generated multiple complete neural network FPGA projects with DNNBuiilder, using different neural networks specified in Caffe for comparison. We determined that the CIFAR-10 FPGA project was the best candidate for conversion to an ASIC on the caravel platform because of die area constraints.
+
+
+
+
 
 ![Tools](https://user-images.githubusercontent.com/76919968/127719155-3585117d-af65-4d23-961d-7011a44594ee.png)
 
