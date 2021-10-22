@@ -35,13 +35,11 @@ https://sscs.ieee.org/about/solid-state-circuits-directions/sscs-pico-design-con
 ## Repository overview
 
 ## Metrics
-
-### Accuracy estimates
+Two main models were used: a modified LeNet-1 for the MNIST dataset and Alex Krizhevsky's cuda-convnet for the CIFAR-10 dataset, the latter of which is used as a tutorial example both for caffe and DNNBuilder. Our modified LeNet-1 with 98% accuracy consists of two convolution/ReLU/max-pooling layers with 4 and 8 filters respectively, ending with a softmax layer. The CIFAR-10 network with ~75% accuracy consists of three convolution/ReLU/max-pooling layers with 32, 32, and 64 filters respectively, ending with a 64 neuron fully connected layer and a softmax layer. 
 
 ### CIFAR-10 Quantized Model
 
-The structure of the CIFAR-10 dataset neural network model we are using was written by teams at IBM and The University of Illinois at Urbana-Champaign. It was trained with 7000 iterations and is quantized to 16 bits for activation layers. 
-
+We took advantage of the ability to use quantized models with DNNBuilder, using the provided example in DNNBuilder for a quantized version of the CNN on CIFAR-10, with 16 bit activations, 8 bit weights for convolutions, and 4 bit weights for fully connected layers. We are currently working on setting up a quantized version of LeNet-1 to run with DNNBuilder to save computational resources on the ASIC.
 
 ## DNNBuilder (also referred to as AccDNN)
 
