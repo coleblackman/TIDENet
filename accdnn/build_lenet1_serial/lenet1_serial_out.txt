@@ -1,0 +1,53 @@
+Input layer will be skipped.
+Layer relu1(ReLU), is aggregated to the upper layer conv1.
+Layer relu1(ReLU), is aggregated to the upper layer conv2.
+Layer ip1: Weights will be reshaped from (10, 128) to (10, 128, 1, 1).
+Layer ip1: Input data will be reshaped from (8, 4, 4) to (128, 1, 1).
+Softmax layer will be skipped.
+pool1: Too higher CPF, will insert a fifo before layer output.
+pool2: Too higher CPF, will insert a fifo before layer output.
+
+Neural network structure overview.
+NAME      TYPE            INPUT_SHAPE     OUTPUT_SHAPE    KERNEL_SHAPE   KN      STRIDE  PAD     GROUP   CPF   KPF   DIN    WEIGHT  DOUT   
+----------------------------------------------------------------------------------------------------------------------------------------
+conv1     Convolution     (2, 28, 28)     (4, 24, 24)     (2, 5, 5)      4       1       0       1       1     1     16/6   16/13   16/6   
+pool1     Pooling         (4, 24, 24)     (4, 12, 12)     2              4       2       0               0     1     16/6   16/13   16/6   
+conv2     Convolution     (4, 12, 12)     (8, 8, 8)       (4, 5, 5)      8       1       0       1       1     1     16/6   16/13   16/6   
+pool2     Pooling         (8, 8, 8)       (8, 4, 4)       2              8       2       0               0     1     16/6   16/13   16/6   
+ip1       InnerProduct    (128, 1, 1)     (10, 1, 1)      (128, 1, 1)    10      0       0       1       1     1     16/6   16/13   16/6   
+
+
+
+FPGA on-chip memory usage (Single batch).
+NAME         TYPE           SIZE(bits)     BRAM18E      WR_WIDTH     WR_DEPTH     RD_WIDTH     RD_DEPTH     UTILIZATION  
+------------------------------------------------------------------------------------------------------------------------
+conv1        reshape        5376           1            16           336          16           336          0.299        
+             weights        2048           15           512          4            16           128          0.008        
+             bias           64             1                                      16           4            0.004        
+pool1        reshape        6144           1            16           384          16           384          0.341        
+conv2        reshape        4608           1            16           288          16           288          0.256        
+             weights        4096           15           512          8            16           256          0.015        
+             bias           128            1                                      16           8            0.007        
+pool2        reshape        4096           1            16           256          16           256          0.228        
+ip1          reshape        4096           1            16           256          16           256          0.228        
+             weights        4096           15           512          8            16           256          0.015        
+             bias           160            1                                      16           10           0.009        
+
+Weight memory is 0.011Mb(48 BRAM18Es).
+Reshape memory of each channel, BRAM memory is 0.024Mb(5 BRAM18Es), distributed memory is 0.000Mb.
+Total memory used is 0.035Mb, where BRAM is 0.035Mb(53 BRAM18Es, 1.5%), distributed memory is 0.000Mb.
+The averaged utilization of BRAM is 0.037.
+
+FPGA implementation summary (projected in 200MHz clock, batch_size=1).
+NAME        TYPE           CPF     KPF     MACS            DSPs            WEIGHTS     CLOCKS       DELAY(us)      DDR_BW(Mb/s)        
+-------------------------------------------------------------------------------------------------------------------------------
+conv1       Convolution    1       1       115200          1               200         115200       576.000        170.67              
+pool1       Pooling                1       0               0               0           2304         11.520         0.00                
+conv2       Convolution    1       1       51200           1               800         51200        256.000        227.56              
+pool2       Pooling                1       0               0               0           512          2.560          0.00                
+ip1         InnerProduct   1       1       1280            1               1280        1280         6.400          35.56               
+----------------------
+total                                      167680          25(0.5%)        2280        170496       852.480        433.78              
+
+Total 3 DMA channels used, 12 left.
+The projected throughput is 1736.1images/s, utilization is about 0.4852.
