@@ -53,6 +53,8 @@ Much of the technology from DNNBuilder is carried over to TIDENet, such as the c
 
 ![c](https://user-images.githubusercontent.com/20258533/138520033-2cfda512-86d5-441d-972e-8369507bdd64.PNG)
 
+![image](https://user-images.githubusercontent.com/20258533/138520366-a6ca3055-4a12-41b0-8bb6-8e28f5904f1f.png)
+
 ## SRAM Requirements
 
 We used OpenRAM to generate SRAM volatile memory registers for each layer. 
