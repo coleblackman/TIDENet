@@ -30,7 +30,10 @@ https://sscs.ieee.org/about/solid-state-circuits-directions/sscs-pico-design-con
 
 ## Repository overview
 
+![image](https://user-images.githubusercontent.com/20258533/138537984-624b54e4-ce74-48d3-9c54-83a4d6a3ebd1.png)
 
+OpenRAM repository - contains our generated SRAM modules
+AccDNN directory - contains our HDL, modified in place after DNNBuilder (AccDNN) generated FPGA Verilog HDL
 
 ## Metrics
 
