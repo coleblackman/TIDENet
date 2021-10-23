@@ -25,14 +25,15 @@ Notes on the process flow:
 
 ## Roadmap
 
-## I/O
-
 Contest Homepage:
 https://sscs.ieee.org/about/solid-state-circuits-directions/sscs-pico-design-contest
 
 ## Repository overview
 
+
+
 ## Metrics
+
 Two main models were used: a modified LeNet-1 for the MNIST dataset and Alex Krizhevsky's cuda-convnet for the CIFAR-10 dataset, the latter of which is used as a tutorial example both for caffe and DNNBuilder. Our modified LeNet-1 with 98% accuracy consists of two convolution/ReLU/max-pooling layers with 4 and 8 filters respectively, ending with a softmax layer. The CIFAR-10 network with ~75% accuracy consists of three convolution/ReLU/max-pooling layers with 32, 32, and 64 filters respectively, ending with a 64 neuron fully connected layer and a softmax layer. 
 
 ### CIFAR-10 Quantized Model
