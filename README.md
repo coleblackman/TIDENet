@@ -53,7 +53,11 @@ We have made the shift from DNNWeaver 2.0 to DNNBuilder for our initial Verilog 
 
 Much of the technology from DNNBuilder is carried over to TIDENet, such as the column-based cache scheme (to buffer input data) as well as the architecture of the computational engine. More on this can be found on the DNNBuilder paper on the IEEE IEEEexplore site: DNNBuilder: an Automated Tool for Building High-Performance DNN Hardware Accelerators for FPGAs.
 
+DNNBuilder output for our most recent LeNet-1 network:
+
 ![c](https://user-images.githubusercontent.com/20258533/138520033-2cfda512-86d5-441d-972e-8369507bdd64.PNG)
+
+
 
 ![image](https://user-images.githubusercontent.com/20258533/138520366-a6ca3055-4a12-41b0-8bb6-8e28f5904f1f.png)
 
