@@ -7,9 +7,6 @@ TinyML Image Detection on the Edge with neural networks, or TIDENet, is an ASIC 
 
 ---
 
-## IO
-## Show pictures of each step (DNNBuilder output, etc)
-## Show synthesis output showing that as we are working we are running synthesis in parallel
 ## Overview
 
 This is a University of Virginia HPLP (High Performance Low Power) lab project specifying an ASIC designed for the CIFAR-10 dataset (32x32). This project is being submitted for consideration of inclusion into the SSCS Open-Source Design Contest (PICO) for 2021. 
@@ -18,7 +15,8 @@ Using DNNBuilder, we generated FPGA-oriented HDL for a pretrained neural network
 
 #### Process flow
 
-![Hardening process](https://user-images.githubusercontent.com/20258533/138198781-d7f36baf-8559-451b-9ce3-3cf3cea4b0cb.jpeg)
+![Hardening process (1)](https://user-images.githubusercontent.com/20258533/138537795-bab417b4-c6be-4b17-a5b8-a931fb069f7f.jpeg)
+
 
 Notes on the process flow:
 
