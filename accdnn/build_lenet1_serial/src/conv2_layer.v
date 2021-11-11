@@ -108,7 +108,7 @@ u_controller(
 .blob_dout_eop(blob_dout_eop));
 
 conv2_rm_ram u_conv2_rm_ram_0(
-.clka(clk),
+.clkb(clk),
 .wea(rm_wr_en),
 .addra(rm_wr_addr),
 .dina(blob_din[15:0]),
@@ -117,7 +117,7 @@ conv2_rm_ram u_conv2_rm_ram_0(
 .doutb(op_data_0));
 
 conv2_wm_ram u_conv2_wm_ram(
-.clka(clk),
+.clkb(clk),
 .wea(double_buf_wr_en),
 .addra(double_buf_wr_addr),
 .dina(dma_engineer_dout),
@@ -126,7 +126,7 @@ conv2_wm_ram u_conv2_wm_ram(
 .doutb(op_weight));
 
 conv2_bm_ram u_conv2_bm_ram(
-.clka(clk),
+.clkb(clk),
 .addra(bm_rd_addr),
 .douta(op_bias));
 

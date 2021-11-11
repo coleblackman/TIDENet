@@ -1,0 +1,2 @@
+ERROR: file sram_config.py: line 166: Minimum number of rows is 16, but given 4.0
+

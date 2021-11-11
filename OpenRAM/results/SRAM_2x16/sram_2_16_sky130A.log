@@ -1,0 +1,77 @@
+[globals/init_openram]: Initializing OpenRAM...
+[globals/setup_paths]: Temporary files saved in /tmp/openram_shon_8210_temp/
+[globals/read_config]: Configuration file is /home/shon/vsdsram_sky130/myconfig_sky130.py
+[globals/read_config]: Output saved in /home/shon/vsdsram_sky130/temp/
+[globals/import_tech]: Adding technology path: /home/shon/vsdsram_sky130/OpenRAM/technology
+[globals/init_paths]: Creating temp directory: /tmp/openram_shon_8210_temp/
+[globals/setup_bitcell]: Using bitcell: bitcell_1port
+[characterizer/<module>]: Initializing characterizer...
+[characterizer/<module>]: Analytical model enabled.
+[verify/<module>]: Initializing verify...
+[verify/<module>]: LVS/DRC/PEX disabled.
+[globals/setup_bitcell]: Using bitcell: bitcell_1port
+|==============================================================================|
+|=========                      OpenRAM v1.1.14                       =========|
+|=========                                                            =========|
+|=========               VLSI Design and Automation Lab               =========|
+|=========        Computer Science and Engineering Department         =========|
+|=========            University of California Santa Cruz             =========|
+|=========                                                            =========|
+|=========          Usage help: openram-user-group@ucsc.edu           =========|
+|=========        Development help: openram-dev-group@ucsc.edu        =========|
+|=========           Temp dir: /tmp/openram_shon_8210_temp/           =========|
+|=========                See LICENSE for license info                =========|
+|==============================================================================|
+** Start: 04/09/2021 15:01:01
+Technology: sky130A
+Total size: 32 bits
+Word size: 2
+Words: 16
+Banks: 1
+Write size: None
+RW ports: 1
+R-only ports: 0
+W-only ports: 0
+DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
+DRC/LVS/PEX is disabled (check_lvsdrc=True to enable).
+Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
+[sram_config/recompute_sizes]: Recomputing with words per row: 1
+[sram_config/recompute_sizes]: Rows: 16 Cols: 2
+[sram_config/recompute_sizes]: Row addr size: 4 Col addr size: 0 Bank addr size: 4
+Words per row: 1
+Output files are: 
+/home/shon/vsdsram_sky130/temp/sram_2_16_sky130A.lvs
+/home/shon/vsdsram_sky130/temp/sram_2_16_sky130A.sp
+/home/shon/vsdsram_sky130/temp/sram_2_16_sky130A.v
+/home/shon/vsdsram_sky130/temp/sram_2_16_sky130A.lib
+/home/shon/vsdsram_sky130/temp/sram_2_16_sky130A.py
+/home/shon/vsdsram_sky130/temp/sram_2_16_sky130A.html
+/home/shon/vsdsram_sky130/temp/sram_2_16_sky130A.log
+/home/shon/vsdsram_sky130/temp/sram_2_16_sky130A.lef
+/home/shon/vsdsram_sky130/temp/sram_2_16_sky130A.gds
+[sram/__init__]: Changed OPTS wpr=1
+[sram/__init__]: OPTS wpr=1
+[dff_array/__init__]: Creating row_addr_dff rows=4 cols=1
+[dff_array/__init__]: Creating data_dff rows=1 cols=2
+[and2_dec/__init__]: Creating and2_dec and2_dec
+[and3_dec/__init__]: Creating and3_dec and3_dec
+[and4_dec/__init__]: Creating and4_dec and4_dec
+[wordline_driver_array/__init__]: Creating wordline_driver_array
+[wordline_driver/__init__]: Creating wordline_driver wordline_driver
+[and2_dec/__init__]: Creating and2_dec and2_dec_0
+[bitcell_base_array/__init__]: Creating replica_bitcell_array 16 x 2
+[replica_bitcell_array/__init__]: Creating replica_bitcell_array 16 x 2 rbls: None left_rbl: None right_rbl: None
+[bitcell_base_array/__init__]: Creating bitcell_array 16 x 2
+[bitcell_array/__init__]: Creating bitcell_array 16 x 2
+[bitcell_base_array/__init__]: Creating replica_column 19 x 1
+[bitcell_base_array/__init__]: Creating dummy_array 1 x 2
+[bitcell_base_array/__init__]: Creating dummy_array_0 1 x 2
+[bitcell_base_array/__init__]: Creating dummy_array_1 1 x 2
+[bitcell_base_array/__init__]: Creating dummy_array_2 19 x 1
+[bitcell_base_array/__init__]: Creating dummy_array_3 19 x 1
+[precharge_array/__init__]: Creating precharge_array
+[sense_amp_array/__init__]: Creating sense_amp_array
+[write_driver_array/__init__]: Creating write_driver_array
+ERROR: file design.py: line 46: Custom cell pin names do not match spice file:
+['din', 'bl', 'br', 'en', 'vdd', 'gnd'] vs []
+
