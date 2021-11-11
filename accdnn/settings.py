@@ -121,10 +121,10 @@ IP_FILE_PATH = IP_PROJECT_PATH + '/' + IP_PROJECT_NAME + '.srcs' + '/sources_1/i
 # AccDNN I/O settings
 # ****************************************************************
 # Data bus width of input and output
-CAPI_DATA_BUS_WIDTH = 512
+CAPI_DATA_BUS_WIDTH = 16
 
 # DDR/DMA data bus width
-DDR_DATA_WIDTH = 512
+DDR_DATA_WIDTH = 16
 # Number of DDR DMA channels
 DDR_DMA_ENGINE_NUM = 15
 # Max DDR DMA delay
