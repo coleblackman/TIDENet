@@ -1,0 +1,90 @@
+|==============================================================================|
+|=========                      OpenRAM v1.1.19                       =========|
+|=========                                                            =========|
+|=========               VLSI Design and Automation Lab               =========|
+|=========        Computer Science and Engineering Department         =========|
+|=========            University of California Santa Cruz             =========|
+|=========                                                            =========|
+|=========          Usage help: openram-user-group@ucsc.edu           =========|
+|=========        Development help: openram-dev-group@ucsc.edu        =========|
+|=========          Temp dir: /tmp/openram_mm4uz_30011_temp/          =========|
+|=========                See LICENSE for license info                =========|
+|==============================================================================|
+** Start: 11/13/2021 17:25:22
+Technology: sky130A
+Total size: 1600 bits
+Word size: 16
+Words: 100
+Banks: 1
+Write size: None
+RW ports: 1
+R-only ports: 0
+W-only ports: 0
+DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
+DRC/LVS/PEX is disabled (check_lvsdrc=True to enable).
+Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
+Words per row: 2
+Output files are: 
+/home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.lvs
+/home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.sp
+/home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.v
+/home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.lib
+/home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.py
+/home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.html
+/home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.log
+/home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.lef
+/home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.gds
+** Submodules: 1.2 seconds
+** Placement: 0.0 seconds
+**** Retrieving pins: 0.0 seconds
+**** Analyzing pins: 0.0 seconds
+**** Finding blockages: 0.4 seconds
+**** Converting blockages: 0.1 seconds
+**** Converting pins: 0.0 seconds
+**** Separating adjacent pins: 0.0 seconds
+**** Enclosing pins: 0.0 seconds
+*** Finding pins and blockages: 4.1 seconds
+*** Maze routing pins: 11.2 seconds
+**** Retrieving pins: 0.0 seconds
+**** Analyzing pins: 0.5 seconds
+**** Finding blockages: 1.3 seconds
+**** Converting blockages: 0.0 seconds
+WARNING: file pin_group.py: line 656:   Expanding conversion (vdd layer=m3 ll=v[-72.87,6.41] ur=v[-72.41,6.87])
+
+WARNING: file pin_group.py: line 656:   Expanding conversion (vdd layer=m3 ll=v[-72.87,6.390000000000001] ur=v[-72.41,6.8500000000000005])
+
+WARNING: file pin_group.py: line 656:   Expanding conversion (vdd layer=m3 ll=v[-66.61,27.7] ur=v[-66.15,28.16])
+
+WARNING: file pin_group.py: line 656:   Expanding conversion (vdd layer=m3 ll=v[-59.75,27.7] ur=v[-59.29,28.16])
+
+WARNING: file pin_group.py: line 656:   Expanding conversion (vdd layer=m3 ll=v[28.67,27.69] ur=v[29.13,28.150000000000002])
+
+**** Converting pins: 0.7 seconds
+**** Separating adjacent pins: 0.2 seconds
+**** Enclosing pins: 0.6 seconds
+*** Finding pins and blockages: 7.7 seconds
+WARNING: file supply_tree_router.py: line 176: Unblocking supply self blockages to improve access (may cause DRC errors):
+vdd
+{(layer=m3 ll=v[-66.61,27.7] ur=v[-66.15,28.16])})
+
+*** Maze routing supplies: 25.6 seconds
+** Routing: 78.0 seconds
+** Verification: 0.0 seconds
+** SRAM creation: 79.2 seconds
+SP: Writing to /home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.sp
+** Spice writing: 0.1 seconds
+GDS: Writing to /home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.gds
+** GDS: 0.2 seconds
+LEF: Writing to /home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.lef
+** LEF: 0.0 seconds
+LVS: Writing to /home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.lvs.sp
+** LVS writing: 0.0 seconds
+LIB: Characterizing... 
+** Characterization: 0.6 seconds
+Config: Writing to /home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.py
+** Config: 0.0 seconds
+Datasheet: Writing to /home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.html
+** Datasheet: 0.0 seconds
+Verilog: Writing to /home/mm4uz/Documents/openram/vsdsram_sky130/OpenRAM/results/DNNBuilder_leNet1_minimal/results_conv1_wm_16_100_sky130A/conv1_wm_sram_16_100_sky130A.v
+** Verilog: 0.0 seconds
+** End: 80.2 seconds
