@@ -1,0 +1,1653 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Sat Nov 13 12:36:48 2021
+# Process ID: 30235
+# Current directory: /home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1
+# Command line: vivado -log model.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source model.tcl
+# Log file: /home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/model.vds
+# Journal file: /home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/opt/Xilinx/Vivado/2017.4/scripts/Vivado_init.tcl'
+215 Beta devices matching pattern found, 0 enabled.
+source model.tcl -notrace
+Command: synth_design -top model -part xc7vx485tffg1761-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-1540] The version limit for your license is '2020.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30379 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1311.418 ; gain = 96.000 ; free physical = 4121 ; free virtual = 104252
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'model' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/model.v:1]
+INFO: [Synth 8-638] synthesizing module 'ddr_read_delay' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:1]
+	Parameter DDR_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter delay_req_port0 bound to: 2 - type: integer 
+	Parameter delay_req_port1 bound to: 2 - type: integer 
+	Parameter delay_req_port2 bound to: 2 - type: integer 
+	Parameter delay_req_port3 bound to: -1 - type: integer 
+	Parameter delay_req_port4 bound to: -1 - type: integer 
+	Parameter delay_req_port5 bound to: -1 - type: integer 
+	Parameter delay_req_port6 bound to: -1 - type: integer 
+	Parameter delay_req_port7 bound to: -1 - type: integer 
+	Parameter delay_req_port8 bound to: -1 - type: integer 
+	Parameter delay_req_port9 bound to: -1 - type: integer 
+	Parameter delay_req_port10 bound to: -1 - type: integer 
+	Parameter delay_req_port11 bound to: -1 - type: integer 
+	Parameter delay_req_port12 bound to: -1 - type: integer 
+	Parameter delay_req_port13 bound to: -1 - type: integer 
+	Parameter delay_req_port14 bound to: -1 - type: integer 
+	Parameter delay_dout_port0 bound to: 2 - type: integer 
+	Parameter delay_dout_port1 bound to: 2 - type: integer 
+	Parameter delay_dout_port2 bound to: 2 - type: integer 
+	Parameter delay_dout_port3 bound to: -1 - type: integer 
+	Parameter delay_dout_port4 bound to: -1 - type: integer 
+	Parameter delay_dout_port5 bound to: -1 - type: integer 
+	Parameter delay_dout_port6 bound to: -1 - type: integer 
+	Parameter delay_dout_port7 bound to: -1 - type: integer 
+	Parameter delay_dout_port8 bound to: -1 - type: integer 
+	Parameter delay_dout_port9 bound to: -1 - type: integer 
+	Parameter delay_dout_port10 bound to: -1 - type: integer 
+	Parameter delay_dout_port11 bound to: -1 - type: integer 
+	Parameter delay_dout_port12 bound to: -1 - type: integer 
+	Parameter delay_dout_port13 bound to: -1 - type: integer 
+	Parameter delay_dout_port14 bound to: -1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:482]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:483]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:484]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:485]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:487]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:488]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:489]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:490]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:492]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:493]
+INFO: [Synth 8-256] done synthesizing module 'ddr_read_delay' (1#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:1]
+INFO: [Synth 8-638] synthesizing module 'busm2n' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/busm2n.v:1]
+	Parameter IN_WIDTH bound to: 16 - type: integer 
+	Parameter OUT_WIDTH bound to: 16 - type: integer 
+	Parameter COM_MUL bound to: 16 - type: integer 
+	Parameter IN_COUNT bound to: 1 - type: integer 
+	Parameter OUT_COUNT bound to: 1 - type: integer 
+	Parameter N bound to: 1568 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'busm2n' (2#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/busm2n.v:1]
+INFO: [Synth 8-638] synthesizing module 'conv1_layer' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/conv1_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'controller_v2' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:1]
+	Parameter DB_W_IN bound to: 28 - type: integer 
+	Parameter DB_H_IN bound to: 28 - type: integer 
+	Parameter DB_C_IN bound to: 2 - type: integer 
+	Parameter DB_W_OUT bound to: 24 - type: integer 
+	Parameter DB_H_OUT bound to: 24 - type: integer 
+	Parameter DB_C_OUT bound to: 4 - type: integer 
+	Parameter WB_W bound to: 5 - type: integer 
+	Parameter WB_H bound to: 5 - type: integer 
+	Parameter WB_C bound to: 2 - type: integer 
+	Parameter WB_K bound to: 4 - type: integer 
+	Parameter CPF bound to: 1 - type: integer 
+	Parameter KPF bound to: 1 - type: integer 
+	Parameter STRIDE_H bound to: 1 - type: integer 
+	Parameter STRIDE_W bound to: 1 - type: integer 
+	Parameter PAD bound to: 0 - type: integer 
+	Parameter OP_DELAY bound to: 4 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 6 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 5 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter DOUBLE_BUF_WR_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter DOUBLE_BUF_RD_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter DOUBLE_BUF_WR_DEPTH bound to: 100 - type: integer 
+	Parameter DOUBLE_BUF_RD_DEPTH bound to: 100 - type: integer 
+	Parameter BM_RD_ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter CG bound to: 2 - type: integer 
+	Parameter KG bound to: 4 - type: integer 
+	Parameter GROUP bound to: 1 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 2 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 1 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 115200 - type: integer 
+	Parameter START_ADDR bound to: 0 - type: integer 
+	Parameter LENGTH bound to: 50 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:27]
+INFO: [Synth 8-256] done synthesizing module 'delay' (3#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (3#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'mul16_unsigned' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/mul16_unsigned_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'mul16_unsigned' (4#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/mul16_unsigned_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized1' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (4#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:391]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2' (5#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:1]
+INFO: [Synth 8-638] synthesizing module 'conv1_rm_ram' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/conv1_rm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv1_rm_ram' (6#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/conv1_rm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'conv1_wm_ram' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/conv1_wm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv1_wm_ram' (7#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/conv1_wm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'conv1_bm_ram' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/conv1_bm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv1_bm_ram' (8#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/conv1_bm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'vector_muladd' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/vector_muladd.sv:1]
+	Parameter CPF bound to: 1 - type: integer 
+	Parameter RELU bound to: 1 - type: integer 
+	Parameter Q bound to: 13 - type: integer 
+	Parameter DIN_Q bound to: 6 - type: integer 
+	Parameter DOUT_Q bound to: 6 - type: integer 
+	Parameter ACC_WIDTH bound to: 40 - type: integer 
+	Parameter BIAS_DW bound to: 16 - type: integer 
+	Parameter BN bound to: 0 - type: integer 
+	Parameter BN_SCALE_Q bound to: 6 - type: integer 
+	Parameter BN_BIAS_Q bound to: 6 - type: integer 
+	Parameter MID_Q bound to: 6 - type: integer 
+	Parameter DIN_DW bound to: 16 - type: integer 
+	Parameter DOUT_DW bound to: 16 - type: integer 
+	Parameter WW bound to: 16 - type: integer 
+	Parameter MAT_DW bound to: 32 - type: integer 
+	Parameter DELTA_DELAY bound to: 0 - type: integer 
+	Parameter DATA_CHANNEL bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'multiplier' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/multiplier.v:1]
+	Parameter C_WIDTH bound to: 1 - type: integer 
+	Parameter D_WIDTH bound to: 16 - type: integer 
+	Parameter W_WIDTH bound to: 16 - type: integer 
+	Parameter M_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'mul16x16_signed' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/mul16x16_signed_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'mul16x16_signed' (9#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/mul16x16_signed_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'multiplier' (10#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/multiplier.v:1]
+INFO: [Synth 8-638] synthesizing module 'acc_addr' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/acc_addr.sv:1]
+	Parameter CPF bound to: 1 - type: integer 
+	Parameter ACC_WIDTH bound to: 40 - type: integer 
+	Parameter M_DW bound to: 32 - type: integer 
+	Parameter A1_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'acc_addr' (11#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/acc_addr.sv:1]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized2' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:16]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized2' (11#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'bn_bias_relu' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bn_bias_relu.v:1]
+	Parameter RELU bound to: 1 - type: integer 
+	Parameter Q bound to: 13 - type: integer 
+	Parameter DIN_Q bound to: 6 - type: integer 
+	Parameter DOUT_DW bound to: 16 - type: integer 
+	Parameter DOUT_Q bound to: 6 - type: integer 
+	Parameter ACC_WIDTH bound to: 40 - type: integer 
+	Parameter BIAS_DW bound to: 16 - type: integer 
+	Parameter BN bound to: 0 - type: integer 
+	Parameter BN_SCALE_Q bound to: 6 - type: integer 
+	Parameter BN_BIAS_Q bound to: 6 - type: integer 
+	Parameter MID_Q bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'bit_trunc' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bit_trunc.v:1]
+	Parameter WIDTH bound to: 40 - type: integer 
+	Parameter MSB bound to: 28 - type: integer 
+	Parameter LSB bound to: 13 - type: integer 
+	Parameter ROUND bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit_trunc' (12#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bit_trunc.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bn_bias_relu' (13#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bn_bias_relu.v:1]
+INFO: [Synth 8-256] done synthesizing module 'vector_muladd' (14#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/vector_muladd.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'conv1_layer' (15#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/conv1_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'pool1_layer' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/pool1_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'controller_v2_a' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:1]
+	Parameter DB_W_IN bound to: 24 - type: integer 
+	Parameter DB_H_IN bound to: 24 - type: integer 
+	Parameter DB_C_IN bound to: 4 - type: integer 
+	Parameter DB_W_OUT bound to: 12 - type: integer 
+	Parameter DB_H_OUT bound to: 12 - type: integer 
+	Parameter DB_C_OUT bound to: 4 - type: integer 
+	Parameter WB_W bound to: 2 - type: integer 
+	Parameter WB_H bound to: 2 - type: integer 
+	Parameter WB_C bound to: 8 - type: integer 
+	Parameter WB_K bound to: 4 - type: integer 
+	Parameter KPF bound to: 1 - type: integer 
+	Parameter STRIDE_H bound to: 2 - type: integer 
+	Parameter STRIDE_W bound to: 2 - type: integer 
+	Parameter PAD bound to: 0 - type: integer 
+	Parameter OP_DELAY bound to: 1 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 4 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 2 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter KG bound to: 4 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 4 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 4 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 2304 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized3' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+	Parameter N bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized3' (15#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:306]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2_a' (16#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:1]
+INFO: [Synth 8-638] synthesizing module 'pool1_rm_ram' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/pool1_rm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'pool1_rm_ram' (17#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/pool1_rm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'vector_max' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/vector_max.v:1]
+	Parameter RELU bound to: 0 - type: integer 
+	Parameter DIN_W bound to: 16 - type: integer 
+	Parameter Q bound to: 13 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vector_max' (18#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/vector_max.v:1]
+INFO: [Synth 8-638] synthesizing module 'interlayer_sync_fifo' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/verilog/interlayer_sync_fifo.v:3]
+	Parameter aw bound to: 1 - type: integer 
+	Parameter dw bound to: 17 - type: integer 
+	Parameter afull_t bound to: 2 - type: integer 
+	Parameter distribute_ram bound to: false - type: string 
+INFO: [Synth 8-256] done synthesizing module 'interlayer_sync_fifo' (19#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/verilog/interlayer_sync_fifo.v:3]
+INFO: [Synth 8-256] done synthesizing module 'pool1_layer' (20#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/pool1_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'conv2_layer' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/conv2_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'controller_v2__parameterized0' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:1]
+	Parameter DB_W_IN bound to: 12 - type: integer 
+	Parameter DB_H_IN bound to: 12 - type: integer 
+	Parameter DB_C_IN bound to: 4 - type: integer 
+	Parameter DB_W_OUT bound to: 8 - type: integer 
+	Parameter DB_H_OUT bound to: 8 - type: integer 
+	Parameter DB_C_OUT bound to: 8 - type: integer 
+	Parameter WB_W bound to: 5 - type: integer 
+	Parameter WB_H bound to: 5 - type: integer 
+	Parameter WB_C bound to: 4 - type: integer 
+	Parameter WB_K bound to: 8 - type: integer 
+	Parameter CPF bound to: 1 - type: integer 
+	Parameter KPF bound to: 1 - type: integer 
+	Parameter STRIDE_H bound to: 1 - type: integer 
+	Parameter STRIDE_W bound to: 1 - type: integer 
+	Parameter PAD bound to: 0 - type: integer 
+	Parameter OP_DELAY bound to: 4 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 6 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 5 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter DOUBLE_BUF_WR_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DOUBLE_BUF_RD_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DOUBLE_BUF_WR_DEPTH bound to: 200 - type: integer 
+	Parameter DOUBLE_BUF_RD_DEPTH bound to: 200 - type: integer 
+	Parameter BM_RD_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter CG bound to: 4 - type: integer 
+	Parameter KG bound to: 8 - type: integer 
+	Parameter GROUP bound to: 1 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 4 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 1 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 51200 - type: integer 
+	Parameter START_ADDR bound to: 200 - type: integer 
+	Parameter LENGTH bound to: 100 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:391]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2__parameterized0' (20#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:1]
+INFO: [Synth 8-638] synthesizing module 'conv2_rm_ram' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/conv2_rm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv2_rm_ram' (21#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/conv2_rm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'conv2_wm_ram' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/conv2_wm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv2_wm_ram' (22#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/conv2_wm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'conv2_bm_ram' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/conv2_bm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv2_bm_ram' (23#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/conv2_bm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv2_layer' (24#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/conv2_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'pool2_layer' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/pool2_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'controller_v2_a__parameterized0' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:1]
+	Parameter DB_W_IN bound to: 8 - type: integer 
+	Parameter DB_H_IN bound to: 8 - type: integer 
+	Parameter DB_C_IN bound to: 8 - type: integer 
+	Parameter DB_W_OUT bound to: 4 - type: integer 
+	Parameter DB_H_OUT bound to: 4 - type: integer 
+	Parameter DB_C_OUT bound to: 8 - type: integer 
+	Parameter WB_W bound to: 2 - type: integer 
+	Parameter WB_H bound to: 2 - type: integer 
+	Parameter WB_C bound to: 8 - type: integer 
+	Parameter WB_K bound to: 8 - type: integer 
+	Parameter KPF bound to: 1 - type: integer 
+	Parameter STRIDE_H bound to: 2 - type: integer 
+	Parameter STRIDE_W bound to: 2 - type: integer 
+	Parameter PAD bound to: 0 - type: integer 
+	Parameter OP_DELAY bound to: 1 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 4 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 2 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter KG bound to: 8 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 8 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 8 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 512 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:306]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2_a__parameterized0' (24#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:1]
+INFO: [Synth 8-638] synthesizing module 'pool2_rm_ram' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/pool2_rm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'pool2_rm_ram' (25#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/pool2_rm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'pool2_layer' (26#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/pool2_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'ip1_layer' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/ip1_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'controller_v2__parameterized1' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:1]
+	Parameter DB_W_IN bound to: 1 - type: integer 
+	Parameter DB_H_IN bound to: 1 - type: integer 
+	Parameter DB_C_IN bound to: 128 - type: integer 
+	Parameter DB_W_OUT bound to: 1 - type: integer 
+	Parameter DB_H_OUT bound to: 1 - type: integer 
+	Parameter DB_C_OUT bound to: 10 - type: integer 
+	Parameter WB_W bound to: 1 - type: integer 
+	Parameter WB_H bound to: 1 - type: integer 
+	Parameter WB_C bound to: 128 - type: integer 
+	Parameter WB_K bound to: 10 - type: integer 
+	Parameter CPF bound to: 1 - type: integer 
+	Parameter KPF bound to: 1 - type: integer 
+	Parameter STRIDE_H bound to: 0 - type: integer 
+	Parameter STRIDE_W bound to: 0 - type: integer 
+	Parameter PAD bound to: 0 - type: integer 
+	Parameter OP_DELAY bound to: 4 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 2 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 1 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DOUBLE_BUF_WR_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DOUBLE_BUF_RD_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DOUBLE_BUF_WR_DEPTH bound to: 256 - type: integer 
+	Parameter DOUBLE_BUF_RD_DEPTH bound to: 256 - type: integer 
+	Parameter BM_RD_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter CG bound to: 128 - type: integer 
+	Parameter KG bound to: 10 - type: integer 
+	Parameter GROUP bound to: 1 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 128 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 1 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 1280 - type: integer 
+	Parameter START_ADDR bound to: 1000 - type: integer 
+	Parameter LENGTH bound to: 128 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:391]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2__parameterized1' (26#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:1]
+INFO: [Synth 8-638] synthesizing module 'ip1_rm_ram' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/ip1_rm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ip1_rm_ram' (27#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/ip1_rm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ip1_wm_ram' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/ip1_wm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ip1_wm_ram' (28#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/ip1_wm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ip1_bm_ram' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/ip1_bm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ip1_bm_ram' (29#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/realtime/ip1_bm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'vector_muladd__parameterized0' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/vector_muladd.sv:1]
+	Parameter CPF bound to: 1 - type: integer 
+	Parameter RELU bound to: 0 - type: integer 
+	Parameter Q bound to: 13 - type: integer 
+	Parameter DIN_Q bound to: 6 - type: integer 
+	Parameter DOUT_Q bound to: 6 - type: integer 
+	Parameter ACC_WIDTH bound to: 40 - type: integer 
+	Parameter BIAS_DW bound to: 16 - type: integer 
+	Parameter BN bound to: 0 - type: integer 
+	Parameter BN_SCALE_Q bound to: 6 - type: integer 
+	Parameter BN_BIAS_Q bound to: 6 - type: integer 
+	Parameter MID_Q bound to: 6 - type: integer 
+	Parameter DIN_DW bound to: 16 - type: integer 
+	Parameter DOUT_DW bound to: 16 - type: integer 
+	Parameter WW bound to: 16 - type: integer 
+	Parameter MAT_DW bound to: 32 - type: integer 
+	Parameter DELTA_DELAY bound to: 0 - type: integer 
+	Parameter DATA_CHANNEL bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'bn_bias_relu__parameterized0' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bn_bias_relu.v:1]
+	Parameter RELU bound to: 0 - type: integer 
+	Parameter Q bound to: 13 - type: integer 
+	Parameter DIN_Q bound to: 6 - type: integer 
+	Parameter DOUT_DW bound to: 16 - type: integer 
+	Parameter DOUT_Q bound to: 6 - type: integer 
+	Parameter ACC_WIDTH bound to: 40 - type: integer 
+	Parameter BIAS_DW bound to: 16 - type: integer 
+	Parameter BN bound to: 0 - type: integer 
+	Parameter BN_SCALE_Q bound to: 6 - type: integer 
+	Parameter BN_BIAS_Q bound to: 6 - type: integer 
+	Parameter MID_Q bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bn_bias_relu__parameterized0' (29#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bn_bias_relu.v:1]
+INFO: [Synth 8-256] done synthesizing module 'vector_muladd__parameterized0' (29#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/vector_muladd.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'ip1_layer' (30#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/ip1_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'busm2n__parameterized0' [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/busm2n.v:1]
+	Parameter IN_WIDTH bound to: 16 - type: integer 
+	Parameter OUT_WIDTH bound to: 16 - type: integer 
+	Parameter COM_MUL bound to: 16 - type: integer 
+	Parameter IN_COUNT bound to: 1 - type: integer 
+	Parameter OUT_COUNT bound to: 1 - type: integer 
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'busm2n__parameterized0' (30#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/busm2n.v:1]
+INFO: [Synth 8-256] done synthesizing module 'model' (31#1) [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/model.v:1]
+WARNING: [Synth 8-3331] design delay__parameterized1 has unconnected port rst
+WARNING: [Synth 8-3331] design delay__parameterized2 has unconnected port rst
+WARNING: [Synth 8-3331] design delay has unconnected port rst
+WARNING: [Synth 8-3331] design delay__parameterized0 has unconnected port rst
+WARNING: [Synth 8-3331] design controller_v2__parameterized1 has unconnected port blob_din_eop
+WARNING: [Synth 8-3331] design delay__parameterized3 has unconnected port rst
+WARNING: [Synth 8-3331] design controller_v2_a__parameterized0 has unconnected port blob_din_eop
+WARNING: [Synth 8-3331] design controller_v2__parameterized0 has unconnected port blob_din_eop
+WARNING: [Synth 8-3331] design controller_v2_a has unconnected port blob_din_eop
+WARNING: [Synth 8-3331] design controller_v2 has unconnected port blob_din_eop
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port rst
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_3_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_4_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_5_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_6_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_7_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_8_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_9_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_10_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_11_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_12_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_13_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_14_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_3_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_4_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_5_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_6_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_7_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_8_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_9_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_10_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_11_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_12_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_13_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_14_i
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1363.949 ; gain = 148.531 ; free physical = 4119 ; free virtual = 104252
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1363.949 ; gain = 148.531 ; free physical = 4124 ; free virtual = 104256
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp13/conv1_rm_ram_in_context.xdc] for cell 'u0_conv1_layer/u_conv1_rm_ram_0'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp13/conv1_rm_ram_in_context.xdc] for cell 'u0_conv1_layer/u_conv1_rm_ram_0'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp14/conv1_wm_ram_in_context.xdc] for cell 'u0_conv1_layer/u_conv1_wm_ram'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp14/conv1_wm_ram_in_context.xdc] for cell 'u0_conv1_layer/u_conv1_wm_ram'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp15/conv1_bm_ram_in_context.xdc] for cell 'u0_conv1_layer/u_conv1_bm_ram'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp15/conv1_bm_ram_in_context.xdc] for cell 'u0_conv1_layer/u_conv1_bm_ram'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp16/pool1_rm_ram_in_context.xdc] for cell 'u0_pool1_layer/u_pool1_rm_ram_0'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp16/pool1_rm_ram_in_context.xdc] for cell 'u0_pool1_layer/u_pool1_rm_ram_0'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp17/conv2_rm_ram_in_context.xdc] for cell 'u0_conv2_layer/u_conv2_rm_ram_0'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp17/conv2_rm_ram_in_context.xdc] for cell 'u0_conv2_layer/u_conv2_rm_ram_0'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp18/conv2_wm_ram_in_context.xdc] for cell 'u0_conv2_layer/u_conv2_wm_ram'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp18/conv2_wm_ram_in_context.xdc] for cell 'u0_conv2_layer/u_conv2_wm_ram'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp19/conv2_bm_ram_in_context.xdc] for cell 'u0_conv2_layer/u_conv2_bm_ram'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp19/conv2_bm_ram_in_context.xdc] for cell 'u0_conv2_layer/u_conv2_bm_ram'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp20/pool2_rm_ram_in_context.xdc] for cell 'u0_pool2_layer/u_pool2_rm_ram_0'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp20/pool2_rm_ram_in_context.xdc] for cell 'u0_pool2_layer/u_pool2_rm_ram_0'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp21/pool2_rm_ram_in_context.xdc] for cell 'u0_ip1_layer/u_ip1_rm_ram_0'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp21/pool2_rm_ram_in_context.xdc] for cell 'u0_ip1_layer/u_ip1_rm_ram_0'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp22/pool2_rm_ram_in_context.xdc] for cell 'u0_ip1_layer/u_ip1_wm_ram'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp22/pool2_rm_ram_in_context.xdc] for cell 'u0_ip1_layer/u_ip1_wm_ram'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp23/ip1_bm_ram_in_context.xdc] for cell 'u0_ip1_layer/u_ip1_bm_ram'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp23/ip1_bm_ram_in_context.xdc] for cell 'u0_ip1_layer/u_ip1_bm_ram'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_1'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_1'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_2'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_2'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_3'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_3'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_6'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_6'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_4'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_4'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_5'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_5'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_pool1_layer/u_controller/u_mul16_unsigned_2'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_pool1_layer/u_controller/u_mul16_unsigned_2'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_pool1_layer/u_controller/u_mul16_unsigned_3'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_pool1_layer/u_controller/u_mul16_unsigned_3'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv2_layer/u_controller/u_mul16_unsigned_1'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv2_layer/u_controller/u_mul16_unsigned_1'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv2_layer/u_controller/u_mul16_unsigned_2'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv2_layer/u_controller/u_mul16_unsigned_2'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv2_layer/u_controller/u_mul16_unsigned_3'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv2_layer/u_controller/u_mul16_unsigned_3'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv2_layer/u_controller/u_mul16_unsigned_6'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv2_layer/u_controller/u_mul16_unsigned_6'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv2_layer/u_controller/u_mul16_unsigned_4'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv2_layer/u_controller/u_mul16_unsigned_4'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv2_layer/u_controller/u_mul16_unsigned_5'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_conv2_layer/u_controller/u_mul16_unsigned_5'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_pool2_layer/u_controller/u_mul16_unsigned_2'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_pool2_layer/u_controller/u_mul16_unsigned_2'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_pool2_layer/u_controller/u_mul16_unsigned_3'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_pool2_layer/u_controller/u_mul16_unsigned_3'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_ip1_layer/u_controller/u_mul16_unsigned_1'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_ip1_layer/u_controller/u_mul16_unsigned_1'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_ip1_layer/u_controller/u_mul16_unsigned_2'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_ip1_layer/u_controller/u_mul16_unsigned_2'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_ip1_layer/u_controller/u_mul16_unsigned_3'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_ip1_layer/u_controller/u_mul16_unsigned_3'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_ip1_layer/u_controller/u_mul16_unsigned_6'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_ip1_layer/u_controller/u_mul16_unsigned_6'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_ip1_layer/u_controller/u_mul16_unsigned_4'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_ip1_layer/u_controller/u_mul16_unsigned_4'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_ip1_layer/u_controller/u_mul16_unsigned_5'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp24/mul16_unsigned_in_context.xdc] for cell 'u0_ip1_layer/u_controller/u_mul16_unsigned_5'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp25/mul16_signed_in_context.xdc] for cell 'u0_conv1_layer/u_vector_muladd_0_0/gen_multiplier[0].u_mult/multiplier.u_mul16x16_signed'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp25/mul16_signed_in_context.xdc] for cell 'u0_conv1_layer/u_vector_muladd_0_0/gen_multiplier[0].u_mult/multiplier.u_mul16x16_signed'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp25/mul16_signed_in_context.xdc] for cell 'u0_conv2_layer/u_vector_muladd_0_0/gen_multiplier[0].u_mult/multiplier.u_mul16x16_signed'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp25/mul16_signed_in_context.xdc] for cell 'u0_conv2_layer/u_vector_muladd_0_0/gen_multiplier[0].u_mult/multiplier.u_mul16x16_signed'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp25/mul16_signed_in_context.xdc] for cell 'u0_ip1_layer/u_vector_muladd_0_0/gen_multiplier[0].u_mult/multiplier.u_mul16x16_signed'
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/.Xil/Vivado-30235-boldrock/dcp25/mul16_signed_in_context.xdc] for cell 'u0_ip1_layer/u_vector_muladd_0_0/gen_multiplier[0].u_mult/multiplier.u_mul16x16_signed'
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc]
+WARNING: [Vivado 12-507] No nets matched 'a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_0_o[*]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:1]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:2]
+WARNING: [Vivado 12-507] No nets matched 'a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_1_o[*]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:3]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_2_o[*]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:5]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:6]
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/model_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/model_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/model_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1878.160 ; gain = 0.000 ; free physical = 3675 ; free virtual = 103800
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 1878.160 ; gain = 662.742 ; free physical = 3758 ; free virtual = 103884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 1878.160 ; gain = 662.742 ; free physical = 3758 ; free virtual = 103884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u0_conv1_layer/u_controller/u_mul16_unsigned_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv1_layer/u_controller/u_mul16_unsigned_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv1_layer/u_controller/u_mul16_unsigned_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv1_layer/u_controller/u_mul16_unsigned_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv1_layer/u_controller/u_mul16_unsigned_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv1_layer/u_controller/u_mul16_unsigned_6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv1_layer/u_conv1_bm_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv1_layer/u_conv1_rm_ram_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv1_layer/u_conv1_wm_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv1_layer/u_vector_muladd_0_0/\gen_multiplier[0].u_mult /\multiplier.u_mul16x16_signed . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv2_layer/u_controller/u_mul16_unsigned_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv2_layer/u_controller/u_mul16_unsigned_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv2_layer/u_controller/u_mul16_unsigned_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv2_layer/u_controller/u_mul16_unsigned_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv2_layer/u_controller/u_mul16_unsigned_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv2_layer/u_controller/u_mul16_unsigned_6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv2_layer/u_conv2_bm_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv2_layer/u_conv2_rm_ram_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv2_layer/u_conv2_wm_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_conv2_layer/u_vector_muladd_0_0/\gen_multiplier[0].u_mult /\multiplier.u_mul16x16_signed . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_ip1_layer/u_controller/u_mul16_unsigned_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_ip1_layer/u_controller/u_mul16_unsigned_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_ip1_layer/u_controller/u_mul16_unsigned_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_ip1_layer/u_controller/u_mul16_unsigned_4. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_ip1_layer/u_controller/u_mul16_unsigned_5. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_ip1_layer/u_controller/u_mul16_unsigned_6. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_ip1_layer/u_ip1_bm_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_ip1_layer/u_ip1_rm_ram_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_ip1_layer/u_ip1_wm_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_ip1_layer/u_vector_muladd_0_0/\gen_multiplier[0].u_mult /\multiplier.u_mul16x16_signed . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_pool1_layer/u_controller/u_mul16_unsigned_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_pool1_layer/u_controller/u_mul16_unsigned_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_pool1_layer/u_pool1_rm_ram_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_pool2_layer/u_controller/u_mul16_unsigned_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_pool2_layer/u_controller/u_mul16_unsigned_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u0_pool2_layer/u_pool2_rm_ram_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 1878.160 ; gain = 662.742 ; free physical = 3760 ; free virtual = 103885
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "auto_pad" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "dout_cnt_total" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "op_din_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "module_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "h_w_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "w_w_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "h_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "k_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_rd_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_offset" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "module_en_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "double_buf_wr_addr_tmp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:314]
+WARNING: [Synth 8-6014] Unused sequential element rm_rd_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:314]
+WARNING: [Synth 8-6014] Unused sequential element rm_rd_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:407]
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_addr_base_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:466]
+WARNING: [Synth 8-6014] Unused sequential element dma_engineer_start_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:728]
+WARNING: [Synth 8-6014] Unused sequential element a2_tmp_reg_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/acc_addr.sv:89]
+INFO: [Synth 8-5545] ROM "op_din_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "module_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "w_w_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "k_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_rd_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_offset" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:228]
+WARNING: [Synth 8-6014] Unused sequential element rm_rd_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:228]
+WARNING: [Synth 8-6014] Unused sequential element rm_rd_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:322]
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_addr_base_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:381]
+INFO: [Synth 8-5545] ROM "op_din_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "module_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "h_w_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "w_w_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "h_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "k_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_rd_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_offset" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "module_en_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "double_buf_wr_addr_tmp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:314]
+WARNING: [Synth 8-6014] Unused sequential element rm_rd_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:314]
+WARNING: [Synth 8-6014] Unused sequential element rm_rd_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:407]
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_addr_base_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:466]
+WARNING: [Synth 8-6014] Unused sequential element dma_engineer_start_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:728]
+INFO: [Synth 8-5545] ROM "op_din_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "module_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "w_w_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "k_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_rd_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_offset" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:228]
+WARNING: [Synth 8-6014] Unused sequential element rm_rd_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:228]
+WARNING: [Synth 8-6014] Unused sequential element rm_rd_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:322]
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_addr_base_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:381]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:341]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:410]
+INFO: [Synth 8-5545] ROM "op_din_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "module_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "h_w_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "w_w_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "h_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "h_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "k_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_rd_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_offset" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "module_en_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "double_buf_wr_addr_tmp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element rm_rd_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:407]
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_addr_base_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:466]
+WARNING: [Synth 8-6014] Unused sequential element dma_engineer_start_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:728]
+INFO: [Synth 8-5546] ROM "auto_pad" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "dout_cnt_total" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:01:06 . Memory (MB): peak = 1878.160 ; gain = 662.742 ; free physical = 3730 ; free virtual = 103856
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |model__GB0    |           1|     39403|
+|2     |pool2_layer   |           1|     12585|
+|3     |model__GB2    |           1|     36253|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 6     
+	   2 Input     32 Bit       Adders := 62    
+	   3 Input     32 Bit       Adders := 5     
+	   4 Input     32 Bit       Adders := 3     
+	   3 Input     17 Bit       Adders := 5     
+	   2 Input     17 Bit       Adders := 12    
+	   2 Input     16 Bit       Adders := 54    
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 6     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 4     
+	   2 Input      1 Bit       Adders := 4     
++---Registers : 
+	               40 Bit    Registers := 3     
+	               32 Bit    Registers := 78    
+	               16 Bit    Registers := 62    
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 212   
++---RAMs : 
+	               34 Bit         RAMs := 2     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 59    
+	   2 Input     16 Bit        Muxes := 55    
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 72    
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module delay__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module delay__parameterized3__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module delay__parameterized3__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module delay__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module controller_v2_a__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 8     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 11    
+	               16 Bit    Registers := 6     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 5     
+Module vector_max__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module interlayer_sync_fifo__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 2     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---RAMs : 
+	               34 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module ddr_read_delay 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 4     
+	                1 Bit    Registers := 14    
+Module delay__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module delay__parameterized0__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 9     
+Module delay__parameterized0__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 9     
+Module delay__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module delay__parameterized1__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module controller_v2__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 14    
+	   4 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 12    
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 18    
+	               16 Bit    Registers := 12    
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   2 Input     16 Bit        Muxes := 9     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+Module acc_addr__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module delay__parameterized2__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module delay__parameterized1__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module bit_trunc__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+Module bn_bias_relu__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+Module vector_muladd__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module delay__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module delay__parameterized0__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 9     
+Module delay__parameterized0__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 9     
+Module delay__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module delay__parameterized1__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module controller_v2__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 14    
+	   4 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 11    
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 18    
+	               16 Bit    Registers := 10    
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   2 Input     16 Bit        Muxes := 9     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module acc_addr__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module delay__parameterized2__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module delay__parameterized1__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module bit_trunc__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+Module bn_bias_relu__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module vector_muladd 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module delay__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module delay__parameterized3__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module delay__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module delay 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module controller_v2_a 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 8     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 11    
+	               16 Bit    Registers := 6     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 5     
+Module vector_max 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module interlayer_sync_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 2     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---RAMs : 
+	               34 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+Module delay__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module delay__parameterized0__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 9     
+Module delay__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 9     
+Module delay__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module delay__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module controller_v2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 14    
+	   4 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 11    
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 18    
+	               16 Bit    Registers := 10    
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   2 Input     16 Bit        Muxes := 9     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module acc_addr 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module delay__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module delay__parameterized1__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module bit_trunc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+Module bn_bias_relu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module vector_muladd__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module busm2n 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module busm2n__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element u_interlayer_sync_fifo/afull_o_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/verilog/interlayer_sync_fifo.v:122]
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/module_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_rd_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_addr_offset" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_addr_base_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/w_w_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/op_din_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/k_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_wr_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:228]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_rd_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:228]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_wr_addr_base_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:381]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_rd_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:322]
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/h_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/module_en_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/module_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_addr_offset" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_addr_base_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/double_buf_wr_addr_tmp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/op_din_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/h_w_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/w_w_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "u_controller/h_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "u_controller/k_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_rd_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_wr_addr_base_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:466]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/dma_engineer_start_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:728]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_rd_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:407]
+WARNING: [Synth 8-6014] Unused sequential element u_vector_muladd_0_0/gen_adder_16b.u_acc_addr0/a2_tmp_reg_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/acc_addr.sv:89]
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/h_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/module_en_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/module_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_rd_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_addr_offset" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_addr_base_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/rm_wr_addr_base" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/double_buf_wr_addr_tmp" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/op_din_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "u_controller/h_w_c" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_wr_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:314]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_rd_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:314]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_wr_addr_base_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:466]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/dma_engineer_start_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:728]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_rd_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:407]
+WARNING: [Synth 8-6014] Unused sequential element u_vector_muladd_0_0/gen_adder_16b.u_acc_addr0/a2_tmp_reg_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/acc_addr.sv:89]
+WARNING: [Synth 8-6014] Unused sequential element u_interlayer_sync_fifo/afull_o_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/verilog/interlayer_sync_fifo.v:122]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_wr_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:228]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_rd_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:228]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_wr_addr_base_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:381]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_rd_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:322]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_wr_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:314]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_rd_log_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:314]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_wr_addr_base_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:466]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/dma_engineer_start_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:728]
+WARNING: [Synth 8-6014] Unused sequential element u_controller/rm_rd_phy_addr_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:407]
+WARNING: [Synth 8-6014] Unused sequential element u_vector_muladd_0_0/gen_adder_16b.u_acc_addr0/a2_tmp_reg_reg was removed.  [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/acc_addr.sv:89]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u0_pool2_layer/i_9/\u_controller/rm_wr_addr_base_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u0_pool2_layer/i_9/\u_controller/rm_wr_addr_base_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u0_pool2_layer/i_9/\u_controller/rm_wr_addr_base_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u0_pool2_layer/i_9/\u_controller/rm_wr_addr_base_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u0_pool2_layer/i_9/\u_controller/rm_wr_addr_base_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u0_pool2_layer/i_9/\u_controller/rm_wr_addr_base_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u0_pool2_layer/i_6/\u_controller/rm_rd_log_addr_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_log_addr_reg[0]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[0]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[1]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[2]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[3]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[4]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[5]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[8]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[9]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[10]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[11]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[12]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[13]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[14]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[15]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[16]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[17]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[18]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[19]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[20]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[21]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[22]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[23]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[24]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[25]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[26]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[27]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[28]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[29]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[30]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_wr_addr_base_reg[31]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d_reg[15]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d_reg[14]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d_reg[13]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d_reg[12]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d_reg[11]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d_reg[10]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d_reg[9]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d_reg[8]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d2_reg[15]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d2_reg[14]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d2_reg[13]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d2_reg[12]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d2_reg[11]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d2_reg[10]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d2_reg[9]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/k_d2_reg[8]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[31]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[30]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[29]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[28]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[27]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[26]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[25]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[24]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[23]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[22]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[21]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[20]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[19]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[18]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[17]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[16]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[15]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[14]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[13]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[12]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[11]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[10]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[9]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_addr_tmp_reg[8]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_controller/rm_rd_phy_addr_reg[0]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_interlayer_sync_fifo/w_num_used_o_reg[1]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_interlayer_sync_fifo/w_num_used_o_reg[0]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_interlayer_sync_fifo/r_num_val_o_reg[1]) is unused and will be removed from module pool2_layer.
+WARNING: [Synth 8-3332] Sequential element (u_interlayer_sync_fifo/r_num_val_o_reg[0]) is unused and will be removed from module pool2_layer.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_8/\u0_conv2_layer/u_controller/rm_wr_addr_base_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_8/\u0_conv2_layer/u_controller/rm_wr_addr_base_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_8/\u0_conv2_layer/u_controller/rm_wr_addr_base_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_8/\u0_conv2_layer/u_controller/rm_wr_addr_base_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_0/\u0_ip1_layer/u_controller/rm_wr_addr_base_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_0/\u0_ip1_layer/u_controller/rm_wr_addr_base_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_0/\u0_ip1_layer/u_controller/rm_wr_addr_base_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_0/\u0_ip1_layer/u_controller/rm_wr_addr_base_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_0/\u0_ip1_layer/u_controller/rm_wr_addr_base_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_0/\u0_ip1_layer/u_controller/rm_wr_addr_base_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_0/\u0_ip1_layer/u_controller/rm_wr_addr_base_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/h_count_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[0]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_3/\u0_ip1_layer/u_controller/dma_engineer_start_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_3/\u0_ip1_layer/u_controller/dma_engineer_start_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_3/\u0_ip1_layer/u_controller/dma_engineer_start_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/i_3/\u0_ip1_layer/u_controller/dma_engineer_start_addr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_3/\u0_ip1_layer/u_controller/dma_engineer_start_addr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/i_3/\u0_ip1_layer/u_controller/dma_engineer_start_addr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/i_3/\u0_ip1_layer/u_controller/dma_engineer_start_addr_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_11/\u0_conv2_layer/u_controller/dma_engineer_start_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/i_11/\u0_conv2_layer/u_controller/dma_engineer_start_addr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[15]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[13]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[14]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[1]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[2]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[3]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[4]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[5]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[6]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[7]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[8]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[9]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[10]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[11]'
+INFO: [Synth 8-3886] merging instance 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[11]' (FDRE) to 'i_0/u0_ip1_layer/u_controller/rm_rd_log_addr_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\u0_ip1_layer/u_controller/rm_rd_log_addr_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_46/\u0_conv1_layer/u_controller/rm_wr_addr_base_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_46/\u0_conv1_layer/u_controller/rm_wr_addr_base_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_46/\u0_conv1_layer/u_controller/rm_wr_addr_base_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_9/\u0_pool1_layer/u_controller/rm_wr_addr_base_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_9/\u0_pool1_layer/u_controller/rm_wr_addr_base_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_9/\u0_pool1_layer/u_controller/rm_wr_addr_base_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_9/\u0_pool1_layer/u_controller/rm_wr_addr_base_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_9/\u0_pool1_layer/u_controller/rm_wr_addr_base_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_6/\u0_pool1_layer/u_controller/rm_rd_log_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_1/i_63/\u0_conv1_layer/u_controller/dma_engineer_start_addr_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:22 . Memory (MB): peak = 1878.160 ; gain = 662.742 ; free physical = 3614 ; free virtual = 103740
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++---------------+-----------------------------------------------+-----------+----------------------+--------------+
+|Module Name    | RTL Object                                    | Inference | Size (Depth x Width) | Primitives   | 
++---------------+-----------------------------------------------+-----------+----------------------+--------------+
+|u0_pool2_layer | u_interlayer_sync_fifo/mem_reg                | Implied   | 2 x 17               | RAM32M x 3   | 
+|model          | u0_pool1_layer/u_interlayer_sync_fifo/mem_reg | Implied   | 2 x 17               | RAM32M x 3   | 
++---------------+-----------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |model__GB0    |           1|      6221|
+|2     |pool2_layer   |           1|      1956|
+|3     |model__GB2    |           1|      5784|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:27 . Memory (MB): peak = 1923.434 ; gain = 708.016 ; free physical = 3493 ; free virtual = 103620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:27 . Memory (MB): peak = 1923.434 ; gain = 708.016 ; free physical = 3493 ; free virtual = 103620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++---------------+-----------------------------------------------+-----------+----------------------+--------------+
+|Module Name    | RTL Object                                    | Inference | Size (Depth x Width) | Primitives   | 
++---------------+-----------------------------------------------+-----------+----------------------+--------------+
+|u0_pool2_layer | u_interlayer_sync_fifo/mem_reg                | Implied   | 2 x 17               | RAM32M x 3   | 
+|model          | u0_pool1_layer/u_interlayer_sync_fifo/mem_reg | Implied   | 2 x 17               | RAM32M x 3   | 
++---------------+-----------------------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |model__GB0    |           1|      6221|
+|2     |pool2_layer   |           1|      1956|
+|3     |model__GB2    |           1|      5784|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[31]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[30]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[29]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[28]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[27]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[26]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[25]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[24]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[23]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[22]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[21]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[20]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[19]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[18]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[17]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[16]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[15]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[14]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[13]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[12]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[11]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[10]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[9]) is unused and will be removed from module model.
+WARNING: [Synth 8-3332] Sequential element (u0_ip1_layer/u_controller/h_w_c_reg[8]) is unused and will be removed from module model.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 1940.449 ; gain = 725.031 ; free physical = 3573 ; free virtual = 103700
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 1940.449 ; gain = 725.031 ; free physical = 3564 ; free virtual = 103690
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:30 . Memory (MB): peak = 1940.449 ; gain = 725.031 ; free physical = 3556 ; free virtual = 103682
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:31 . Memory (MB): peak = 1940.449 ; gain = 725.031 ; free physical = 3553 ; free virtual = 103679
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:31 . Memory (MB): peak = 1940.449 ; gain = 725.031 ; free physical = 3571 ; free virtual = 103698
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:31 . Memory (MB): peak = 1940.449 ; gain = 725.031 ; free physical = 3567 ; free virtual = 103693
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:31 . Memory (MB): peak = 1940.449 ; gain = 725.031 ; free physical = 3563 ; free virtual = 103689
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |conv1_rm_ram    |         1|
+|2     |conv1_wm_ram    |         1|
+|3     |conv1_bm_ram    |         1|
+|4     |mul16_unsigned  |        22|
+|5     |mul16x16_signed |         3|
+|6     |conv2_rm_ram    |         1|
+|7     |conv2_wm_ram    |         1|
+|8     |conv2_bm_ram    |         1|
+|9     |ip1_rm_ram      |         1|
+|10    |ip1_wm_ram      |         1|
+|11    |ip1_bm_ram      |         1|
+|12    |pool1_rm_ram    |         1|
+|13    |pool2_rm_ram    |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |conv1_bm_ram       |     1|
+|2     |conv1_rm_ram       |     1|
+|3     |conv1_wm_ram       |     1|
+|4     |conv2_bm_ram       |     1|
+|5     |conv2_rm_ram       |     1|
+|6     |conv2_wm_ram       |     1|
+|7     |ip1_bm_ram         |     1|
+|8     |ip1_rm_ram         |     1|
+|9     |ip1_wm_ram         |     1|
+|10    |mul16_unsigned     |     1|
+|11    |mul16_unsigned__1  |     1|
+|12    |mul16_unsigned__10 |     1|
+|13    |mul16_unsigned__11 |     1|
+|14    |mul16_unsigned__12 |     1|
+|15    |mul16_unsigned__13 |     1|
+|16    |mul16_unsigned__14 |     1|
+|17    |mul16_unsigned__15 |     1|
+|18    |mul16_unsigned__16 |     1|
+|19    |mul16_unsigned__17 |     1|
+|20    |mul16_unsigned__18 |     1|
+|21    |mul16_unsigned__19 |     1|
+|22    |mul16_unsigned__2  |     1|
+|23    |mul16_unsigned__20 |     1|
+|24    |mul16_unsigned__21 |     1|
+|25    |mul16_unsigned__3  |     1|
+|26    |mul16_unsigned__4  |     1|
+|27    |mul16_unsigned__5  |     1|
+|28    |mul16_unsigned__6  |     1|
+|29    |mul16_unsigned__7  |     1|
+|30    |mul16_unsigned__8  |     1|
+|31    |mul16_unsigned__9  |     1|
+|32    |mul16x16_signed    |     1|
+|33    |mul16x16_signed__3 |     1|
+|34    |mul16x16_signed__4 |     1|
+|35    |pool1_rm_ram       |     1|
+|36    |pool2_rm_ram       |     1|
+|37    |BUFG               |     1|
+|38    |CARRY4             |   872|
+|39    |LUT1               |   462|
+|40    |LUT2               |  1323|
+|41    |LUT3               |   400|
+|42    |LUT4               |   769|
+|43    |LUT5               |  1152|
+|44    |LUT6               |   267|
+|45    |RAM32M             |     6|
+|46    |FDCE               |     4|
+|47    |FDPE               |     2|
+|48    |FDRE               |  3217|
+|49    |FDSE               |     6|
+|50    |IBUF               |    57|
+|51    |OBUF               |   844|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+--------------------------------------------+--------------------------------+------+
+|      |Instance                                    |Module                          |Cells |
++------+--------------------------------------------+--------------------------------+------+
+|1     |top                                         |                                | 10358|
+|2     |  u0_ddr_read_delay                         |ddr_read_delay                  |   129|
+|3     |  u0_busm2n                                 |busm2n                          |   128|
+|4     |  u0_conv1_layer                            |conv1_layer                     |  2234|
+|5     |    u_controller                            |controller_v2                   |  1900|
+|6     |      u_delay_1                             |delay__7                        |     5|
+|7     |      u_delay_2                             |delay__parameterized0__5        |     9|
+|8     |      u_delay_3                             |delay__parameterized0           |     9|
+|9     |      u_delay_4                             |delay__8                        |     5|
+|10    |      u_delay_5                             |delay__parameterized1           |     2|
+|11    |    u_vector_muladd_0_0                     |vector_muladd__xdcDup__1        |   286|
+|12    |      u_delay_1                             |delay__parameterized2           |     1|
+|13    |      u_delay_2                             |delay__parameterized1__6        |     2|
+|14    |      \gen_adder_16b.u_acc_addr0            |acc_addr_4                      |    75|
+|15    |      \gen_multiplier[0].u_mult             |multiplier__xdcDup__1           |    82|
+|16    |      u_bn_bias_relu                        |bn_bias_relu_5                  |   110|
+|17    |        \gen_block_without_bn.u0_bit_trunc  |bit_trunc_6                     |     7|
+|18    |  u0_conv2_layer                            |conv2_layer                     |  2238|
+|19    |    u_controller                            |controller_v2__parameterized0   |  1904|
+|20    |      u_delay_1                             |delay__1                        |     5|
+|21    |      u_delay_2                             |delay__parameterized0__1        |     9|
+|22    |      u_delay_3                             |delay__parameterized0__2        |     9|
+|23    |      u_delay_4                             |delay__2                        |     5|
+|24    |      u_delay_5                             |delay__parameterized1__3        |     2|
+|25    |    u_vector_muladd_0_0                     |vector_muladd                   |   286|
+|26    |      u_delay_1                             |delay__parameterized2__2        |     1|
+|27    |      u_delay_2                             |delay__parameterized1__2        |     2|
+|28    |      \gen_adder_16b.u_acc_addr0            |acc_addr_2                      |    75|
+|29    |      \gen_multiplier[0].u_mult             |multiplier__xdcDup__2           |    82|
+|30    |      u_bn_bias_relu                        |bn_bias_relu                    |   110|
+|31    |        \gen_block_without_bn.u0_bit_trunc  |bit_trunc_3                     |     7|
+|32    |  u0_ip1_layer                              |ip1_layer                       |  1859|
+|33    |    u_controller                            |controller_v2__parameterized1   |  1511|
+|34    |      u_delay_1                             |delay__3                        |     5|
+|35    |      u_delay_2                             |delay__parameterized0__3        |     9|
+|36    |      u_delay_3                             |delay__parameterized0__4        |     9|
+|37    |      u_delay_4                             |delay__4                        |     5|
+|38    |      u_delay_5                             |delay__parameterized1__5        |     2|
+|39    |    u_vector_muladd_0_0                     |vector_muladd__parameterized0   |   300|
+|40    |      u_delay_1                             |delay__parameterized2__3        |     1|
+|41    |      u_delay_2                             |delay__parameterized1__4        |     2|
+|42    |      \gen_adder_16b.u_acc_addr0            |acc_addr                        |    75|
+|43    |      \gen_multiplier[0].u_mult             |multiplier                      |    82|
+|44    |      u_bn_bias_relu                        |bn_bias_relu__parameterized0    |   124|
+|45    |        \gen_block_without_bn.u0_bit_trunc  |bit_trunc                       |    52|
+|46    |  u0_pool1_layer                            |pool1_layer                     |  1382|
+|47    |    u_controller                            |controller_v2_a                 |  1304|
+|48    |      u_delay_1                             |delay__9                        |     5|
+|49    |      u_delay_2                             |delay__parameterized3__3        |     6|
+|50    |      u_delay_3                             |delay__parameterized3           |     6|
+|51    |      u_delay_4                             |delay                           |     5|
+|52    |    u_interlayer_sync_fifo                  |interlayer_sync_fifo_0          |    10|
+|53    |    u_vector_max_0_0                        |vector_max_1                    |    52|
+|54    |  u0_pool2_layer                            |pool2_layer                     |  1372|
+|55    |    u_controller                            |controller_v2_a__parameterized0 |  1295|
+|56    |      u_delay_1                             |delay__5                        |     5|
+|57    |      u_delay_2                             |delay__parameterized3__1        |     6|
+|58    |      u_delay_3                             |delay__parameterized3__2        |     6|
+|59    |      u_delay_4                             |delay__6                        |     5|
+|60    |    u_interlayer_sync_fifo                  |interlayer_sync_fifo            |     9|
+|61    |    u_vector_max_0_0                        |vector_max                      |    52|
+|62    |  u1_busm2n                                 |busm2n__parameterized0          |   114|
++------+--------------------------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:31 . Memory (MB): peak = 1940.449 ; gain = 725.031 ; free physical = 3562 ; free virtual = 103689
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 462 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1940.449 ; gain = 210.820 ; free physical = 3627 ; free virtual = 103753
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:31 . Memory (MB): peak = 1940.457 ; gain = 725.031 ; free physical = 3630 ; free virtual = 103756
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 935 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+284 Infos, 195 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:33 . Memory (MB): peak = 1972.465 ; gain = 770.051 ; free physical = 3619 ; free virtual = 103746
+INFO: [Common 17-1381] The checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/model.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file model_utilization_synth.rpt -pb model_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.86 ; elapsed = 00:00:00.89 . Memory (MB): peak = 1996.477 ; gain = 0.000 ; free physical = 3617 ; free virtual = 103745
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 13 12:38:32 2021...

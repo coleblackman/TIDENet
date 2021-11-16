@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="conv1_bm_ram_synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1637076563">
+  <File Type="VDS-TIMING-PB" Name="conv1_bm_ram_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="conv1_bm_ram_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="conv1_bm_ram.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="conv1_bm_ram_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="conv1_bm_ram_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="conv1_bm_ram_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="conv1_bm_ram.vds"/>
+  <File Type="REPORTS-TCL" Name="conv1_bm_ram_reports.tcl"/>
+  <File Type="PA-TCL" Name="conv1_bm_ram.tcl"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/conv1_bm_ram">
+    <File Path="$PSRCDIR/sources_1/ip/conv1_bm_ram/conv1_bm_ram.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../mm4uz/Desktop/research/tidenet/try6/TIDENet/accdnn/build/ips_prj/ips_prj.srcs/sources_1/ip/conv1_bm_ram/conv1_bm_ram.xci"/>
+        <Attr Name="ImportTime" Val="1636655641"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="conv1_bm_ram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/conv1_bm_ram">
+    <File Path="$PSRCDIR/sources_1/ip/conv1_bm_ram/conv1_bm_ram.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../mm4uz/Desktop/research/tidenet/try6/TIDENet/accdnn/build/ips_prj/ips_prj.srcs/sources_1/ip/conv1_bm_ram/conv1_bm_ram.xci"/>
+        <Attr Name="ImportTime" Val="1636655641"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="conv1_bm_ram"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

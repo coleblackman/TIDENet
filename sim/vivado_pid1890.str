@@ -1,0 +1,279 @@
+/*
+
+Xilinx Vivado v2017.4.1 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2117270 on Tue Jan 30 15:31:13 MST 2018
+IP Build: 2095745 on Tue Jan 30 17:13:15 MST 2018
+
+Process ID: 1890
+License: Customer
+
+Current time: 	Tue Nov 16 10:28:50 EST 2021
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Ubuntu
+OS Version: 4.15.0-161-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :54.0
+Screen size: 1536x801
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 25 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/opt/Xilinx/Vivado/2017.4/tps/lnx64/jre
+JVM executable location: 	/opt/Xilinx/Vivado/2017.4/tps/lnx64/jre/bin/java
+
+User name: 	jmz8rm
+User home directory: /home/jmz8rm
+User working directory: /home/jmz8rm/tidenet/sim
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2017.4
+RDI_DATADIR: /opt/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: /home/jmz8rm/.Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: /home/jmz8rm/.Xilinx/Vivado/2017.4/
+Vivado layouts directory: /home/jmz8rm/.Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	/home/jmz8rm/tidenet/sim/vivado.log
+Vivado journal file location: 	/home/jmz8rm/tidenet/sim/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-1890-boldrock
+
+GUI allocated memory:	181 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 926 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: Sourcing tcl script '/opt/Xilinx/Vivado/2017.4/scripts/Vivado_init.tcl' 215 Beta devices matching pattern found, 0 enabled. 
+// Tcl Message: start_gui 
+// [GUI Memory]: 41 MB (+40363kb) [00:00:05]
+// [Engine Memory]: 925 MB (+818170kb) [00:00:05]
+// HMemoryUtils.trashcanNow. Engine heap size: 933 MB. GUI used memory: 32 MB. Current time: 11/16/21 10:28:52 AM EST
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // x (w, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/home/jmz8rm/tidenet/sim/lenet1_minimal.xpr");
+// [GUI Memory]: 43 MB (+556kb) [00:00:15]
+// [Engine Memory]: 993 MB (+22958kb) [00:00:15]
+// Opening Vivado Project: /home/jmz8rm/tidenet/sim/lenet1_minimal.xpr. Version: Vivado v2017.4.1 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,046 MB (+3738kb) [00:00:16]
+// [GUI Memory]: 50 MB (+4494kb) [00:00:17]
+// [GUI Memory]: 59 MB (+7179kb) [00:00:17]
+// [GUI Memory]: 63 MB (+865kb) [00:00:18]
+// Tcl Message: open_project /home/jmz8rm/tidenet/sim/lenet1_minimal.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'. 
+// [GUI Memory]: 76 MB (+9840kb) [00:00:19]
+// Project name: lenet1_minimal; location: /home/jmz8rm/tidenet/sim; part: xc7vx485tffg1761-2
+// 'i' command handler elapsed time: 8 seconds
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "model"); // h (N, cj)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// v (cj): Settings: addNotify
+// [GUI Memory]: 87 MB (+7649kb) [00:00:28]
+// [Engine Memory]: 1,102 MB (+3908kb) [00:00:28]
+dismissDialog("Settings"); // v (cj)
+// [GUI Memory]: 99 MB (+7928kb) [00:00:31]
+// [GUI Memory]: 114 MB (+10453kb) [00:00:31]
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cj)
+// [GUI Memory]: 128 MB (+8829kb) [00:00:32]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, cj)
+// x (cj): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// bs (cj):  Open Elaborated Design : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Elaborate Design"); // x (cj)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run conv1_bm_ram_synth_1 
+// TclEventType: LOAD_FEATURE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs conv1_bm_ram_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'conv1_bm_ram'... 
+// Tcl Message: [Tue Nov 16 10:29:23 2021] Launched conv1_bm_ram_synth_1... Run output will be captured here: /home/jmz8rm/tidenet/sim/lenet1_minimal.runs/conv1_bm_ram_synth_1/runme.log 
+// Tcl Message: wait_on_run conv1_bm_ram_synth_1 
+// Tcl Message: [Tue Nov 16 10:29:24 2021] Waiting for conv1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:29:29 2021] Waiting for conv1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:29:34 2021] Waiting for conv1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:29:39 2021] Waiting for conv1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:29:49 2021] Waiting for conv1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:29:59 2021] Waiting for conv1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:30:09 2021] Waiting for conv1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:30:19 2021] Waiting for conv1_bm_ram_synth_1 to finish... 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,130 MB. GUI used memory: 66 MB. Current time: 11/16/21 10:30:37 AM EST
+// Tcl Message: [Tue Nov 16 10:30:39 2021] Waiting for conv1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:30:59 2021] Waiting for conv1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:31:19 2021] Waiting for conv1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:31:39 2021] Waiting for conv1_bm_ram_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Tue Nov 16 10:31:44 2021] conv1_bm_ram_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:08 ; elapsed = 00:02:20 . Memory (MB): peak = 6269.227 ; gain = 22.016 ; free physical = 16135 ; free virtual = 107281 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run conv2_bm_ram_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs conv2_bm_ram_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'conv2_bm_ram'... 
+// Tcl Message: [Tue Nov 16 10:31:44 2021] Launched conv2_bm_ram_synth_1... Run output will be captured here: /home/jmz8rm/tidenet/sim/lenet1_minimal.runs/conv2_bm_ram_synth_1/runme.log 
+// Tcl Message: wait_on_run conv2_bm_ram_synth_1 
+// Tcl Message: [Tue Nov 16 10:31:44 2021] Waiting for conv2_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:31:49 2021] Waiting for conv2_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:31:54 2021] Waiting for conv2_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:31:59 2021] Waiting for conv2_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:32:09 2021] Waiting for conv2_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:32:19 2021] Waiting for conv2_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:32:29 2021] Waiting for conv2_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:32:39 2021] Waiting for conv2_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:32:59 2021] Waiting for conv2_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:33:19 2021] Waiting for conv2_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:33:39 2021] Waiting for conv2_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:33:59 2021] Waiting for conv2_bm_ram_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Tue Nov 16 10:34:04 2021] conv2_bm_ram_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:04 ; elapsed = 00:02:20 . Memory (MB): peak = 6269.234 ; gain = 0.000 ; free physical = 15871 ; free virtual = 107205 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run ip1_bm_ram_synth_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs ip1_bm_ram_synth_1 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ip1_bm_ram'... 
+// Tcl Message: [Tue Nov 16 10:34:05 2021] Launched ip1_bm_ram_synth_1... Run output will be captured here: /home/jmz8rm/tidenet/sim/lenet1_minimal.runs/ip1_bm_ram_synth_1/runme.log 
+// Tcl Message: wait_on_run ip1_bm_ram_synth_1 
+// Tcl Message: [Tue Nov 16 10:34:05 2021] Waiting for ip1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:34:10 2021] Waiting for ip1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:34:15 2021] Waiting for ip1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:34:20 2021] Waiting for ip1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:34:30 2021] Waiting for ip1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:34:40 2021] Waiting for ip1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:34:50 2021] Waiting for ip1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:35:00 2021] Waiting for ip1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:35:20 2021] Waiting for ip1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:35:40 2021] Waiting for ip1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:36:00 2021] Waiting for ip1_bm_ram_synth_1 to finish... 
+// Tcl Message: [Tue Nov 16 10:36:20 2021] Waiting for ip1_bm_ram_synth_1 to finish... 
+// TclEventType: RUN_COMPLETED
+// Tcl Message: [Tue Nov 16 10:36:25 2021] ip1_bm_ram_synth_1 finished 
+// Tcl Message: wait_on_run: Time (s): cpu = 00:00:03 ; elapsed = 00:02:20 . Memory (MB): peak = 6269.234 ; gain = 0.000 ; free physical = 15747 ; free virtual = 107194 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7vx485tffg1761-2 Top: model 
+// [Engine Memory]: 1,215 MB (+60779kb) [00:07:47]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,232 MB. GUI used memory: 65 MB. Current time: 11/16/21 10:36:32 AM EST
+// TclEventType: ELABORATE_FINISH
+// [Engine Memory]: 1,380 MB (+109224kb) [00:07:52]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,432 MB. GUI used memory: 65 MB. Current time: 11/16/21 10:37:07 AM EST
+// [Engine Memory]: 1,465 MB (+16960kb) [00:08:32]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,730 MB. GUI used memory: 65 MB. Current time: 11/16/21 10:37:20 AM EST
+// [Engine Memory]: 1,730 MB (+200826kb) [00:08:36]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,862 MB (+47379kb) [00:08:36]
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6301.227 ; gain = 31.992 ; free physical = 15629 ; free virtual = 107076 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'model' [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/model.v:1] INFO: [Synth 8-638] synthesizing module 'ddr_read_delay' [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:1] 
+// Tcl Message: 	Parameter IN_WIDTH bound to: 16 - type: integer  	Parameter OUT_WIDTH bound to: 16 - type: integer  	Parameter COM_MUL bound to: 16 - type: integer  	Parameter IN_COUNT bound to: 1 - type: integer  	Parameter OUT_COUNT bound to: 1 - type: integer  	Parameter N bound to: 1568 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'busm2n' (2#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/busm2n.v:1] INFO: [Synth 8-638] synthesizing module 'conv1_layer' [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/conv1_layer.v:1] INFO: [Synth 8-638] synthesizing module 'controller_v2' [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:1] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 5 - type: integer  
+// Tcl Message: 	Parameter N bound to: 9 - type: integer  
+// Tcl Message: 	Parameter N bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (4#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'multiplier' [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/multiplier.v:1] 
+// Tcl Message: 	Parameter C_WIDTH bound to: 1 - type: integer  	Parameter D_WIDTH bound to: 16 - type: integer  	Parameter W_WIDTH bound to: 16 - type: integer  	Parameter M_WIDTH bound to: 32 - type: integer  
+// Tcl Message: 	Parameter CPF bound to: 1 - type: integer  	Parameter ACC_WIDTH bound to: 40 - type: integer  	Parameter M_DW bound to: 32 - type: integer  	Parameter A1_WIDTH bound to: 32 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'acc_addr' (11#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/acc_addr.sv:1] INFO: [Synth 8-638] synthesizing module 'delay__parameterized2' [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 1 - type: integer  
+// Tcl Message: 	Parameter RELU bound to: 1 - type: integer  	Parameter Q bound to: 13 - type: integer  	Parameter DIN_Q bound to: 6 - type: integer  	Parameter DOUT_DW bound to: 16 - type: integer  	Parameter DOUT_Q bound to: 6 - type: integer  	Parameter ACC_WIDTH bound to: 40 - type: integer  	Parameter BIAS_DW bound to: 16 - type: integer  	Parameter BN bound to: 0 - type: integer  	Parameter BN_SCALE_Q bound to: 6 - type: integer  	Parameter BN_BIAS_Q bound to: 6 - type: integer  	Parameter MID_Q bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'bit_trunc' [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bit_trunc.v:1] 
+// Tcl Message: 	Parameter WIDTH bound to: 40 - type: integer  	Parameter MSB bound to: 28 - type: integer  	Parameter LSB bound to: 13 - type: integer  	Parameter ROUND bound to: 1 - type: integer  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'delay__parameterized3' [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'delay__parameterized3' (15#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3] 
+// Tcl Message: 	Parameter RELU bound to: 0 - type: integer  	Parameter DIN_W bound to: 16 - type: integer  	Parameter Q bound to: 13 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'vector_max' (18#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/vector_max.v:1] INFO: [Synth 8-638] synthesizing module 'interlayer_sync_fifo' [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/verilog/interlayer_sync_fifo.v:3] 
+// Tcl Message: 	Parameter aw bound to: 1 - type: integer  	Parameter dw bound to: 17 - type: integer  	Parameter afull_t bound to: 2 - type: integer  	Parameter distribute_ram bound to: false - type: string  
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'bn_bias_relu__parameterized0' [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bn_bias_relu.v:1] 
+// Tcl Message: 	Parameter RELU bound to: 0 - type: integer  	Parameter Q bound to: 13 - type: integer  	Parameter DIN_Q bound to: 6 - type: integer  	Parameter DOUT_DW bound to: 16 - type: integer  	Parameter DOUT_Q bound to: 6 - type: integer  	Parameter ACC_WIDTH bound to: 40 - type: integer  	Parameter BIAS_DW bound to: 16 - type: integer  	Parameter BN bound to: 0 - type: integer  	Parameter BN_SCALE_Q bound to: 6 - type: integer  	Parameter BN_BIAS_Q bound to: 6 - type: integer  	Parameter MID_Q bound to: 6 - type: integer  
+// Tcl Message: 	Parameter IN_WIDTH bound to: 16 - type: integer  	Parameter OUT_WIDTH bound to: 16 - type: integer  	Parameter COM_MUL bound to: 16 - type: integer  	Parameter IN_COUNT bound to: 1 - type: integer  	Parameter OUT_COUNT bound to: 1 - type: integer  	Parameter N bound to: 10 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'busm2n__parameterized0' (30#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/busm2n.v:1] INFO: [Synth 8-256] done synthesizing module 'model' (31#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/model.v:1] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6351.477 ; gain = 82.242 ; free physical = 15647 ; free virtual = 107096 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 6351.477 ; gain = 82.242 ; free physical = 15652 ; free virtual = 107100 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc] 
+// Tcl Message: Finished Parsing XDC File [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc] 
+// Tcl Message: INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/model_propImpl.xdc]. Resolution: To avoid this warning, move constraints listed in [.Xil/model_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis. 
+// Tcl Message: Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// OpenDesignTask elapsed time: 479.5s
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:57 . Memory (MB): peak = 7024.867 ; gain = 755.633 ; free physical = 15099 ; free virtual = 106548 
+// Tcl Message: 117 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:57 . Memory (MB): peak = 7024.867 ; gain = 755.633 ; free physical = 15099 ; free virtual = 106548 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 479 seconds
+dismissDialog("Open Elaborated Design"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 135 MB (+1045kb) [00:12:48]
+// [GUI Memory]: 143 MB (+1445kb) [00:15:48]

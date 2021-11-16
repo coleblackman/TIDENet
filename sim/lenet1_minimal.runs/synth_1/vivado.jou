@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Sat Nov 13 12:36:48 2021
+# Process ID: 30235
+# Current directory: /home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1
+# Command line: vivado -log model.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source model.tcl
+# Log file: /home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/model.vds
+# Journal file: /home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source model.tcl -notrace

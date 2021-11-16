@@ -1,0 +1,309 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Sat Nov 13 12:39:02 2021
+# Process ID: 354
+# Current directory: /home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/impl_1
+# Command line: vivado -log model.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source model.tcl -notrace
+# Log file: /home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/impl_1/model.vdi
+# Journal file: /home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/opt/Xilinx/Vivado/2017.4/scripts/Vivado_init.tcl'
+215 Beta devices matching pattern found, 0 enabled.
+source model.tcl -notrace
+Command: link_design -top model -part xc7vx485tffg1761-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/conv1_bm_ram/conv1_bm_ram.dcp' for cell 'u0_conv1_layer/u_conv1_bm_ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/conv1_rm_ram/conv1_rm_ram.dcp' for cell 'u0_conv1_layer/u_conv1_rm_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/conv1_wm_ram/conv1_wm_ram.dcp' for cell 'u0_conv1_layer/u_conv1_wm_ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/mul16_unsigned/mul16_unsigned.dcp' for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/mul16x16_signed/mul16x16_signed.dcp' for cell 'u0_conv1_layer/u_vector_muladd_0_0/gen_multiplier[0].u_mult/multiplier.u_mul16x16_signed'
+INFO: [Project 1-454] Reading design checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/conv2_bm_ram/conv2_bm_ram.dcp' for cell 'u0_conv2_layer/u_conv2_bm_ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/conv2_rm_ram/conv2_rm_ram.dcp' for cell 'u0_conv2_layer/u_conv2_rm_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/conv2_wm_ram/conv2_wm_ram.dcp' for cell 'u0_conv2_layer/u_conv2_wm_ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/ip1_bm_ram/ip1_bm_ram.dcp' for cell 'u0_ip1_layer/u_ip1_bm_ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/ip1_rm_ram/ip1_rm_ram.dcp' for cell 'u0_ip1_layer/u_ip1_rm_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/ip1_wm_ram/ip1_wm_ram.dcp' for cell 'u0_ip1_layer/u_ip1_wm_ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/pool1_rm_ram/pool1_rm_ram.dcp' for cell 'u0_pool1_layer/u_pool1_rm_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/pool2_rm_ram/pool2_rm_ram.dcp' for cell 'u0_pool2_layer/u_pool2_rm_ram_0'
+INFO: [Netlist 29-17] Analyzing 971 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4.1
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc]
+WARNING: [Vivado 12-507] No nets matched 'a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_0_o[*]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:1]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_nets {a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_0_o[*]}]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:1]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_0_o[*]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:2]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_nets {a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_0_o[*]}]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:2]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_1_o[*]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:3]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_nets {a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_1_o[*]}]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:3]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_1_o[*]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:4]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_nets {a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_1_o[*]}]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:4]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_2_o[*]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_nets {a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_2_o[*]}]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-507] No nets matched 'a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_2_o[*]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:6]
+CRITICAL WARNING: [Vivado 12-4739] set_multicycle_path:No valid object(s) found for '-from [get_nets {a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_2_o[*]}]'. [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:6]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+Finished Parsing XDC File [/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+
+20 Infos, 6 Warnings, 6 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:48 . Memory (MB): peak = 1699.121 ; gain = 495.754 ; free physical = 3736 ; free virtual = 103864
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-1540] The version limit for your license is '2020.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.79 . Memory (MB): peak = 1785.156 ; gain = 77.031 ; free physical = 3712 ; free virtual = 103840
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 15f148eae
+
+Time (s): cpu = 00:00:00.40 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2340.898 ; gain = 0.000 ; free physical = 3209 ; free virtual = 103357
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 3 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 16375fee8
+
+Time (s): cpu = 00:00:00.50 ; elapsed = 00:00:00.36 . Memory (MB): peak = 2340.898 ; gain = 0.000 ; free physical = 3209 ; free virtual = 103357
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: f1067825
+
+Time (s): cpu = 00:00:00.86 ; elapsed = 00:00:00.72 . Memory (MB): peak = 2340.898 ; gain = 0.000 ; free physical = 3208 ; free virtual = 103356
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: f1067825
+
+Time (s): cpu = 00:00:00.97 ; elapsed = 00:00:00.83 . Memory (MB): peak = 2340.898 ; gain = 0.000 ; free physical = 3206 ; free virtual = 103355
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: f1067825
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.90 . Memory (MB): peak = 2340.898 ; gain = 0.000 ; free physical = 3206 ; free virtual = 103355
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2340.898 ; gain = 0.000 ; free physical = 3194 ; free virtual = 103343
+Ending Logic Optimization Task | Checksum: f1067825
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2340.898 ; gain = 0.000 ; free physical = 3188 ; free virtual = 103337
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.000 | TNS=0.000 |
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 11 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 8 newly gated: 0 Total Ports: 22
+Ending PowerOpt Patch Enables Task | Checksum: 166805f58
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2759.125 ; gain = 0.000 ; free physical = 3159 ; free virtual = 103312
+Ending Power Optimization Task | Checksum: 166805f58
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 2759.125 ; gain = 418.227 ; free physical = 3168 ; free virtual = 103320
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 7 Warnings, 6 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 2759.125 ; gain = 1060.004 ; free physical = 3168 ; free virtual = 103320
+INFO: [Common 17-1381] The checkpoint '/home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/impl_1/model_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file model_drc_opted.rpt -pb model_drc_opted.pb -rpx model_drc_opted.rpx
+Command: report_drc -file model_drc_opted.rpt -pb model_drc_opted.pb -rpx model_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/mm4uz/Desktop/research/tidenet/try6/lenet1_minimal/lenet1_minimal.runs/impl_1/model_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7vx485t'
+INFO: [Common 17-1540] The version limit for your license is '2020.07' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u0_conv2_layer/u_conv2_rm_ram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin u0_conv2_layer/u_conv2_rm_ram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENBWREN (net: u0_conv2_layer/u_conv2_rm_ram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/wea[0]) which is driven by a register (u0_pool1_layer/u_interlayer_sync_fifo/empty_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 u0_ip1_layer/u_ip1_rm_ram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin u0_ip1_layer/u_ip1_rm_ram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENBWREN (net: u0_ip1_layer/u_ip1_rm_ram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/wea[0]) which is driven by a register (u0_pool2_layer/u_interlayer_sync_fifo/empty_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 2 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2759.125 ; gain = 0.000 ; free physical = 3158 ; free virtual = 103313
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: bd8d63ea
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2759.125 ; gain = 0.000 ; free physical = 3158 ; free virtual = 103313
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2759.125 ; gain = 0.000 ; free physical = 3161 ; free virtual = 103316
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 901 I/O ports
+ while the target  device: 7vx485t package: ffg1761, contains only 700 available user I/O. The target device has 700 usable I/O pins of which 0 are already occupied by user-locked I/Os.
+ To rectify this issue:
+ 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
+ 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+ 3. Consider design changes to reduce the number of I/Os necessary.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-68] Instance blob_din_IBUF[0]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[10]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[11]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[12]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[13]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[14]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[15]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[1]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[2]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[3]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[4]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[5]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[6]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[7]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[8]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_IBUF[9]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_en_IBUF_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_eop_IBUF_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance blob_din_rdy_OBUF_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[10]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[11]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[12]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[13]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[14]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[15]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[2]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[3]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[4]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[5]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[6]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[7]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[8]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_OBUF[9]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_en_OBUF_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_eop_OBUF_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance blob_dout_rdy_IBUF_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance clk_IBUF_BUFG_inst (BUFG) is not placed
+ERROR: [Place 30-68] Instance clk_IBUF_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[0]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[10]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[11]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[12]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[13]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[14]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[15]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[1]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[2]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[3]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[4]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[5]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[6]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[7]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[8]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_IBUF[9]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[0]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[10]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[11]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[12]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[13]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[14]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[15]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[1]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[2]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[3]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[4]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[5]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[6]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[7]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[8]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_en_IBUF[9]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_dout_eop_IBUF_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_ack_0_IBUF_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_ack_1_IBUF_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_ack_2_IBUF_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[10]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[11]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[12]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[13]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[14]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[15]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[16]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[17]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[18]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[19]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[1]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[20]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[21]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[22]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[23]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[24]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[25]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[26]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[2]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[3]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[4]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[5]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance ddr_read_length_0_OBUF[6]_inst (OBUF) is not placed
+INFO: [Common 17-14] Message 'Place 30-68' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: c9b884fc
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2759.125 ; gain = 0.000 ; free physical = 3141 ; free virtual = 103298
+Phase 1 Placer Initialization | Checksum: c9b884fc
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2759.125 ; gain = 0.000 ; free physical = 3141 ; free virtual = 103298
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: c9b884fc
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2759.125 ; gain = 0.000 ; free physical = 3153 ; free virtual = 103309
+INFO: [Common 17-83] Releasing license: Implementation
+62 Infos, 9 Warnings, 6 Critical Warnings and 103 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 13 12:40:50 2021...

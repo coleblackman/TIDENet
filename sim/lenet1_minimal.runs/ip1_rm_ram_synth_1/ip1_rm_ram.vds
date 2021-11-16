@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Thu Nov 11 13:54:04 2021
+# Process ID: 32693
+# Current directory: /home/mm4uz/Desktop/research/tidenet/try6/TIDENet/accdnn/build/ips_prj/ips_prj.runs/ip1_rm_ram_synth_1
+# Command line: vivado -log ip1_rm_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ip1_rm_ram.tcl
+# Log file: /home/mm4uz/Desktop/research/tidenet/try6/TIDENet/accdnn/build/ips_prj/ips_prj.runs/ip1_rm_ram_synth_1/ip1_rm_ram.vds
+# Journal file: /home/mm4uz/Desktop/research/tidenet/try6/TIDENet/accdnn/build/ips_prj/ips_prj.runs/ip1_rm_ram_synth_1/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/opt/Xilinx/Vivado/2017.4/scripts/Vivado_init.tcl'
+215 Beta devices matching pattern found, 0 enabled.
+source ip1_rm_ram.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ip1_rm_ram, cache-ID = c2bad4228d0086ca.
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 11 13:54:13 2021...

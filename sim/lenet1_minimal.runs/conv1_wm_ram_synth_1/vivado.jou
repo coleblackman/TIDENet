@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Thu Nov 11 13:31:41 2021
+# Process ID: 6091
+# Current directory: /home/mm4uz/Desktop/research/tidenet/try6/TIDENet/accdnn/build/ips_prj/ips_prj.runs/conv1_wm_ram_synth_1
+# Command line: vivado -log conv1_wm_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source conv1_wm_ram.tcl
+# Log file: /home/mm4uz/Desktop/research/tidenet/try6/TIDENet/accdnn/build/ips_prj/ips_prj.runs/conv1_wm_ram_synth_1/conv1_wm_ram.vds
+# Journal file: /home/mm4uz/Desktop/research/tidenet/try6/TIDENet/accdnn/build/ips_prj/ips_prj.runs/conv1_wm_ram_synth_1/vivado.jou
+#-----------------------------------------------------------
+source conv1_wm_ram.tcl -notrace

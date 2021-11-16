@@ -1,0 +1,15 @@
+
+*** Running vivado
+    with args -log ip1_rm_ram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ip1_rm_ram.tcl
+
+
+****** Vivado v2017.4.1 (64-bit)
+  **** SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+  **** IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+Sourcing tcl script '/opt/Xilinx/Vivado/2017.4/scripts/Vivado_init.tcl'
+215 Beta devices matching pattern found, 0 enabled.
+source ip1_rm_ram.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ip1_rm_ram, cache-ID = c2bad4228d0086ca.
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 11 13:54:13 2021...

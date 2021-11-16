@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Tue Nov 16 10:31:45 2021
+# Process ID: 5882
+# Current directory: /home/jmz8rm/tidenet/sim/lenet1_minimal.runs/conv2_bm_ram_synth_1
+# Command line: vivado -log conv2_bm_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source conv2_bm_ram.tcl
+# Log file: /home/jmz8rm/tidenet/sim/lenet1_minimal.runs/conv2_bm_ram_synth_1/conv2_bm_ram.vds
+# Journal file: /home/jmz8rm/tidenet/sim/lenet1_minimal.runs/conv2_bm_ram_synth_1/vivado.jou
+#-----------------------------------------------------------
+source conv2_bm_ram.tcl -notrace
