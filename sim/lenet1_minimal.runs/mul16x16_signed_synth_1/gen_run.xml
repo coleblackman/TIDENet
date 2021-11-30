@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="mul16x16_signed_synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1636685498">
-  <File Type="RDS-RDS" Name="mul16x16_signed.vds"/>
   <File Type="RDS-DCP" Name="mul16x16_signed.dcp"/>
   <File Type="PA-TCL" Name="mul16x16_signed.tcl"/>
+  <File Type="RDS-RDS" Name="mul16x16_signed.vds"/>
   <File Type="REPORTS-TCL" Name="mul16x16_signed_reports.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mul16x16_signed">
     <File Path="$PSRCDIR/sources_1/ip/mul16x16_signed/mul16x16_signed.xci">

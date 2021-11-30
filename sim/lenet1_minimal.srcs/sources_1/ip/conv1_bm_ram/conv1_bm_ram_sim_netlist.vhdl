@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.4.1 (lin64) Build 2117270 Tue Jan 30 15:31:13 MST 2018
--- Date        : Tue Nov 16 10:31:42 2021
+-- Date        : Tue Nov 16 10:31:41 2021
 -- Host        : boldrock running 64-bit Ubuntu 18.04.6 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/ip/conv1_bm_ram/conv1_bm_ram_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top conv1_bm_ram -prefix
+--               conv1_bm_ram_ conv1_bm_ram_sim_netlist.vhdl
 -- Design      : conv1_bm_ram
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,8 +20,6 @@ entity conv1_bm_ram_blk_mem_gen_prim_wrapper_init is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of conv1_bm_ram_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end conv1_bm_ram_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of conv1_bm_ram_blk_mem_gen_prim_wrapper_init is
@@ -209,8 +207,6 @@ entity conv1_bm_ram_blk_mem_gen_prim_width is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of conv1_bm_ram_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end conv1_bm_ram_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of conv1_bm_ram_blk_mem_gen_prim_width is
@@ -232,8 +228,6 @@ entity conv1_bm_ram_blk_mem_gen_generic_cstr is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of conv1_bm_ram_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end conv1_bm_ram_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of conv1_bm_ram_blk_mem_gen_generic_cstr is
@@ -255,8 +249,6 @@ entity conv1_bm_ram_blk_mem_gen_top is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of conv1_bm_ram_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end conv1_bm_ram_blk_mem_gen_top;
 
 architecture STRUCTURE of conv1_bm_ram_blk_mem_gen_top is
@@ -278,8 +270,6 @@ entity conv1_bm_ram_blk_mem_gen_v8_4_1_synth is
     clka : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of conv1_bm_ram_blk_mem_gen_v8_4_1_synth : entity is "blk_mem_gen_v8_4_1_synth";
 end conv1_bm_ram_blk_mem_gen_v8_4_1_synth;
 
 architecture STRUCTURE of conv1_bm_ram_blk_mem_gen_v8_4_1_synth is
@@ -507,8 +497,6 @@ entity conv1_bm_ram_blk_mem_gen_v8_4_1 is
   attribute C_WRITE_WIDTH_B of conv1_bm_ram_blk_mem_gen_v8_4_1 : entity is 16;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of conv1_bm_ram_blk_mem_gen_v8_4_1 : entity is "virtex7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of conv1_bm_ram_blk_mem_gen_v8_4_1 : entity is "blk_mem_gen_v8_4_1";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of conv1_bm_ram_blk_mem_gen_v8_4_1 : entity is "yes";
 end conv1_bm_ram_blk_mem_gen_v8_4_1;

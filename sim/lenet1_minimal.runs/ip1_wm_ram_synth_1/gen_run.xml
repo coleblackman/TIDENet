@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="ip1_wm_ram_synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1636656853">
-  <File Type="RDS-DCP" Name="ip1_wm_ram.dcp"/>
   <File Type="PA-TCL" Name="ip1_wm_ram.tcl"/>
+  <File Type="RDS-DCP" Name="ip1_wm_ram.dcp"/>
   <File Type="RDS-RDS" Name="ip1_wm_ram.vds"/>
   <File Type="REPORTS-TCL" Name="ip1_wm_ram_reports.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ip1_wm_ram">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="conv2_rm_ram_synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1636655919">
-  <File Type="RDS-UTIL" Name="conv2_rm_ram_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="conv2_rm_ram_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="conv2_rm_ram_utilization_synth.rpt"/>
   <File Type="RDS-RDS" Name="conv2_rm_ram.vds"/>
   <File Type="RDS-DCP" Name="conv2_rm_ram.dcp"/>
   <File Type="PA-TCL" Name="conv2_rm_ram.tcl"/>

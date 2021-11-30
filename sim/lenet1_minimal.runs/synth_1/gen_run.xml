@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1636825007">
-  <File Type="RDS-UTIL-PB" Name="model_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="model_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="model_utilization_synth.pb"/>
   <File Type="RDS-RDS" Name="model.vds"/>
   <File Type="RDS-DCP" Name="model.dcp"/>
   <File Type="PA-TCL" Name="model.tcl"/>
@@ -236,17 +236,17 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="conv2_rm_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="conv1_wm_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="ip1_wm_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="conv2_bm_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="mul16x16_signed"/>
+  <BlockFileSet Type="BlockSrcs" Name="pool2_rm_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="mul16_unsigned"/>
+  <BlockFileSet Type="BlockSrcs" Name="conv2_wm_ram"/>
   <BlockFileSet Type="BlockSrcs" Name="pool1_rm_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="conv2_rm_ram"/>
   <BlockFileSet Type="BlockSrcs" Name="conv1_bm_ram"/>
   <BlockFileSet Type="BlockSrcs" Name="ip1_bm_ram"/>
-  <BlockFileSet Type="BlockSrcs" Name="conv1_rm_ram"/>
   <BlockFileSet Type="BlockSrcs" Name="ip1_rm_ram"/>
-  <BlockFileSet Type="BlockSrcs" Name="conv2_wm_ram"/>
-  <BlockFileSet Type="BlockSrcs" Name="mul16_unsigned"/>
-  <BlockFileSet Type="BlockSrcs" Name="pool2_rm_ram"/>
-  <BlockFileSet Type="BlockSrcs" Name="mul16x16_signed"/>
-  <BlockFileSet Type="BlockSrcs" Name="conv2_bm_ram"/>
-  <BlockFileSet Type="BlockSrcs" Name="ip1_wm_ram"/>
-  <BlockFileSet Type="BlockSrcs" Name="conv1_wm_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="conv1_rm_ram"/>
 </GenRun>

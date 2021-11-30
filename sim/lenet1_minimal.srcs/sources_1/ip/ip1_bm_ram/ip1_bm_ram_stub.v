@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2017.4.1 (lin64) Build 2117270 Tue Jan 30 15:31:13 MST 2018
 // Date        : Tue Nov 16 10:36:22 2021
 // Host        : boldrock running 64-bit Ubuntu 18.04.6 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/jmz8rm/tidenet/sim/lenet1_minimal.srcs/sources_1/ip/ip1_bm_ram/ip1_bm_ram_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top ip1_bm_ram -prefix
+//               ip1_bm_ram_ ip1_bm_ram_stub.v
 // Design      : ip1_bm_ram
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7vx485tffg1761-2
