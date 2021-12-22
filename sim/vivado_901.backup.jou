@@ -2,22 +2,14 @@
 # Vivado v2017.4.1 (64-bit)
 # SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
 # IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
-# Start of session at: Sun Dec 19 09:38:29 2021
-# Process ID: 27745
+# Start of session at: Tue Nov 30 11:12:38 2021
+# Process ID: 901
 # Current directory: /home/jmz8rm/tidenet/sim
 # Command line: vivado lenet1_minimal.xpr
 # Log file: /home/jmz8rm/tidenet/sim/vivado.log
 # Journal file: /home/jmz8rm/tidenet/sim/vivado.jou
 #-----------------------------------------------------------
-Sourcing tcl script '/opt/Xilinx/Vivado/2017.4/scripts/Vivado_init.tcl'
-215 Beta devices matching pattern found, 0 enabled.
 start_gui
 open_project lenet1_minimal.xpr
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
 update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 19 09:38:51 2021...
+synth_design -rtl -name rtl_1

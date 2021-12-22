@@ -12,12 +12,10 @@
 ./lib/verilog/acc_addr.sv
 ./lib/verilog/vector_muladd.sv
 ./lib/verilog/controller_v2_a.v
-./build/src/pool3_layer.v
+./lib/verilog/interlayer_sync_fifo.v
 ./build/src/pool1_layer.v
 ./build/src/pool2_layer.v
 ./build/src/model.v
-./build/src/conv3_layer.v
 ./build/src/conv1_layer.v
 ./build/src/conv2_layer.v
 ./build/src/ip1_layer.v
-./build/src/ip2_layer.v

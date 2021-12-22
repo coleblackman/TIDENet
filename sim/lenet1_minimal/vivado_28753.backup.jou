@@ -2,13 +2,14 @@
 # Vivado v2017.4.1 (64-bit)
 # SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
 # IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
-# Start of session at: Sun Dec 19 09:38:29 2021
-# Process ID: 27745
-# Current directory: /home/jmz8rm/tidenet/sim
+# Start of session at: Sun Dec 19 09:39:20 2021
+# Process ID: 28753
+# Current directory: /home/jmz8rm/tidenet/sim/lenet1_minimal
 # Command line: vivado lenet1_minimal.xpr
-# Log file: /home/jmz8rm/tidenet/sim/vivado.log
-# Journal file: /home/jmz8rm/tidenet/sim/vivado.jou
+# Log file: /home/jmz8rm/tidenet/sim/lenet1_minimal/vivado.log
+# Journal file: /home/jmz8rm/tidenet/sim/lenet1_minimal/vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project lenet1_minimal.xpr
+synth_design -rtl -name rtl_1
 update_compile_order -fileset sources_1

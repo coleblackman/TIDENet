@@ -1270,3 +1270,30 @@ selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Int
 dismissDialog("Open Block Design"); // bs (cj)
 selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 122, 64); // dw (ad, cj)
 selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 178, 104); // dw (ad, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 59 MB. Current time: 11/29/21 11:00:26 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/29/21 11:30:26 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 54 MB. Current time: 11/30/21 12:00:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 54 MB. Current time: 11/30/21 12:30:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 1:00:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 56 MB. Current time: 11/30/21 1:30:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 2:00:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 2:30:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 3:00:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 3:30:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 4:00:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 4:30:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 5:00:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 5:30:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 6:00:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 6:30:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 7:00:26 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 7:30:27 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 8:00:27 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 8:30:27 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 9:00:27 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 9:30:27 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 56 MB. Current time: 11/30/21 10:00:27 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 10:30:27 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,920 MB. GUI used memory: 55 MB. Current time: 11/30/21 11:00:27 AM EST
+// Elapsed time: 45049 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 170, 69); // dw (ad, cj)

@@ -1,0 +1,494 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:31:13 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Wed Dec 22 14:38:56 2021
+# Process ID: 7769
+# Current directory: /home/jmz8rm/tidenet/sim/lenet1_minimal
+# Command line: vivado lenet1_minimal.xpr
+# Log file: /home/jmz8rm/tidenet/sim/lenet1_minimal/vivado.log
+# Journal file: /home/jmz8rm/tidenet/sim/lenet1_minimal/vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script '/opt/Xilinx/Vivado/2017.4/scripts/Vivado_init.tcl'
+215 Beta devices matching pattern found, 0 enabled.
+start_gui
+open_project lenet1_minimal.xpr
+INFO: [Project 1-313] Project file moved from '/home/jmz8rm/tidenet/sim' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.4/data/ip'.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1761-2
+Top: model
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6253.492 ; gain = 34.000 ; free physical = 7088 ; free virtual = 108829
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'model' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/model.v:1]
+INFO: [Synth 8-638] synthesizing module 'ddr_read_delay' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:1]
+	Parameter DDR_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter delay_req_port0 bound to: 2 - type: integer 
+	Parameter delay_req_port1 bound to: 2 - type: integer 
+	Parameter delay_req_port2 bound to: 2 - type: integer 
+	Parameter delay_req_port3 bound to: -1 - type: integer 
+	Parameter delay_req_port4 bound to: -1 - type: integer 
+	Parameter delay_req_port5 bound to: -1 - type: integer 
+	Parameter delay_req_port6 bound to: -1 - type: integer 
+	Parameter delay_req_port7 bound to: -1 - type: integer 
+	Parameter delay_req_port8 bound to: -1 - type: integer 
+	Parameter delay_req_port9 bound to: -1 - type: integer 
+	Parameter delay_req_port10 bound to: -1 - type: integer 
+	Parameter delay_req_port11 bound to: -1 - type: integer 
+	Parameter delay_req_port12 bound to: -1 - type: integer 
+	Parameter delay_req_port13 bound to: -1 - type: integer 
+	Parameter delay_req_port14 bound to: -1 - type: integer 
+	Parameter delay_dout_port0 bound to: 2 - type: integer 
+	Parameter delay_dout_port1 bound to: 2 - type: integer 
+	Parameter delay_dout_port2 bound to: 2 - type: integer 
+	Parameter delay_dout_port3 bound to: -1 - type: integer 
+	Parameter delay_dout_port4 bound to: -1 - type: integer 
+	Parameter delay_dout_port5 bound to: -1 - type: integer 
+	Parameter delay_dout_port6 bound to: -1 - type: integer 
+	Parameter delay_dout_port7 bound to: -1 - type: integer 
+	Parameter delay_dout_port8 bound to: -1 - type: integer 
+	Parameter delay_dout_port9 bound to: -1 - type: integer 
+	Parameter delay_dout_port10 bound to: -1 - type: integer 
+	Parameter delay_dout_port11 bound to: -1 - type: integer 
+	Parameter delay_dout_port12 bound to: -1 - type: integer 
+	Parameter delay_dout_port13 bound to: -1 - type: integer 
+	Parameter delay_dout_port14 bound to: -1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:482]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:483]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:484]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:485]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:487]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:488]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:489]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:490]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:492]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:493]
+INFO: [Synth 8-256] done synthesizing module 'ddr_read_delay' (1#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/ddr_read_delay.v:1]
+INFO: [Synth 8-638] synthesizing module 'busm2n' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/busm2n.v:1]
+	Parameter IN_WIDTH bound to: 16 - type: integer 
+	Parameter OUT_WIDTH bound to: 16 - type: integer 
+	Parameter COM_MUL bound to: 16 - type: integer 
+	Parameter IN_COUNT bound to: 1 - type: integer 
+	Parameter OUT_COUNT bound to: 1 - type: integer 
+	Parameter N bound to: 1568 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'busm2n' (2#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/busm2n.v:1]
+INFO: [Synth 8-638] synthesizing module 'conv1_layer' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/conv1_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'controller_v2' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:1]
+	Parameter DB_W_IN bound to: 28 - type: integer 
+	Parameter DB_H_IN bound to: 28 - type: integer 
+	Parameter DB_C_IN bound to: 2 - type: integer 
+	Parameter DB_W_OUT bound to: 24 - type: integer 
+	Parameter DB_H_OUT bound to: 24 - type: integer 
+	Parameter DB_C_OUT bound to: 4 - type: integer 
+	Parameter WB_W bound to: 5 - type: integer 
+	Parameter WB_H bound to: 5 - type: integer 
+	Parameter WB_C bound to: 2 - type: integer 
+	Parameter WB_K bound to: 4 - type: integer 
+	Parameter CPF bound to: 1 - type: integer 
+	Parameter KPF bound to: 1 - type: integer 
+	Parameter STRIDE_H bound to: 1 - type: integer 
+	Parameter STRIDE_W bound to: 1 - type: integer 
+	Parameter PAD bound to: 0 - type: integer 
+	Parameter OP_DELAY bound to: 4 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 6 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 5 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter DOUBLE_BUF_WR_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter DOUBLE_BUF_RD_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter DOUBLE_BUF_WR_DEPTH bound to: 100 - type: integer 
+	Parameter DOUBLE_BUF_RD_DEPTH bound to: 100 - type: integer 
+	Parameter BM_RD_ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter CG bound to: 2 - type: integer 
+	Parameter KG bound to: 4 - type: integer 
+	Parameter GROUP bound to: 1 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 2 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 1 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 115200 - type: integer 
+	Parameter START_ADDR bound to: 0 - type: integer 
+	Parameter LENGTH bound to: 50 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:27]
+INFO: [Synth 8-256] done synthesizing module 'delay' (3#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (3#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'mul16_unsigned' [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/mul16_unsigned_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'mul16_unsigned' (4#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/mul16_unsigned_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized1' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (4#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:391]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2' (5#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:1]
+INFO: [Synth 8-638] synthesizing module 'conv1_rm_ram' [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/conv1_rm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv1_rm_ram' (6#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/conv1_rm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'conv1_wm_ram' [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/conv1_wm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv1_wm_ram' (7#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/conv1_wm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'conv1_bm_ram' [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/conv1_bm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv1_bm_ram' (8#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/conv1_bm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'vector_muladd' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/vector_muladd.sv:1]
+	Parameter CPF bound to: 1 - type: integer 
+	Parameter RELU bound to: 1 - type: integer 
+	Parameter Q bound to: 13 - type: integer 
+	Parameter DIN_Q bound to: 6 - type: integer 
+	Parameter DOUT_Q bound to: 6 - type: integer 
+	Parameter ACC_WIDTH bound to: 40 - type: integer 
+	Parameter BIAS_DW bound to: 16 - type: integer 
+	Parameter BN bound to: 0 - type: integer 
+	Parameter BN_SCALE_Q bound to: 6 - type: integer 
+	Parameter BN_BIAS_Q bound to: 6 - type: integer 
+	Parameter MID_Q bound to: 6 - type: integer 
+	Parameter DIN_DW bound to: 16 - type: integer 
+	Parameter DOUT_DW bound to: 16 - type: integer 
+	Parameter WW bound to: 16 - type: integer 
+	Parameter MAT_DW bound to: 32 - type: integer 
+	Parameter DELTA_DELAY bound to: 0 - type: integer 
+	Parameter DATA_CHANNEL bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'multiplier' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/multiplier.v:1]
+	Parameter C_WIDTH bound to: 1 - type: integer 
+	Parameter D_WIDTH bound to: 16 - type: integer 
+	Parameter W_WIDTH bound to: 16 - type: integer 
+	Parameter M_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'mul16x16_signed' [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/mul16x16_signed_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'mul16x16_signed' (9#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/mul16x16_signed_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'multiplier' (10#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/multiplier.v:1]
+INFO: [Synth 8-638] synthesizing module 'acc_addr' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/acc_addr.sv:1]
+	Parameter CPF bound to: 1 - type: integer 
+	Parameter ACC_WIDTH bound to: 40 - type: integer 
+	Parameter M_DW bound to: 32 - type: integer 
+	Parameter A1_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'acc_addr' (11#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/acc_addr.sv:1]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized2' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:16]
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized2' (11#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'bn_bias_relu' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bn_bias_relu.v:1]
+	Parameter RELU bound to: 1 - type: integer 
+	Parameter Q bound to: 13 - type: integer 
+	Parameter DIN_Q bound to: 6 - type: integer 
+	Parameter DOUT_DW bound to: 16 - type: integer 
+	Parameter DOUT_Q bound to: 6 - type: integer 
+	Parameter ACC_WIDTH bound to: 40 - type: integer 
+	Parameter BIAS_DW bound to: 16 - type: integer 
+	Parameter BN bound to: 0 - type: integer 
+	Parameter BN_SCALE_Q bound to: 6 - type: integer 
+	Parameter BN_BIAS_Q bound to: 6 - type: integer 
+	Parameter MID_Q bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'bit_trunc' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bit_trunc.v:1]
+	Parameter WIDTH bound to: 40 - type: integer 
+	Parameter MSB bound to: 28 - type: integer 
+	Parameter LSB bound to: 13 - type: integer 
+	Parameter ROUND bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bit_trunc' (12#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bit_trunc.v:1]
+INFO: [Synth 8-256] done synthesizing module 'bn_bias_relu' (13#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bn_bias_relu.v:1]
+INFO: [Synth 8-256] done synthesizing module 'vector_muladd' (14#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/vector_muladd.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'conv1_layer' (15#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/conv1_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'pool1_layer' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/pool1_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'controller_v2_a' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:1]
+	Parameter DB_W_IN bound to: 24 - type: integer 
+	Parameter DB_H_IN bound to: 24 - type: integer 
+	Parameter DB_C_IN bound to: 4 - type: integer 
+	Parameter DB_W_OUT bound to: 12 - type: integer 
+	Parameter DB_H_OUT bound to: 12 - type: integer 
+	Parameter DB_C_OUT bound to: 4 - type: integer 
+	Parameter WB_W bound to: 2 - type: integer 
+	Parameter WB_H bound to: 2 - type: integer 
+	Parameter WB_C bound to: 8 - type: integer 
+	Parameter WB_K bound to: 4 - type: integer 
+	Parameter KPF bound to: 1 - type: integer 
+	Parameter STRIDE_H bound to: 2 - type: integer 
+	Parameter STRIDE_W bound to: 2 - type: integer 
+	Parameter PAD bound to: 0 - type: integer 
+	Parameter OP_DELAY bound to: 1 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 4 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 2 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter KG bound to: 4 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 4 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 4 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 2304 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized3' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+	Parameter N bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized3' (15#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/delay.v:3]
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:306]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2_a' (16#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:1]
+INFO: [Synth 8-638] synthesizing module 'pool1_rm_ram' [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/pool1_rm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'pool1_rm_ram' (17#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/pool1_rm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'vector_max' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/vector_max.v:1]
+	Parameter RELU bound to: 0 - type: integer 
+	Parameter DIN_W bound to: 16 - type: integer 
+	Parameter Q bound to: 13 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vector_max' (18#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/vector_max.v:1]
+INFO: [Synth 8-638] synthesizing module 'interlayer_sync_fifo' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/verilog/interlayer_sync_fifo.v:3]
+	Parameter aw bound to: 1 - type: integer 
+	Parameter dw bound to: 17 - type: integer 
+	Parameter afull_t bound to: 2 - type: integer 
+	Parameter distribute_ram bound to: false - type: string 
+INFO: [Synth 8-256] done synthesizing module 'interlayer_sync_fifo' (19#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/verilog/interlayer_sync_fifo.v:3]
+INFO: [Synth 8-256] done synthesizing module 'pool1_layer' (20#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/pool1_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'conv2_layer' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/conv2_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'controller_v2__parameterized0' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:1]
+	Parameter DB_W_IN bound to: 12 - type: integer 
+	Parameter DB_H_IN bound to: 12 - type: integer 
+	Parameter DB_C_IN bound to: 4 - type: integer 
+	Parameter DB_W_OUT bound to: 8 - type: integer 
+	Parameter DB_H_OUT bound to: 8 - type: integer 
+	Parameter DB_C_OUT bound to: 8 - type: integer 
+	Parameter WB_W bound to: 5 - type: integer 
+	Parameter WB_H bound to: 5 - type: integer 
+	Parameter WB_C bound to: 4 - type: integer 
+	Parameter WB_K bound to: 8 - type: integer 
+	Parameter CPF bound to: 1 - type: integer 
+	Parameter KPF bound to: 1 - type: integer 
+	Parameter STRIDE_H bound to: 1 - type: integer 
+	Parameter STRIDE_W bound to: 1 - type: integer 
+	Parameter PAD bound to: 0 - type: integer 
+	Parameter OP_DELAY bound to: 4 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 6 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 5 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter DOUBLE_BUF_WR_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DOUBLE_BUF_RD_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DOUBLE_BUF_WR_DEPTH bound to: 200 - type: integer 
+	Parameter DOUBLE_BUF_RD_DEPTH bound to: 200 - type: integer 
+	Parameter BM_RD_ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter CG bound to: 4 - type: integer 
+	Parameter KG bound to: 8 - type: integer 
+	Parameter GROUP bound to: 1 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 4 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 1 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 51200 - type: integer 
+	Parameter START_ADDR bound to: 200 - type: integer 
+	Parameter LENGTH bound to: 100 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:391]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2__parameterized0' (20#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:1]
+INFO: [Synth 8-638] synthesizing module 'conv2_rm_ram' [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/conv2_rm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv2_rm_ram' (21#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/conv2_rm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'conv2_wm_ram' [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/conv2_wm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv2_wm_ram' (22#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/conv2_wm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'conv2_bm_ram' [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/conv2_bm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv2_bm_ram' (23#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/conv2_bm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'conv2_layer' (24#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/conv2_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'pool2_layer' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/pool2_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'controller_v2_a__parameterized0' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:1]
+	Parameter DB_W_IN bound to: 8 - type: integer 
+	Parameter DB_H_IN bound to: 8 - type: integer 
+	Parameter DB_C_IN bound to: 8 - type: integer 
+	Parameter DB_W_OUT bound to: 4 - type: integer 
+	Parameter DB_H_OUT bound to: 4 - type: integer 
+	Parameter DB_C_OUT bound to: 8 - type: integer 
+	Parameter WB_W bound to: 2 - type: integer 
+	Parameter WB_H bound to: 2 - type: integer 
+	Parameter WB_C bound to: 8 - type: integer 
+	Parameter WB_K bound to: 8 - type: integer 
+	Parameter KPF bound to: 1 - type: integer 
+	Parameter STRIDE_H bound to: 2 - type: integer 
+	Parameter STRIDE_W bound to: 2 - type: integer 
+	Parameter PAD bound to: 0 - type: integer 
+	Parameter OP_DELAY bound to: 1 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 4 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 2 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter KG bound to: 8 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 8 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 8 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 512 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:306]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2_a__parameterized0' (24#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2_a.v:1]
+INFO: [Synth 8-638] synthesizing module 'pool2_rm_ram' [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/pool2_rm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'pool2_rm_ram' (25#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/pool2_rm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'pool2_layer' (26#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/pool2_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'ip1_layer' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/ip1_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'controller_v2__parameterized1' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:1]
+	Parameter DB_W_IN bound to: 1 - type: integer 
+	Parameter DB_H_IN bound to: 1 - type: integer 
+	Parameter DB_C_IN bound to: 128 - type: integer 
+	Parameter DB_W_OUT bound to: 1 - type: integer 
+	Parameter DB_H_OUT bound to: 1 - type: integer 
+	Parameter DB_C_OUT bound to: 10 - type: integer 
+	Parameter WB_W bound to: 1 - type: integer 
+	Parameter WB_H bound to: 1 - type: integer 
+	Parameter WB_C bound to: 128 - type: integer 
+	Parameter WB_K bound to: 10 - type: integer 
+	Parameter CPF bound to: 1 - type: integer 
+	Parameter KPF bound to: 1 - type: integer 
+	Parameter STRIDE_H bound to: 0 - type: integer 
+	Parameter STRIDE_W bound to: 0 - type: integer 
+	Parameter PAD bound to: 0 - type: integer 
+	Parameter OP_DELAY bound to: 4 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 2 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 1 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DOUBLE_BUF_WR_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DOUBLE_BUF_RD_ADDR_WIDTH bound to: 8 - type: integer 
+	Parameter DOUBLE_BUF_WR_DEPTH bound to: 256 - type: integer 
+	Parameter DOUBLE_BUF_RD_DEPTH bound to: 256 - type: integer 
+	Parameter BM_RD_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter CG bound to: 128 - type: integer 
+	Parameter KG bound to: 10 - type: integer 
+	Parameter GROUP bound to: 1 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 128 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 1 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 1280 - type: integer 
+	Parameter START_ADDR bound to: 1000 - type: integer 
+	Parameter LENGTH bound to: 128 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:391]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2__parameterized1' (26#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/controller_v2.v:1]
+INFO: [Synth 8-638] synthesizing module 'ip1_rm_ram' [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/ip1_rm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ip1_rm_ram' (27#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/ip1_rm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ip1_wm_ram' [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/ip1_wm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ip1_wm_ram' (28#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/ip1_wm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'ip1_bm_ram' [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/ip1_bm_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ip1_bm_ram' (29#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/.Xil/Vivado-7769-boldrock/realtime/ip1_bm_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'vector_muladd__parameterized0' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/vector_muladd.sv:1]
+	Parameter CPF bound to: 1 - type: integer 
+	Parameter RELU bound to: 0 - type: integer 
+	Parameter Q bound to: 13 - type: integer 
+	Parameter DIN_Q bound to: 6 - type: integer 
+	Parameter DOUT_Q bound to: 6 - type: integer 
+	Parameter ACC_WIDTH bound to: 40 - type: integer 
+	Parameter BIAS_DW bound to: 16 - type: integer 
+	Parameter BN bound to: 0 - type: integer 
+	Parameter BN_SCALE_Q bound to: 6 - type: integer 
+	Parameter BN_BIAS_Q bound to: 6 - type: integer 
+	Parameter MID_Q bound to: 6 - type: integer 
+	Parameter DIN_DW bound to: 16 - type: integer 
+	Parameter DOUT_DW bound to: 16 - type: integer 
+	Parameter WW bound to: 16 - type: integer 
+	Parameter MAT_DW bound to: 32 - type: integer 
+	Parameter DELTA_DELAY bound to: 0 - type: integer 
+	Parameter DATA_CHANNEL bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'bn_bias_relu__parameterized0' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bn_bias_relu.v:1]
+	Parameter RELU bound to: 0 - type: integer 
+	Parameter Q bound to: 13 - type: integer 
+	Parameter DIN_Q bound to: 6 - type: integer 
+	Parameter DOUT_DW bound to: 16 - type: integer 
+	Parameter DOUT_Q bound to: 6 - type: integer 
+	Parameter ACC_WIDTH bound to: 40 - type: integer 
+	Parameter BIAS_DW bound to: 16 - type: integer 
+	Parameter BN bound to: 0 - type: integer 
+	Parameter BN_SCALE_Q bound to: 6 - type: integer 
+	Parameter BN_BIAS_Q bound to: 6 - type: integer 
+	Parameter MID_Q bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'bn_bias_relu__parameterized0' (29#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/bn_bias_relu.v:1]
+INFO: [Synth 8-256] done synthesizing module 'vector_muladd__parameterized0' (29#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/vector_muladd.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'ip1_layer' (30#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/ip1_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'busm2n__parameterized0' [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/busm2n.v:1]
+	Parameter IN_WIDTH bound to: 16 - type: integer 
+	Parameter OUT_WIDTH bound to: 16 - type: integer 
+	Parameter COM_MUL bound to: 16 - type: integer 
+	Parameter IN_COUNT bound to: 1 - type: integer 
+	Parameter OUT_COUNT bound to: 1 - type: integer 
+	Parameter N bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'busm2n__parameterized0' (30#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/vivado_prj/lenet1/lenet1.srcs/sources_1/imports/tidenet/vivado_prj/project_2/project_2.srcs/sources_1/imports/verilog/busm2n.v:1]
+INFO: [Synth 8-256] done synthesizing module 'model' (31#1) [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/imports/tidenet/try6/TIDENet/accdnn/build/src/model.v:1]
+WARNING: [Synth 8-3331] design delay__parameterized1 has unconnected port rst
+WARNING: [Synth 8-3331] design delay__parameterized2 has unconnected port rst
+WARNING: [Synth 8-3331] design delay has unconnected port rst
+WARNING: [Synth 8-3331] design delay__parameterized0 has unconnected port rst
+WARNING: [Synth 8-3331] design controller_v2__parameterized1 has unconnected port blob_din_eop
+WARNING: [Synth 8-3331] design delay__parameterized3 has unconnected port rst
+WARNING: [Synth 8-3331] design controller_v2_a__parameterized0 has unconnected port blob_din_eop
+WARNING: [Synth 8-3331] design controller_v2__parameterized0 has unconnected port blob_din_eop
+WARNING: [Synth 8-3331] design controller_v2_a has unconnected port blob_din_eop
+WARNING: [Synth 8-3331] design controller_v2 has unconnected port blob_din_eop
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port rst
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_3_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_4_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_5_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_6_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_7_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_8_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_9_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_10_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_11_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_12_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_13_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port layer_ddr_read_req_14_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_3_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_4_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_5_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_6_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_7_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_8_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_9_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_10_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_11_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_12_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_13_i
+WARNING: [Synth 8-3331] design ddr_read_delay has unconnected port engine_ddr_read_ack_14_i
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6303.984 ; gain = 84.492 ; free physical = 7069 ; free virtual = 108811
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 6303.984 ; gain = 84.492 ; free physical = 7089 ; free virtual = 108831
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint '/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/conv1_rm_ram/conv1_rm_ram.dcp' for cell 'u0_conv1_layer/u_conv1_rm_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/conv1_wm_ram/conv1_wm_ram.dcp' for cell 'u0_conv1_layer/u_conv1_wm_ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/conv1_bm_ram/conv1_bm_ram.dcp' for cell 'u0_conv1_layer/u_conv1_bm_ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/mul16_unsigned/mul16_unsigned.dcp' for cell 'u0_conv1_layer/u_controller/u_mul16_unsigned_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/mul16x16_signed/mul16x16_signed.dcp' for cell 'u0_conv1_layer/u_vector_muladd_0_0/gen_multiplier[0].u_mult/multiplier.u_mul16x16_signed'
+INFO: [Project 1-454] Reading design checkpoint '/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/pool1_rm_ram/pool1_rm_ram.dcp' for cell 'u0_pool1_layer/u_pool1_rm_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/conv2_rm_ram/conv2_rm_ram.dcp' for cell 'u0_conv2_layer/u_conv2_rm_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/conv2_wm_ram/conv2_wm_ram.dcp' for cell 'u0_conv2_layer/u_conv2_wm_ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/conv2_bm_ram/conv2_bm_ram.dcp' for cell 'u0_conv2_layer/u_conv2_bm_ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/pool2_rm_ram/pool2_rm_ram.dcp' for cell 'u0_pool2_layer/u_pool2_rm_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/ip1_rm_ram/ip1_rm_ram.dcp' for cell 'u0_ip1_layer/u_ip1_rm_ram_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/ip1_wm_ram/ip1_wm_ram.dcp' for cell 'u0_ip1_layer/u_ip1_wm_ram'
+INFO: [Project 1-454] Reading design checkpoint '/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/sources_1/ip/ip1_bm_ram/ip1_bm_ram.dcp' for cell 'u0_ip1_layer/u_ip1_bm_ram'
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4.1
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 741 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc]
+WARNING: [Vivado 12-507] No nets matched 'a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_0_o[*]'. [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:1]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:2]
+WARNING: [Vivado 12-507] No nets matched 'a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_1_o[*]'. [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:3]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:4]
+WARNING: [Vivado 12-507] No nets matched 'a0/afu0/acc_module/u_module/u0_ddr_read_delay/engine_ddr_read_addr_2_o[*]'. [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:5]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc:6]
+Finished Parsing XDC File [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/model_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jmz8rm/tidenet/sim/lenet1_minimal/lenet1_minimal.srcs/constrs_1/imports/timing/dma_timing.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/model_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/model_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 6949.246 ; gain = 729.754 ; free physical = 6550 ; free virtual = 108292
+117 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:58 . Memory (MB): peak = 6949.246 ; gain = 733.730 ; free physical = 6550 ; free virtual = 108292
+update_compile_order -fileset sources_1
