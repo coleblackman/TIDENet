@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Dec 22 15:36:21 2021" VIVADOVERSION="2017.4.1">
+
+  <SYSTEMINFO ARCH="virtex7" DEVICE="7vx485t" NAME="design_1" PACKAGE="ffg1157" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS/>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES/>
+
+</EDKSYSTEM>

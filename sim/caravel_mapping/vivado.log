@@ -133,3 +133,1190 @@ RTL Elaboration failed
 6 Infos, 1 Warnings, 0 Critical Warnings and 3 Errors encountered.
 synth_design failed
 ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: controller_v2_b
+WARNING: [Synth 8-1935] empty port in module declaration [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:19]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6297.711 ; gain = 0.000 ; free physical = 6234 ; free virtual = 108163
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1]
+	Parameter DB_W_IN bound to: 8 - type: integer 
+	Parameter DB_H_IN bound to: 8 - type: integer 
+	Parameter DB_C_IN bound to: 8 - type: integer 
+	Parameter DB_W_OUT bound to: 8 - type: integer 
+	Parameter DB_H_OUT bound to: 8 - type: integer 
+	Parameter DB_C_OUT bound to: 8 - type: integer 
+	Parameter WB_W bound to: 4 - type: integer 
+	Parameter WB_H bound to: 4 - type: integer 
+	Parameter WB_C bound to: 8 - type: integer 
+	Parameter WB_K bound to: 4 - type: integer 
+	Parameter CPF bound to: 2 - type: integer 
+	Parameter KPF bound to: 2 - type: integer 
+	Parameter STRIDE_H bound to: 2 - type: integer 
+	Parameter STRIDE_W bound to: 2 - type: integer 
+	Parameter PAD bound to: 1 - type: integer 
+	Parameter OP_DELAY bound to: 3 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 6 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 1 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter WM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter BM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter CG bound to: 4 - type: integer 
+	Parameter KG bound to: 2 - type: integer 
+	Parameter GROUP bound to: 1 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 4 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 4 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 8192 - type: integer 
+	Parameter START_ADDR bound to: 0 - type: integer 
+	Parameter LENGTH bound to: 512 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27]
+INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+ERROR: [Synth 8-439] module 'mul16_unsigned' not found [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:505]
+ERROR: [Synth 8-285] failed synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6297.711 ; gain = 0.000 ; free physical = 6253 ; free virtual = 108181
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+6 Infos, 1 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+open_bd_design {/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd}
+Successfully read diagram <design_1> from BD file </home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd>
+INFO: [Common 17-365] Interrupt caught but 'open_bd_design' cannot be canceled. Please wait for command to finish.
+INFO: [Common 17-681] Processing pending cancel.
+1
+add_files -scan_for_includes {/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v}
+import_files -force {/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v}
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: controller_v2_b
+ERROR: [Synth 8-2715] syntax error near ( [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:221]
+ERROR: [Synth 8-993] clock is an unknown type [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:221]
+INFO: [Synth 8-2350] module mul16x16_signed ignored due to previous errors [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:193]
+INFO: [Synth 8-2350] module mul16_unsigned ignored due to previous errors [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:226]
+Failed to read verilog '/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v'
+2 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+update_compile_order -fileset sources_1
+add_files -scan_for_includes {/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v}
+import_files -force {/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v}
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: controller_v2_b
+ERROR: [Synth 8-1031] clock is not declared [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:221]
+ERROR: [Synth 8-2576] procedural assignment to a non-register P is not permitted [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:221]
+INFO: [Synth 8-2350] module mul16x16_signed ignored due to previous errors [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:193]
+INFO: [Synth 8-2350] module mul16_unsigned ignored due to previous errors [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:226]
+Failed to read verilog '/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v'
+2 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+update_compile_order -fileset sources_1
+add_files -scan_for_includes {/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v}
+import_files -force {/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v}
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: controller_v2_b
+WARNING: [Synth 8-1935] empty port in module declaration [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:19]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6404.383 ; gain = 0.000 ; free physical = 5477 ; free virtual = 107584
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1]
+	Parameter DB_W_IN bound to: 8 - type: integer 
+	Parameter DB_H_IN bound to: 8 - type: integer 
+	Parameter DB_C_IN bound to: 8 - type: integer 
+	Parameter DB_W_OUT bound to: 8 - type: integer 
+	Parameter DB_H_OUT bound to: 8 - type: integer 
+	Parameter DB_C_OUT bound to: 8 - type: integer 
+	Parameter WB_W bound to: 4 - type: integer 
+	Parameter WB_H bound to: 4 - type: integer 
+	Parameter WB_C bound to: 8 - type: integer 
+	Parameter WB_K bound to: 4 - type: integer 
+	Parameter CPF bound to: 2 - type: integer 
+	Parameter KPF bound to: 2 - type: integer 
+	Parameter STRIDE_H bound to: 2 - type: integer 
+	Parameter STRIDE_W bound to: 2 - type: integer 
+	Parameter PAD bound to: 1 - type: integer 
+	Parameter OP_DELAY bound to: 3 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 6 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 1 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter WM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter BM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter CG bound to: 4 - type: integer 
+	Parameter KG bound to: 2 - type: integer 
+	Parameter GROUP bound to: 1 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 4 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 4 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 8192 - type: integer 
+	Parameter START_ADDR bound to: 0 - type: integer 
+	Parameter LENGTH bound to: 512 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27]
+INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'mul16_unsigned' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:226]
+ERROR: [Synth 8-439] module 'mul16_signed' not found [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:227]
+ERROR: [Synth 8-285] failed synthesizing module 'mul16_unsigned' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:226]
+ERROR: [Synth 8-285] failed synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6414.777 ; gain = 10.395 ; free physical = 5485 ; free virtual = 107592
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+7 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+update_compile_order -fileset sources_1
+add_files -scan_for_includes {/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v}
+import_files -force {/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: controller_v2_b
+WARNING: [Synth 8-1935] empty port in module declaration [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:19]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 6464.074 ; gain = 0.000 ; free physical = 5464 ; free virtual = 107572
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1]
+	Parameter DB_W_IN bound to: 8 - type: integer 
+	Parameter DB_H_IN bound to: 8 - type: integer 
+	Parameter DB_C_IN bound to: 8 - type: integer 
+	Parameter DB_W_OUT bound to: 8 - type: integer 
+	Parameter DB_H_OUT bound to: 8 - type: integer 
+	Parameter DB_C_OUT bound to: 8 - type: integer 
+	Parameter WB_W bound to: 4 - type: integer 
+	Parameter WB_H bound to: 4 - type: integer 
+	Parameter WB_C bound to: 8 - type: integer 
+	Parameter WB_K bound to: 4 - type: integer 
+	Parameter CPF bound to: 2 - type: integer 
+	Parameter KPF bound to: 2 - type: integer 
+	Parameter STRIDE_H bound to: 2 - type: integer 
+	Parameter STRIDE_W bound to: 2 - type: integer 
+	Parameter PAD bound to: 1 - type: integer 
+	Parameter OP_DELAY bound to: 3 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 6 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 1 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter WM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter BM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter CG bound to: 4 - type: integer 
+	Parameter KG bound to: 2 - type: integer 
+	Parameter GROUP bound to: 1 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 4 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 4 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 8192 - type: integer 
+	Parameter START_ADDR bound to: 0 - type: integer 
+	Parameter LENGTH bound to: 512 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27]
+INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'mul16_unsigned' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:226]
+INFO: [Synth 8-638] synthesizing module 'mul16x16_signed' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:193]
+INFO: [Synth 8-638] synthesizing module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:149]
+INFO: [Synth 8-638] synthesizing module 'Adder' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:81]
+INFO: [Synth 8-638] synthesizing module 'fa' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:71]
+INFO: [Synth 8-638] synthesizing module 'xor3' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:59]
+INFO: [Synth 8-638] synthesizing module 'xor2' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:13]
+INFO: [Synth 8-256] done synthesizing module 'xor2' (2#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:13]
+INFO: [Synth 8-256] done synthesizing module 'xor3' (3#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:59]
+INFO: [Synth 8-638] synthesizing module 'and2' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:5]
+INFO: [Synth 8-256] done synthesizing module 'and2' (4#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:5]
+INFO: [Synth 8-638] synthesizing module 'or3' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:41]
+INFO: [Synth 8-638] synthesizing module 'or2' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:9]
+INFO: [Synth 8-256] done synthesizing module 'or2' (5#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:9]
+INFO: [Synth 8-256] done synthesizing module 'or3' (6#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:41]
+INFO: [Synth 8-256] done synthesizing module 'fa' (7#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:71]
+INFO: [Synth 8-256] done synthesizing module 'Adder' (8#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:81]
+INFO: [Synth 8-638] synthesizing module 'subtractor' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:104]
+INFO: [Synth 8-638] synthesizing module 'invert' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:1]
+INFO: [Synth 8-256] done synthesizing module 'invert' (9#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:1]
+INFO: [Synth 8-256] done synthesizing module 'subtractor' (10#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:104]
+INFO: [Synth 8-256] done synthesizing module 'booth_substep' (11#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:149]
+WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:205]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:206]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:207]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:208]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:209]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:210]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:211]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:212]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:213]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:214]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:215]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:216]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:217]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:218]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:219]
+WARNING: [Synth 8-3848] Net b in module/entity mul16x16_signed does not have driver. [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-3848] Net a in module/entity mul16x16_signed does not have driver. [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:204]
+INFO: [Synth 8-256] done synthesizing module 'mul16x16_signed' (12#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:193]
+WARNING: [Synth 8-689] width (16) of port connection 'clk' does not match port width (1) of module 'mul16x16_signed' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:227]
+WARNING: [Synth 8-689] width (1) of port connection 'B' does not match port width (16) of module 'mul16x16_signed' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:227]
+INFO: [Synth 8-256] done synthesizing module 'mul16_unsigned' (13#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:226]
+ERROR: [Synth 8-448] named port connection 'CLK' does not exist for instance 'u_mul16_unsigned_1' of module 'mul16_unsigned' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:506]
+ERROR: [Synth 8-448] named port connection 'CLK' does not exist for instance 'u_mul16_unsigned_2' of module 'mul16_unsigned' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:513]
+ERROR: [Synth 8-448] named port connection 'CLK' does not exist for instance 'u_mul16_unsigned_3' of module 'mul16_unsigned' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:520]
+ERROR: [Synth 8-448] named port connection 'CLK' does not exist for instance 'u_mul16_unsigned_7' of module 'mul16_unsigned' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:561]
+ERROR: [Synth 8-448] named port connection 'CLK' does not exist for instance 'u_mul16_unsigned_4' of module 'mul16_unsigned' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:597]
+ERROR: [Synth 8-448] named port connection 'CLK' does not exist for instance 'u_mul16_unsigned_5' of module 'mul16_unsigned' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:603]
+ERROR: [Synth 8-448] named port connection 'CLK' does not exist for instance 'u_mul16_unsigned_6' of module 'mul16_unsigned' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:609]
+WARNING: [Synth 8-308] ignoring empty port [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:20]
+ERROR: [Synth 8-285] failed synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6465.043 ; gain = 0.969 ; free physical = 5486 ; free virtual = 107593
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+30 Infos, 23 Warnings, 0 Critical Warnings and 9 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+add_files -scan_for_includes {/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v}
+update_compile_order -fileset sources_1
+add_files -scan_for_includes {/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v}
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v' cannot be added to the project because it already exists in the project, skipping this file
+import_files {/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v}
+WARNING: [filemgmt 20-354] The following file(s) were not imported. Local copy of file(s) already exists:
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v
+/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v
+Hint: use the '-force' option to overwrite the local copies.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: controller_v2_b
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module invert [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:1]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module and2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:5]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module or2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:9]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module xor2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:13]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module nand2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:17]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module nor2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:23]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module xnor2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:29]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module and3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:35]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module or3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:41]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module nor3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:47]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module nand3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:53]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module xor3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:59]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module xnor3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:65]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module fa [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:71]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module Adder [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module subtractor [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module booth_substep [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+ERROR: [Synth 8-1031] clk is not declared [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:221]
+INFO: [Synth 8-2350] module mul16x16_signed ignored due to previous errors [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+INFO: [Synth 8-2350] module mul16_unsigned ignored due to previous errors [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+Failed to read verilog '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v'
+2 Infos, 0 Warnings, 17 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+add_files -scan_for_includes {/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v}
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_b.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v' cannot be added to the project because it already exists in the project, skipping this file
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: controller_v2_b
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module invert [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:1]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module and2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:5]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module or2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:9]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module xor2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:13]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module nand2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:17]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module nor2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:23]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module xnor2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:29]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module and3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:35]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module or3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:41]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module nor3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:47]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module nand3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:53]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module xor3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:59]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module xnor3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:65]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module fa [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:71]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module Adder [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module subtractor [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module booth_substep [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module mul16x16_signed [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module mul16_unsigned [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:19]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 6532.867 ; gain = 0.000 ; free physical = 5459 ; free virtual = 107566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1]
+	Parameter DB_W_IN bound to: 8 - type: integer 
+	Parameter DB_H_IN bound to: 8 - type: integer 
+	Parameter DB_C_IN bound to: 8 - type: integer 
+	Parameter DB_W_OUT bound to: 8 - type: integer 
+	Parameter DB_H_OUT bound to: 8 - type: integer 
+	Parameter DB_C_OUT bound to: 8 - type: integer 
+	Parameter WB_W bound to: 4 - type: integer 
+	Parameter WB_H bound to: 4 - type: integer 
+	Parameter WB_C bound to: 8 - type: integer 
+	Parameter WB_K bound to: 4 - type: integer 
+	Parameter CPF bound to: 2 - type: integer 
+	Parameter KPF bound to: 2 - type: integer 
+	Parameter STRIDE_H bound to: 2 - type: integer 
+	Parameter STRIDE_W bound to: 2 - type: integer 
+	Parameter PAD bound to: 1 - type: integer 
+	Parameter OP_DELAY bound to: 3 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 6 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 1 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter WM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter BM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter CG bound to: 4 - type: integer 
+	Parameter KG bound to: 2 - type: integer 
+	Parameter GROUP bound to: 1 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 4 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 4 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 8192 - type: integer 
+	Parameter START_ADDR bound to: 0 - type: integer 
+	Parameter LENGTH bound to: 512 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27]
+INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'mul16_unsigned' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+INFO: [Synth 8-638] synthesizing module 'mul16x16_signed' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+INFO: [Synth 8-638] synthesizing module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+INFO: [Synth 8-638] synthesizing module 'Adder' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+INFO: [Synth 8-638] synthesizing module 'fa' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:71]
+INFO: [Synth 8-638] synthesizing module 'xor3' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:59]
+INFO: [Synth 8-638] synthesizing module 'xor2' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:13]
+INFO: [Synth 8-256] done synthesizing module 'xor2' (2#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:13]
+INFO: [Synth 8-256] done synthesizing module 'xor3' (3#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:59]
+INFO: [Synth 8-638] synthesizing module 'and2' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:5]
+INFO: [Synth 8-256] done synthesizing module 'and2' (4#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:5]
+INFO: [Synth 8-638] synthesizing module 'or3' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:41]
+INFO: [Synth 8-638] synthesizing module 'or2' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:9]
+INFO: [Synth 8-256] done synthesizing module 'or2' (5#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:9]
+INFO: [Synth 8-256] done synthesizing module 'or3' (6#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:41]
+INFO: [Synth 8-256] done synthesizing module 'fa' (7#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:71]
+INFO: [Synth 8-256] done synthesizing module 'Adder' (8#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+INFO: [Synth 8-638] synthesizing module 'subtractor' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+INFO: [Synth 8-638] synthesizing module 'invert' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:1]
+INFO: [Synth 8-256] done synthesizing module 'invert' (9#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:1]
+INFO: [Synth 8-256] done synthesizing module 'subtractor' (10#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+INFO: [Synth 8-256] done synthesizing module 'booth_substep' (11#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:205]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:206]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:207]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:208]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:209]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:210]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:211]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:212]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:213]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:214]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:215]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:216]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:217]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:218]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:219]
+WARNING: [Synth 8-3848] Net b in module/entity mul16x16_signed does not have driver. [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-3848] Net a in module/entity mul16x16_signed does not have driver. [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+INFO: [Synth 8-256] done synthesizing module 'mul16x16_signed' (12#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+INFO: [Synth 8-256] done synthesizing module 'mul16_unsigned' (13#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+WARNING: [Synth 8-308] ignoring empty port [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:20]
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:368]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2_b' (14#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[15]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[14]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[13]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[12]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[11]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[10]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[9]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[8]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[7]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[6]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[5]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[4]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[3]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[2]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[1]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[0]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[15]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[14]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[13]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[12]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[11]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[10]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[9]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[8]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[7]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[6]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[5]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[4]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[3]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[2]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[1]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[0]
+WARNING: [Synth 8-3331] design delay has unconnected port rst
+WARNING: [Synth 8-3331] design delay__parameterized0 has unconnected port rst
+WARNING: [Synth 8-3331] design controller_v2_b has unconnected port blob_din_eop
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6532.867 ; gain = 0.000 ; free physical = 5470 ; free virtual = 107579
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin step1:Q[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-3295] tying undriven pin step1:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-3295] tying undriven pin step2:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:205]
+WARNING: [Synth 8-3295] tying undriven pin step3:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:206]
+WARNING: [Synth 8-3295] tying undriven pin step4:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:207]
+WARNING: [Synth 8-3295] tying undriven pin step5:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:208]
+WARNING: [Synth 8-3295] tying undriven pin step6:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:209]
+WARNING: [Synth 8-3295] tying undriven pin step7:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:210]
+WARNING: [Synth 8-3295] tying undriven pin step8:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:211]
+WARNING: [Synth 8-3295] tying undriven pin step9:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:212]
+WARNING: [Synth 8-3295] tying undriven pin step10:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:213]
+WARNING: [Synth 8-3295] tying undriven pin step11:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:214]
+WARNING: [Synth 8-3295] tying undriven pin step12:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:215]
+WARNING: [Synth 8-3295] tying undriven pin step13:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:216]
+WARNING: [Synth 8-3295] tying undriven pin step14:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:217]
+WARNING: [Synth 8-3295] tying undriven pin step15:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:218]
+WARNING: [Synth 8-3295] tying undriven pin step16:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:219]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6532.867 ; gain = 0.000 ; free physical = 5472 ; free virtual = 107581
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:38 ; elapsed = 00:01:00 . Memory (MB): peak = 7279.059 ; gain = 746.191 ; free physical = 4905 ; free virtual = 107013
+37 Infos, 74 Warnings, 19 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:00 . Memory (MB): peak = 7279.059 ; gain = 746.191 ; free physical = 4905 ; free virtual = 107013
+open_bd_design {/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd}
+generate_target all [get_files  /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : </home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Exporting to file /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.ip_user_files/sim_scripts -ip_user_files_dir /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.ip_user_files -ipstatic_source_dir /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.cache/compile_simlib/modelsim} {questa=/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.cache/compile_simlib/questa} {ies=/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.cache/compile_simlib/ies} {vcs=/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.cache/compile_simlib/vcs} {riviera=/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 4
+[Wed Dec 22 15:36:42 2021] Launched synth_1...
+Run output will be captured here: /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7vx485tffg1157-1
+INFO: [Netlist 29-17] Analyzing 130 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'controller_v2_b' is not ideal for floorplanning, since the cellview 'controller_v2_b' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1157-1
+Top: controller_v2_b
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module invert [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:1]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module and2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:5]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module or2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:9]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module xor2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:13]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module nand2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:17]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module nor2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:23]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module xnor2 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:29]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module and3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:35]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module or3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:41]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module nor3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:47]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module nand3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:53]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module xor3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:59]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module xnor3 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:65]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module fa [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:71]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module Adder [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module subtractor [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module booth_substep [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module mul16x16_signed [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module mul16_unsigned [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:19]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7657.090 ; gain = 0.000 ; free physical = 4538 ; free virtual = 106669
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1]
+	Parameter DB_W_IN bound to: 8 - type: integer 
+	Parameter DB_H_IN bound to: 8 - type: integer 
+	Parameter DB_C_IN bound to: 8 - type: integer 
+	Parameter DB_W_OUT bound to: 8 - type: integer 
+	Parameter DB_H_OUT bound to: 8 - type: integer 
+	Parameter DB_C_OUT bound to: 8 - type: integer 
+	Parameter WB_W bound to: 4 - type: integer 
+	Parameter WB_H bound to: 4 - type: integer 
+	Parameter WB_C bound to: 8 - type: integer 
+	Parameter WB_K bound to: 4 - type: integer 
+	Parameter CPF bound to: 2 - type: integer 
+	Parameter KPF bound to: 2 - type: integer 
+	Parameter STRIDE_H bound to: 2 - type: integer 
+	Parameter STRIDE_W bound to: 2 - type: integer 
+	Parameter PAD bound to: 1 - type: integer 
+	Parameter OP_DELAY bound to: 3 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 6 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 1 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter WM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter BM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter CG bound to: 4 - type: integer 
+	Parameter KG bound to: 2 - type: integer 
+	Parameter GROUP bound to: 1 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 4 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 4 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 8192 - type: integer 
+	Parameter START_ADDR bound to: 0 - type: integer 
+	Parameter LENGTH bound to: 512 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27]
+INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'mul16_unsigned' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+INFO: [Synth 8-638] synthesizing module 'mul16x16_signed' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+INFO: [Synth 8-638] synthesizing module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+INFO: [Synth 8-638] synthesizing module 'Adder' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+INFO: [Synth 8-638] synthesizing module 'fa' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:71]
+INFO: [Synth 8-638] synthesizing module 'xor3' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:59]
+INFO: [Synth 8-638] synthesizing module 'xor2' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:13]
+INFO: [Synth 8-256] done synthesizing module 'xor2' (2#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:13]
+INFO: [Synth 8-256] done synthesizing module 'xor3' (3#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:59]
+INFO: [Synth 8-638] synthesizing module 'and2' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:5]
+INFO: [Synth 8-256] done synthesizing module 'and2' (4#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:5]
+INFO: [Synth 8-638] synthesizing module 'or3' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:41]
+INFO: [Synth 8-638] synthesizing module 'or2' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:9]
+INFO: [Synth 8-256] done synthesizing module 'or2' (5#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:9]
+INFO: [Synth 8-256] done synthesizing module 'or3' (6#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:41]
+INFO: [Synth 8-256] done synthesizing module 'fa' (7#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:71]
+INFO: [Synth 8-256] done synthesizing module 'Adder' (8#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+INFO: [Synth 8-638] synthesizing module 'subtractor' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+INFO: [Synth 8-638] synthesizing module 'invert' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:1]
+INFO: [Synth 8-256] done synthesizing module 'invert' (9#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:1]
+INFO: [Synth 8-256] done synthesizing module 'subtractor' (10#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+INFO: [Synth 8-256] done synthesizing module 'booth_substep' (11#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:205]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:206]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:207]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:208]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:209]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:210]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:211]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:212]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:213]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:214]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:215]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:216]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:217]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:218]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:219]
+WARNING: [Synth 8-3848] Net b in module/entity mul16x16_signed does not have driver. [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-3848] Net a in module/entity mul16x16_signed does not have driver. [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+INFO: [Synth 8-256] done synthesizing module 'mul16x16_signed' (12#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+INFO: [Synth 8-256] done synthesizing module 'mul16_unsigned' (13#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+WARNING: [Synth 8-308] ignoring empty port [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:20]
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:368]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2_b' (14#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[15]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[14]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[13]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[12]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[11]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[10]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[9]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[8]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[7]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[6]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[5]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[4]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[3]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[2]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[1]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[0]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[15]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[14]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[13]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[12]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[11]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[10]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[9]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[8]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[7]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[6]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[5]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[4]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[3]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[2]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[1]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[0]
+WARNING: [Synth 8-3331] design delay has unconnected port rst
+WARNING: [Synth 8-3331] design delay__parameterized0 has unconnected port rst
+WARNING: [Synth 8-3331] design controller_v2_b has unconnected port blob_din_eop
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7657.090 ; gain = 0.000 ; free physical = 4550 ; free virtual = 106681
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin step1:Q[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-3295] tying undriven pin step1:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-3295] tying undriven pin step2:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:205]
+WARNING: [Synth 8-3295] tying undriven pin step3:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:206]
+WARNING: [Synth 8-3295] tying undriven pin step4:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:207]
+WARNING: [Synth 8-3295] tying undriven pin step5:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:208]
+WARNING: [Synth 8-3295] tying undriven pin step6:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:209]
+WARNING: [Synth 8-3295] tying undriven pin step7:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:210]
+WARNING: [Synth 8-3295] tying undriven pin step8:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:211]
+WARNING: [Synth 8-3295] tying undriven pin step9:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:212]
+WARNING: [Synth 8-3295] tying undriven pin step10:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:213]
+WARNING: [Synth 8-3295] tying undriven pin step11:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:214]
+WARNING: [Synth 8-3295] tying undriven pin step12:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:215]
+WARNING: [Synth 8-3295] tying undriven pin step13:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:216]
+WARNING: [Synth 8-3295] tying undriven pin step14:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:217]
+WARNING: [Synth 8-3295] tying undriven pin step15:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:218]
+WARNING: [Synth 8-3295] tying undriven pin step16:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:219]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7657.090 ; gain = 0.000 ; free physical = 4553 ; free virtual = 106684
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 7867.691 ; gain = 210.602 ; free physical = 4334 ; free virtual = 106465
+36 Infos, 74 Warnings, 19 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 7867.691 ; gain = 210.602 ; free physical = 4334 ; free virtual = 106465
+add_files -scan_for_includes {/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v}
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/delay.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ddr_read_delay.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv2_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_max.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_ave.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bus512ton.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/vector_muladd.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr4.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool1_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/conv1_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr2.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/addr3.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/passthrough.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busnto512.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/fraction_table.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/model.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bit_trunc.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2_a.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/pool2_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/bn_bias_relu.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multiplier.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/ip1_layer.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/controller_v2.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/acc_addr.sv' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/interlayer_sync_fifo.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/busm2n.v' cannot be added to the project because it already exists in the project, skipping this file
+refresh_design
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module Adder [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module subtractor [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module booth_substep [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module mul16x16_signed [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module mul16_unsigned [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+WARNING: [Synth 8-1935] empty port in module declaration [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:19]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7867.691 ; gain = 0.000 ; free physical = 4276 ; free virtual = 106412
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1]
+	Parameter DB_W_IN bound to: 8 - type: integer 
+	Parameter DB_H_IN bound to: 8 - type: integer 
+	Parameter DB_C_IN bound to: 8 - type: integer 
+	Parameter DB_W_OUT bound to: 8 - type: integer 
+	Parameter DB_H_OUT bound to: 8 - type: integer 
+	Parameter DB_C_OUT bound to: 8 - type: integer 
+	Parameter WB_W bound to: 4 - type: integer 
+	Parameter WB_H bound to: 4 - type: integer 
+	Parameter WB_C bound to: 8 - type: integer 
+	Parameter WB_K bound to: 4 - type: integer 
+	Parameter CPF bound to: 2 - type: integer 
+	Parameter KPF bound to: 2 - type: integer 
+	Parameter STRIDE_H bound to: 2 - type: integer 
+	Parameter STRIDE_W bound to: 2 - type: integer 
+	Parameter PAD bound to: 1 - type: integer 
+	Parameter OP_DELAY bound to: 3 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 6 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 1 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter WM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter BM_RD_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter CG bound to: 4 - type: integer 
+	Parameter KG bound to: 2 - type: integer 
+	Parameter GROUP bound to: 1 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 4 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 4 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 8192 - type: integer 
+	Parameter START_ADDR bound to: 0 - type: integer 
+	Parameter LENGTH bound to: 512 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27]
+INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'mul16_unsigned' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+INFO: [Synth 8-638] synthesizing module 'mul16x16_signed' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+INFO: [Synth 8-638] synthesizing module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+INFO: [Synth 8-638] synthesizing module 'Adder' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+INFO: [Synth 8-638] synthesizing module 'bfa' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:71]
+INFO: [Synth 8-638] synthesizing module 'bxor3' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:59]
+INFO: [Synth 8-638] synthesizing module 'bxor2' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:13]
+INFO: [Synth 8-256] done synthesizing module 'bxor2' (2#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:13]
+INFO: [Synth 8-256] done synthesizing module 'bxor3' (3#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:59]
+INFO: [Synth 8-638] synthesizing module 'band2' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:5]
+INFO: [Synth 8-256] done synthesizing module 'band2' (4#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:5]
+INFO: [Synth 8-638] synthesizing module 'bor3' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:41]
+INFO: [Synth 8-638] synthesizing module 'bor2' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:9]
+INFO: [Synth 8-256] done synthesizing module 'bor2' (5#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:9]
+INFO: [Synth 8-256] done synthesizing module 'bor3' (6#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:41]
+INFO: [Synth 8-256] done synthesizing module 'bfa' (7#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:71]
+INFO: [Synth 8-256] done synthesizing module 'Adder' (8#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+INFO: [Synth 8-638] synthesizing module 'subtractor' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+INFO: [Synth 8-638] synthesizing module 'binvert' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:1]
+INFO: [Synth 8-256] done synthesizing module 'binvert' (9#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:1]
+INFO: [Synth 8-256] done synthesizing module 'subtractor' (10#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+INFO: [Synth 8-256] done synthesizing module 'booth_substep' (11#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:205]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:206]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:207]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:208]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:209]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:210]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:211]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:212]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:213]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:214]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:215]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:216]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:217]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:218]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:219]
+WARNING: [Synth 8-3848] Net b in module/entity mul16x16_signed does not have driver. [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-3848] Net a in module/entity mul16x16_signed does not have driver. [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+INFO: [Synth 8-256] done synthesizing module 'mul16x16_signed' (12#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+INFO: [Synth 8-256] done synthesizing module 'mul16_unsigned' (13#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+WARNING: [Synth 8-308] ignoring empty port [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:20]
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:368]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2_b' (14#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[15]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[14]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[13]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[12]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[11]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[10]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[9]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[8]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[7]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[6]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[5]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[4]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[3]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[2]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[1]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port A[0]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[15]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[14]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[13]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[12]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[11]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[10]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[9]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[8]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[7]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[6]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[5]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[4]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[3]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[2]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[1]
+WARNING: [Synth 8-3331] design mul16x16_signed has unconnected port B[0]
+WARNING: [Synth 8-3331] design delay has unconnected port rst
+WARNING: [Synth 8-3331] design delay__parameterized0 has unconnected port rst
+WARNING: [Synth 8-3331] design controller_v2_b has unconnected port blob_din_eop
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7867.691 ; gain = 0.000 ; free physical = 4311 ; free virtual = 106446
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin step1:Q[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-3295] tying undriven pin step1:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-3295] tying undriven pin step2:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:205]
+WARNING: [Synth 8-3295] tying undriven pin step3:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:206]
+WARNING: [Synth 8-3295] tying undriven pin step4:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:207]
+WARNING: [Synth 8-3295] tying undriven pin step5:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:208]
+WARNING: [Synth 8-3295] tying undriven pin step6:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:209]
+WARNING: [Synth 8-3295] tying undriven pin step7:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:210]
+WARNING: [Synth 8-3295] tying undriven pin step8:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:211]
+WARNING: [Synth 8-3295] tying undriven pin step9:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:212]
+WARNING: [Synth 8-3295] tying undriven pin step10:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:213]
+WARNING: [Synth 8-3295] tying undriven pin step11:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:214]
+WARNING: [Synth 8-3295] tying undriven pin step12:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:215]
+WARNING: [Synth 8-3295] tying undriven pin step13:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:216]
+WARNING: [Synth 8-3295] tying undriven pin step14:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:217]
+WARNING: [Synth 8-3295] tying undriven pin step15:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:218]
+WARNING: [Synth 8-3295] tying undriven pin step16:m[0] to constant 0 [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:219]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7867.691 ; gain = 0.000 ; free physical = 4315 ; free virtual = 106450
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 7994.473 ; gain = 126.781 ; free physical = 4266 ; free virtual = 106402
+export_ip_user_files -of_objects  [get_files /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v] -no_script -reset -force -quiet
+remove_files  /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v
+refresh_design
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module Adder [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module subtractor [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module booth_substep [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module mul16x16_signed [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module mul16_unsigned [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 7994.473 ; gain = 0.000 ; free physical = 4239 ; free virtual = 106375
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-439] module 'controller_v2_b' not found
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7994.473 ; gain = 0.000 ; free physical = 4256 ; free virtual = 106392
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7994.473 ; gain = 0.000 ; free physical = 4256 ; free virtual = 106392
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module Adder [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module subtractor [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module booth_substep [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module mul16x16_signed [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module mul16_unsigned [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 8010.488 ; gain = 0.000 ; free physical = 4246 ; free virtual = 106382
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'model' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/model.v:1]
+INFO: [Synth 8-638] synthesizing module 'ddr_read_delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v:1]
+	Parameter DDR_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter delay_req_port0 bound to: 2 - type: integer 
+	Parameter delay_req_port1 bound to: 2 - type: integer 
+	Parameter delay_req_port2 bound to: 2 - type: integer 
+	Parameter delay_req_port3 bound to: -1 - type: integer 
+	Parameter delay_req_port4 bound to: -1 - type: integer 
+	Parameter delay_req_port5 bound to: -1 - type: integer 
+	Parameter delay_req_port6 bound to: -1 - type: integer 
+	Parameter delay_req_port7 bound to: -1 - type: integer 
+	Parameter delay_req_port8 bound to: -1 - type: integer 
+	Parameter delay_req_port9 bound to: -1 - type: integer 
+	Parameter delay_req_port10 bound to: -1 - type: integer 
+	Parameter delay_req_port11 bound to: -1 - type: integer 
+	Parameter delay_req_port12 bound to: -1 - type: integer 
+	Parameter delay_req_port13 bound to: -1 - type: integer 
+	Parameter delay_req_port14 bound to: -1 - type: integer 
+	Parameter delay_dout_port0 bound to: 2 - type: integer 
+	Parameter delay_dout_port1 bound to: 2 - type: integer 
+	Parameter delay_dout_port2 bound to: 2 - type: integer 
+	Parameter delay_dout_port3 bound to: -1 - type: integer 
+	Parameter delay_dout_port4 bound to: -1 - type: integer 
+	Parameter delay_dout_port5 bound to: -1 - type: integer 
+	Parameter delay_dout_port6 bound to: -1 - type: integer 
+	Parameter delay_dout_port7 bound to: -1 - type: integer 
+	Parameter delay_dout_port8 bound to: -1 - type: integer 
+	Parameter delay_dout_port9 bound to: -1 - type: integer 
+	Parameter delay_dout_port10 bound to: -1 - type: integer 
+	Parameter delay_dout_port11 bound to: -1 - type: integer 
+	Parameter delay_dout_port12 bound to: -1 - type: integer 
+	Parameter delay_dout_port13 bound to: -1 - type: integer 
+	Parameter delay_dout_port14 bound to: -1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v:482]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v:483]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v:484]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v:485]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v:487]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v:488]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v:489]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v:490]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v:492]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v:493]
+INFO: [Synth 8-256] done synthesizing module 'ddr_read_delay' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v:1]
+INFO: [Synth 8-638] synthesizing module 'busm2n' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/busm2n.v:1]
+	Parameter IN_WIDTH bound to: 16 - type: integer 
+	Parameter OUT_WIDTH bound to: 16 - type: integer 
+	Parameter COM_MUL bound to: 16 - type: integer 
+	Parameter IN_COUNT bound to: 1 - type: integer 
+	Parameter OUT_COUNT bound to: 1 - type: integer 
+	Parameter N bound to: 1568 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'busm2n' (2#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/busm2n.v:1]
+INFO: [Synth 8-638] synthesizing module 'conv1_layer' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/conv1_layer.v:1]
+INFO: [Synth 8-638] synthesizing module 'controller_v2' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2.v:1]
+	Parameter DB_W_IN bound to: 28 - type: integer 
+	Parameter DB_H_IN bound to: 28 - type: integer 
+	Parameter DB_C_IN bound to: 2 - type: integer 
+	Parameter DB_W_OUT bound to: 24 - type: integer 
+	Parameter DB_H_OUT bound to: 24 - type: integer 
+	Parameter DB_C_OUT bound to: 4 - type: integer 
+	Parameter WB_W bound to: 5 - type: integer 
+	Parameter WB_H bound to: 5 - type: integer 
+	Parameter WB_C bound to: 2 - type: integer 
+	Parameter WB_K bound to: 4 - type: integer 
+	Parameter CPF bound to: 1 - type: integer 
+	Parameter KPF bound to: 1 - type: integer 
+	Parameter STRIDE_H bound to: 1 - type: integer 
+	Parameter STRIDE_W bound to: 1 - type: integer 
+	Parameter PAD bound to: 0 - type: integer 
+	Parameter OP_DELAY bound to: 4 - type: integer 
+	Parameter RM_RING_LENGTH bound to: 6 - type: integer 
+	Parameter RM_RD_PHY_ADDR_JUMP bound to: 5 - type: integer 
+	Parameter RM_WR_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter RM_RD_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter DOUBLE_BUF_WR_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter DOUBLE_BUF_RD_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter DOUBLE_BUF_WR_DEPTH bound to: 100 - type: integer 
+	Parameter DOUBLE_BUF_RD_DEPTH bound to: 100 - type: integer 
+	Parameter BM_RD_ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter CG bound to: 2 - type: integer 
+	Parameter KG bound to: 4 - type: integer 
+	Parameter GROUP bound to: 1 - type: integer 
+	Parameter RM_WR_NUM_PER_CHANNEL bound to: 2 - type: integer 
+	Parameter RM_WR_STRIDE bound to: 1 - type: integer 
+	Parameter COUNT_PER_LAYER bound to: 115200 - type: integer 
+	Parameter START_ADDR bound to: 0 - type: integer 
+	Parameter LENGTH bound to: 50 - type: integer 
+	Parameter DATA_ACCESS_DELAY bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27]
+INFO: [Synth 8-256] done synthesizing module 'delay' (3#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (3#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+INFO: [Synth 8-638] synthesizing module 'mul16_unsigned' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+INFO: [Synth 8-638] synthesizing module 'mul16x16_signed' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+INFO: [Synth 8-638] synthesizing module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+INFO: [Synth 8-638] synthesizing module 'Adder' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+INFO: [Synth 8-638] synthesizing module 'bfa' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:71]
+INFO: [Synth 8-638] synthesizing module 'bxor3' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:59]
+INFO: [Synth 8-638] synthesizing module 'bxor2' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:13]
+INFO: [Synth 8-256] done synthesizing module 'bxor2' (4#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:13]
+INFO: [Synth 8-256] done synthesizing module 'bxor3' (5#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:59]
+INFO: [Synth 8-638] synthesizing module 'band2' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:5]
+INFO: [Synth 8-256] done synthesizing module 'band2' (6#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:5]
+INFO: [Synth 8-638] synthesizing module 'bor3' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:41]
+INFO: [Synth 8-638] synthesizing module 'bor2' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:9]
+INFO: [Synth 8-256] done synthesizing module 'bor2' (7#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:9]
+INFO: [Synth 8-256] done synthesizing module 'bor3' (8#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:41]
+INFO: [Synth 8-256] done synthesizing module 'bfa' (9#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:71]
+INFO: [Synth 8-256] done synthesizing module 'Adder' (10#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:81]
+INFO: [Synth 8-638] synthesizing module 'subtractor' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+INFO: [Synth 8-638] synthesizing module 'binvert' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:1]
+INFO: [Synth 8-256] done synthesizing module 'binvert' (11#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:1]
+INFO: [Synth 8-256] done synthesizing module 'subtractor' (12#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:104]
+INFO: [Synth 8-256] done synthesizing module 'booth_substep' (13#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:149]
+WARNING: [Synth 8-689] width (1) of port connection 'Q' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:205]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:206]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:207]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:208]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:209]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:210]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:211]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:212]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:213]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:214]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:215]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:216]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:217]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:218]
+WARNING: [Synth 8-689] width (1) of port connection 'm' does not match port width (16) of module 'booth_substep' [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:219]
+WARNING: [Synth 8-3848] Net b in module/entity mul16x16_signed does not have driver. [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+WARNING: [Synth 8-3848] Net a in module/entity mul16x16_signed does not have driver. [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:204]
+INFO: [Synth 8-256] done synthesizing module 'mul16x16_signed' (14#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193]
+INFO: [Synth 8-256] done synthesizing module 'mul16_unsigned' (15#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226]
+INFO: [Synth 8-638] synthesizing module 'delay__parameterized1' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (15#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3]
+WARNING: [Synth 8-6014] Unused sequential element rm_wr_phy_addr_reg was removed.  [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2.v:391]
+INFO: [Synth 8-256] done synthesizing module 'controller_v2' (16#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2.v:1]
+ERROR: [Synth 8-439] module 'conv1_rm_ram' not found [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/conv1_layer.v:110]
+ERROR: [Synth 8-285] failed synthesizing module 'conv1_layer' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/conv1_layer.v:1]
+ERROR: [Synth 8-285] failed synthesizing module 'model' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/model.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8010.488 ; gain = 0.000 ; free physical = 4259 ; free virtual = 106395
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8010.488 ; gain = 0.000 ; free physical = 4260 ; free virtual = 106395
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.

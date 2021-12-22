@@ -185,3 +185,64 @@ maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (Q, c
 // [GUI Memory]: 137 MB (+4644kb) [00:03:41]
 // [GUI Memory]: 145 MB (+715kb) [00:04:55]
 // [GUI Memory]: 153 MB (+1064kb) [00:10:30]
+// [GUI Memory]: 162 MB (+1730kb) [00:23:29]
+// Elapsed time: 1346 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+// [GUI Memory]: 172 MB (+1308kb) [00:25:19]
+// [GUI Memory]: 181 MB (+738kb) [00:25:44]
+// [GUI Memory]: 191 MB (+1253kb) [00:29:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,890 MB. GUI used memory: 89 MB. Current time: 12/22/21 3:10:12 PM EST
+// Elapsed time: 584 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, model (model.v)]", 1); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 10); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, model (model.v), u0_conv1_layer : conv1_layer (conv1_layer.v)]", 4); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, model (model.v), u0_conv1_layer : conv1_layer (conv1_layer.v), u_controller : controller_v2 (controller_v2.v)]", 5); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, model (model.v), u0_conv1_layer : conv1_layer (conv1_layer.v), u_controller : controller_v2 (controller_v2.v), u_mul16_unsigned_1 : mul16_unsigned (mul16_unsigned.xci)]", 10); // B (D, cj)
+// x (cj): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // x (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, model (model.v), u0_conv1_layer : conv1_layer (conv1_layer.v), u_controller : controller_v2 (controller_v2.v), u_mul16_unsigned_1 : mul16_unsigned (mul16_unsigned.xci), mul16_unsigned(mul16_unsigned_arch) (mul16_unsigned.vhd)]", 11, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, model (model.v), u0_conv1_layer : conv1_layer (conv1_layer.v), u_controller : controller_v2 (controller_v2.v), u_mul16_unsigned_1 : mul16_unsigned (mul16_unsigned.xci), mul16_unsigned(mul16_unsigned_arch) (mul16_unsigned.vhd)]", 11, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Elapsed time: 42 seconds
+selectCodeEditor("mul16_unsigned.vhd", 52, 407); // D (w, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, model (model.v), u0_conv1_layer : conv1_layer (conv1_layer.v), u_controller : controller_v2 (controller_v2.v), u_mul16_unsigned_6 : mul16_unsigned (mul16_unsigned.xci)]", 15, true); // B (D, cj) - Node
+selectCodeEditor("mul16_unsigned.vhd", 246, 385); // D (w, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, model (model.v), u0_conv1_layer : conv1_layer (conv1_layer.v), u_controller : controller_v2 (controller_v2.v), u_mul16_unsigned_1 : mul16_unsigned (mul16_unsigned.xci)]", 10, true); // B (D, cj) - Node
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, model (model.v), u0_conv1_layer : conv1_layer (conv1_layer.v), u_controller : controller_v2 (controller_v2.v), u_mul16_unsigned_1 : mul16_unsigned (mul16_unsigned.xci), mul16_unsigned(mul16_unsigned_arch) (mul16_unsigned.vhd), U0 : mult_gen_v12_0_13(xilinx)]", 12, false); // B (D, cj)
+// Elapsed time: 126 seconds
+selectCodeEditor("mul16_unsigned.vhd", 341, 270); // D (w, cj)
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, model (model.v), u0_conv1_layer : conv1_layer (conv1_layer.v), u_controller : controller_v2 (controller_v2.v), u_mul16_unsigned_2 : mul16_unsigned (mul16_unsigned.xci)]", 13, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, model (model.v), u0_conv1_layer : conv1_layer (conv1_layer.v), u_controller : controller_v2 (controller_v2.v), u_mul16_unsigned_2 : mul16_unsigned (mul16_unsigned.xci)]", 13, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// r (cj): Re-customize IP: addNotify
+// Elapsed time: 24 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Information", 1); // bb (C, r)
+selectButton(PAResourceAtoD.CustomizeCoreDialog_IP_LOCATION, "IP Location"); // B (f, r)
+// IP Location: show
+// Elapsed time: 298 seconds
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+// IP Location: hide
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, PAResourceEtoH.HACGCTopPanel_IP_SYMBOL, "IP Symbol", 0); // bb (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Information", 1); // bb (C, r)
+selectButton(PAResourceAtoD.CustomizeCoreDialog_DOCUMENTATION, "Documentation"); // B (f, r)
+selectMenuItem(PAResourceCommand.PACommandNames_SHOW_PRODUCT_GUIDE, "Product Guide"); // ac (ai, r)
+// Run Command: PAResourceCommand.PACommandNames_SHOW_PRODUCT_GUIDE
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Output and Control", 1); // bb (C, r)
+// Elapsed time: 70 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Basic", 0); // bb (C, r)
+// Elapsed time: 26 seconds
+setText("Width", "16"); // z (bc, r)
+// Elapsed time: 32 seconds
+dismissDialog("Re-customize IP"); // r (cj)
+selectCodeEditor("mul16_unsigned.vhd", 313, 40); // D (w, cj)
+// Elapsed time: 156 seconds
+selectCodeEditor("mul16_unsigned.vhd", 541, 135); // D (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,899 MB. GUI used memory: 90 MB. Current time: 12/22/21 3:40:13 PM EST

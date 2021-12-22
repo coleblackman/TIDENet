@@ -32,14 +32,37 @@ set rt::rc [catch {
 
     set rt::useElabCache false
     if {$rt::useElabCache == false} {
+      rt::read_verilog -sv {
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/acc_addr.sv
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/vector_muladd.sv
+    }
       rt::read_verilog {
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/addr2.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/addr3.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/addr4.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/bit_trunc.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/bn_bias_relu.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/busm2n.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_a.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/conv1_layer.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/conv2_layer.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v
       /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v
-      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/interlayer_sync_fifo.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ip1_layer.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multiplier.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v
+      /home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/pool1_layer.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/pool2_layer.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/vector_max.v
+      /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/model.v
     }
       rt::filesetChecksum
     }
     rt::set_parameter usePostFindUniquification false
-    set rt::top controller_v2_b
+    set rt::top model
     set rt::reportTiming false
     rt::set_parameter elaborateOnly true
     rt::set_parameter elaborateRtl true

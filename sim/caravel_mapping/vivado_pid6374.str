@@ -153,3 +153,907 @@ dismissDialog("Open Elaborated Design"); // bs (cj)
 // Elapsed time: 349 seconds
 selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
 dismissDialog("Critical Messages"); // M (cj)
+// Elapsed time: 214 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controller_v2_b (controller_v2_b.v)]", 1); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controller_v2_b (controller_v2_b.v)]", 1); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controller_v2_b (controller_v2_b.v)]", 1); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, model (model.v)]", 2); // B (D, cj)
+// [GUI Memory]: 95 MB (+1131kb) [00:21:42]
+// Elapsed time: 101 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, cj) - Node
+// [GUI Memory]: 102 MB (+1863kb) [00:21:46]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, cj)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// v (cj): Settings: addNotify
+// [GUI Memory]: 112 MB (+5872kb) [00:21:52]
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Source File]", 2, false); // M (C, v)
+dismissDialog("Settings"); // v (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_SOURCE_FILE, "Open Source File..."); // ac (cj, Popup.HeavyWeightWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_SOURCE_FILE
+// [GUI Memory]: 122 MB (+3911kb) [00:22:25]
+// Elapsed time: 33 seconds
+selectTreeTableHeader(PAResourceOtoP.OpenSourceTreeTablePanel_OPEN_SOURCE_TREE_TABLE, "Path", 1); // aj (O, ResizableWindow)
+// [GUI Memory]: 133 MB (+5747kb) [00:22:48]
+// [GUI Memory]: 140 MB (+392kb) [00:24:38]
+// [GUI Memory]: 148 MB (+706kb) [00:25:03]
+// Elapsed time: 329 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 2, true); // B (D, cj) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 2); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 2); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 2); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 3); // B (D, cj)
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// bs (cj):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7vx485tffg1157-1 Top: controller_v2_b 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6297.711 ; gain = 0.000 ; free physical = 6234 ; free virtual = 108163 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27] INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: ERROR: [Synth 8-439] module 'mul16_unsigned' not found [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:505] ERROR: [Synth 8-285] failed synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6297.711 ; gain = 0.000 ; free physical = 6253 ; free virtual = 108181 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 6 Infos, 1 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dO' command handler elapsed time: 5 seconds
+// M (cj): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bs (cj)
+// Elapsed time: 222 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (cj)
+// Elapsed time: 19 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2017) ; Vivado Implementation Default Reports (Vivado Implementation 2017) ; xc7vx485tffg1157-1 ;  ; Default settings for Implementation.", 1, (String) null, 5, false); // ax (O, cj)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// [GUI Memory]: 158 MB (+2912kb) [00:32:57]
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj, Popup.HeavyWeightWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // Z (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // U (q, cj)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, cj)
+// [GUI Memory]: 176 MB (+10129kb) [00:33:10]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, design_1]", 1, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, design_1]", 1, false, false, false, false, false, true); // B (D, cj) - Double Click
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 1,272 MB (+103274kb) [00:33:14]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: open_bd_design {/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Successfully read diagram <design_1> from BD file </home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd> 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,272 MB. GUI used memory: 63 MB. Current time: 12/22/21 3:11:18 PM EST
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bs)
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bs)
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bs)
+// Tcl Message: INFO: [Common 17-365] Interrupt caught but 'open_bd_design' cannot be canceled. Please wait for command to finish. INFO: [Common 17-681] Processing pending cancel. 
+// Tcl Message: 1 
+dismissDialog("Open Block Design"); // bs (cj)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aF (Q, cj)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a (C, c)
+setFolderChooser("/home/jmz8rm/tidenet/verilog/rtl/user_proj_example");
+// Elapsed time: 13 seconds
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 26 seconds
+dismissDialog("Add Sources"); // c (cj)
+// c (cj): Add Sources: addNotify
+// bH (c): Import Source Conflicts: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bH)
+dismissDialog("Import Source Conflicts"); // bH (c)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// bs (c):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // bs (c)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cj) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,310 MB. GUI used memory: 64 MB. Current time: 12/22/21 3:12:05 PM EST
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// bs (cj):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7vx485tffg1157-1 Top: controller_v2_b 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: ERROR: [Synth 8-2715] syntax error near ( [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:221] ERROR: [Synth 8-993] clock is an unknown type [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:221] 
+// Tcl Message: INFO: [Synth 8-2350] module mul16x16_signed ignored due to previous errors [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:193] INFO: [Synth 8-2350] module mul16_unsigned ignored due to previous errors [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:226] 
+// Tcl Message: Failed to read verilog '/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v' 
+// Tcl Message: 2 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dO' command handler elapsed time: 5 seconds
+// M (cj): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bs (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,337 MB (+1824kb) [00:34:11]
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 48 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (cj)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a (C, c)
+setFolderChooser("/home/jmz8rm/tidenet/verilog/rtl/user_proj_example");
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 10 seconds
+dismissDialog("Add Sources"); // c (cj)
+// c (cj): Add Sources: addNotify
+// bH (c): Import Source Conflicts: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bH)
+dismissDialog("Import Source Conflicts"); // bH (c)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// bs (c):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // bs (c)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// bs (cj):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7vx485tffg1157-1 Top: controller_v2_b 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: ERROR: [Synth 8-1031] clock is not declared [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:221] ERROR: [Synth 8-2576] procedural assignment to a non-register P is not permitted [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:221] 
+// Tcl Message: INFO: [Synth 8-2350] module mul16x16_signed ignored due to previous errors [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:193] INFO: [Synth 8-2350] module mul16_unsigned ignored due to previous errors [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:226] 
+// Tcl Message: Failed to read verilog '/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v' 
+// Tcl Message: 2 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dO' command handler elapsed time: 5 seconds
+// M (cj): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bs (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,371 MB. GUI used memory: 66 MB. Current time: 12/22/21 3:13:45 PM EST
+// Elapsed time: 951 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_CANCEL, "Cancel"); // a (M)
+dismissDialog("Critical Messages"); // M (cj)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 116 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 436, 88); // dw (ad, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj, Popup.HeavyWeightWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a (C, c)
+setFolderChooser("/home/jmz8rm/tidenet/verilog/rtl/user_proj_example");
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c (cj)
+// c (cj): Add Sources: addNotify
+// bH (c): Import Source Conflicts: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bH)
+dismissDialog("Import Source Conflicts"); // bH (c)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bs (c):  Add Sources  : addNotify
+dismissDialog("Add Sources"); // bs (c)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// bs (cj):  Open Elaborated Design : addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7vx485tffg1157-1 Top: controller_v2_b 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6404.383 ; gain = 0.000 ; free physical = 5477 ; free virtual = 107584 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27] INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'delay__parameterized0' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] INFO: [Synth 8-638] synthesizing module 'mul16_unsigned' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:226] 
+// Tcl Message: ERROR: [Synth 8-439] module 'mul16_signed' not found [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:227] ERROR: [Synth 8-285] failed synthesizing module 'mul16_unsigned' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:226] ERROR: [Synth 8-285] failed synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6414.777 ; gain = 10.395 ; free physical = 5485 ; free virtual = 107592 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 7 Infos, 1 Warnings, 0 Critical Warnings and 4 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dO' command handler elapsed time: 6 seconds
+// M (cj): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,402 MB. GUI used memory: 66 MB. Current time: 12/22/21 3:31:55 PM EST
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,418 MB (+14904kb) [00:53:53]
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (cj)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a (C, c)
+setFolderChooser("/home/jmz8rm/tidenet/verilog/rtl/user_proj_example");
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c (cj)
+// c (cj): Add Sources: addNotify
+// bH (c): Import Source Conflicts: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bH)
+dismissDialog("Import Source Conflicts"); // bH (c)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// bs (c):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // bs (c)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// bs (cj):  Open Elaborated Design : addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,436 MB. GUI used memory: 66 MB. Current time: 12/22/21 3:32:25 PM EST
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7vx485tffg1157-1 Top: controller_v2_b 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 6464.074 ; gain = 0.000 ; free physical = 5464 ; free virtual = 107572 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27] INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'mul16x16_signed' (12#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:193] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'mul16_unsigned' (13#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/multlib.v:226] 
+// Tcl Message: ERROR: [Synth 8-285] failed synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6465.043 ; gain = 0.969 ; free physical = 5486 ; free virtual = 107593 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 30 Infos, 23 Warnings, 0 Critical Warnings and 9 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dO' command handler elapsed time: 7 seconds
+// M (cj): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (cj)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 26 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, "Copy sources into project", false); // g (aY, c): FALSE
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories..."); // ac (ai, c)
+setFolderChooser("/home/jmz8rm/tidenet/verilog/rtl/user_proj_example");
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, "Copy sources into project", false); // g (aY, c): FALSE
+selectTableHeader(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "Location", 4); // bC (O, c)
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "SourceRoot_small ; 1 ; user_proj_example ; xil_defaultlib ; /home/jmz8rm/tidenet/verilog/rtl", 0, "/home/jmz8rm/tidenet/verilog/rtl", 4); // bC (O, c)
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 16 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// bs (cj):  Add Sources  : addNotify
+dismissDialog("Add Sources"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,471 MB. GUI used memory: 69 MB. Current time: 12/22/21 3:33:25 PM EST
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton("NEXT", "Next >"); // JButton (h, c)
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B (f, c)
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories..."); // ac (ai, c)
+setFolderChooser("/home/jmz8rm/tidenet/verilog/rtl/user_proj_example");
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, "Copy sources into project", true); // g (aY, c): TRUE
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 8 seconds
+dismissDialog("Add Sources"); // c (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// c (cj): Add Sources: addNotify
+// bs (c):  Add Sources  : addNotify
+dismissDialog("Add Sources"); // bs (c)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// bs (cj):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7vx485tffg1157-1 Top: controller_v2_b 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: ERROR: [Synth 8-1031] clk is not declared [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:221] 
+// Tcl Message: INFO: [Synth 8-2350] module mul16x16_signed ignored due to previous errors [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193] INFO: [Synth 8-2350] module mul16_unsigned ignored due to previous errors [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226] 
+// Tcl Message: Failed to read verilog '/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v' 
+// Tcl Message: 2 Infos, 0 Warnings, 17 Critical Warnings and 2 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dO' command handler elapsed time: 5 seconds
+// M (cj): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bs (cj)
+// Elapsed time: 24 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, (String) null); // B (gH, cj)
+// [Engine Memory]: 1,492 MB (+2731kb) [00:56:06]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Critical Messages"); // M (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,508 MB. GUI used memory: 69 MB. Current time: 12/22/21 3:34:10 PM EST
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a (C, c)
+setFolderChooser("/home/jmz8rm/tidenet/verilog/rtl/user_proj_example");
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, "Copy sources into project", false); // g (aY, c): FALSE
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 6 seconds
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Add Sources"); // c (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// bs (cj):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7vx485tffg1157-1 Top: controller_v2_b 
+// TclEventType: ELABORATE_FINISH
+// [Engine Memory]: 1,593 MB (+28273kb) [00:56:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,740 MB. GUI used memory: 69 MB. Current time: 12/22/21 3:34:35 PM EST
+// [Engine Memory]: 1,740 MB (+69908kb) [00:56:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,822 MB. GUI used memory: 68 MB. Current time: 12/22/21 3:35:15 PM EST
+// [Engine Memory]: 1,834 MB (+7278kb) [00:57:13]
+// TclEventType: FLOORPLAN_MODIFY
+// [Engine Memory]: 2,100 MB (+183236kb) [00:57:18]
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,100 MB. GUI used memory: 68 MB. Current time: 12/22/21 3:35:21 PM EST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Xgd.load filename: /opt/Xilinx/Vivado/2017.4/data/parts/xilinx/virtex7/devint/virtex7/xc7vx485t/xc7vx485t.xgd; ZipEntry: xc7vx485t_detail.xgd elapsed time: 0.6s
+// [Engine Memory]: 2,232 MB (+27864kb) [00:57:19]
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 6532.867 ; gain = 0.000 ; free physical = 5459 ; free virtual = 107566 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27] INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'mul16x16_signed' (12#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193] INFO: [Synth 8-256] done synthesizing module 'mul16_unsigned' (13#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'controller_v2_b' (14#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6532.867 ; gain = 0.000 ; free physical = 5470 ; free virtual = 107579 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6532.867 ; gain = 0.000 ; free physical = 5472 ; free virtual = 107581 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7vx485tffg1157-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:38 ; elapsed = 00:01:00 . Memory (MB): peak = 7279.059 ; gain = 746.191 ; free physical = 4905 ; free virtual = 107013 
+// Tcl Message: 37 Infos, 74 Warnings, 19 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:00 . Memory (MB): peak = 7279.059 ; gain = 746.191 ; free physical = 4905 ; free virtual = 107013 
+// 'dO' command handler elapsed time: 60 seconds
+// M (cj): Critical Messages: addNotify
+// Elapsed time: 60 seconds
+dismissDialog("Open Elaborated Design"); // bs (cj)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (cj)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[controller_v2_b]", 0, true); // aW (O, cj) - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[controller_v2_b]", 0, true, false, false, false, false, true); // aW (O, cj) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_DEFINITION
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k (j, cj)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (Q, cj)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cj)
+unMinimizeFrame(PAResourceOtoP.PAViews_NETLIST, "Netlist"); // ax
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[controller_v2_b]", 0, true); // aW (O, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, design_1]", 1, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Designs, design_1]", 1, false, false, false, false, false, true); // B (D, cj) - Double Click
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // bs (cj)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// au (cj): Generate Output Products: addNotify
+collapseTree(PAResourceQtoS.SimpleOutputProductDialog_OUTPUT_PRODUCT_TREE, "[root, design_1.bd]", 0); // aM (O, au)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (au)
+// bs (cj):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /design_1 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd] 
+// Tcl Message: export_ip_user_files -of_objects [get_files /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// 'bn' command handler elapsed time: 9 seconds
+dismissDialog("Managing Output Products"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cj): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bs (cj):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cj)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Dec 22 15:36:42 2021] Launched synth_1... Run output will be captured here: /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 18, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectButton("PAResourceQtoS.RunRun_TASK_ALREADY_RUNNING_WOULD_YOU_LIKE_Cancel", "Cancel"); // JButton (A, G)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+dismissDialog("Add Sources"); // c (cj)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i (N, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced]", 7); // B (D, cj)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, multlib.v]", 4, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, multlib.v]", 5, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, controller_v2_b.v]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, controller_v2_b.v]", 6, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, controller_v2_b.v]", 6, false); // B (D, cj)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, conv1_layer.v]", 39, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, conv1_layer.v]", 39, false, false, false, false, false, true); // B (D, cj) - Double Click
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah (cj): Synthesis Completed: addNotify
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a (N, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// e (cj): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (e)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,228 MB. GUI used memory: 106 MB. Current time: 12/22/21 3:38:03 PM EST
+// Engine heap size: 2,228 MB. GUI used memory: 107 MB. Current time: 12/22/21 3:38:03 PM EST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// bs (cj):  Open Synthesized Design : addNotify
+// Tcl Message: close_design 
+dismissDialog("Close Design"); // e (cj)
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7vx485tffg1157-1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,225 MB. GUI used memory: 76 MB. Current time: 12/22/21 3:38:04 PM EST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 130 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2017.4.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0.0
+// 'dO' command handler elapsed time: 6 seconds
+dismissDialog("Open Synthesized Design"); // bs (cj)
+// Device view-level: 0.3
+// Device view-level: 0.6
+// Device view-level: 0.9
+// HMemoryUtils.trashcanNow. Engine heap size: 2,280 MB. GUI used memory: 111 MB. Current time: 12/22/21 3:38:10 PM EST
+// Device view-level: 1.2
+// Device view-level: 1.5
+// Device view-level: 1.8
+// Device view-level: 1.5
+// Device view-level: 1.2
+// HMemoryUtils.trashcanNow. Engine heap size: 2,273 MB. GUI used memory: 111 MB. Current time: 12/22/21 3:38:11 PM EST
+// Device view-level: 0.9
+// Device view-level: 0.6
+// Device view-level: 0.3
+// Device view-level: 0.6
+// HMemoryUtils.trashcanNow. Engine heap size: 2,273 MB. GUI used memory: 114 MB. Current time: 12/22/21 3:38:14 PM EST
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G (Q, cj)
+// Device view-level: 0.9
+// Device view-level: 1.2
+// Device view-level: 1.5
+// Device view-level: 1.8
+// DeviceOracle::getDeviceDataByteArray length(bytes): 250437
+// Device view-level: 2.0
+// DeviceOracle::getDeviceDataByteArray length(bytes): 105957
+// HMemoryUtils.trashcanNow. Engine heap size: 2,317 MB. GUI used memory: 114 MB. Current time: 12/22/21 3:38:19 PM EST
+// Device view-level: 2.3
+// Device view-level: 2.6
+// Device view-level: 2.9
+// Device view-level: 3.2
+// Device view-level: 2.9
+// HMemoryUtils.trashcanNow. Engine heap size: 2,351 MB. GUI used memory: 113 MB. Current time: 12/22/21 3:38:22 PM EST
+// Device view-level: 2.0
+// DeviceOracle::getDeviceDataByteArray length(bytes): 111291
+// [Engine Memory]: 2,551 MB (+217732kb) [01:00:19]
+// Device view-level: 1.5
+// Device view-level: 1.2
+// Device view-level: 0.9
+// Device view-level: 1.2
+// HMemoryUtils.trashcanNow. Engine heap size: 2,551 MB. GUI used memory: 147 MB. Current time: 12/22/21 3:38:24 PM EST
+// RouteApi::initDelayMediator elapsed time: 20.2s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 1.5
+// Device view-level: 1.8
+// DeviceOracle::getDeviceDataByteArray length(bytes): 256648
+// Device view-level: 2.0
+// DeviceOracle::getDeviceDataByteArray length(bytes): 104147
+// Device view-level: 2.3
+// Device view-level: 2.0
+// DeviceOracle::getDeviceDataByteArray length(bytes): 111040
+// HMemoryUtils.trashcanNow. Engine heap size: 2,627 MB. GUI used memory: 115 MB. Current time: 12/22/21 3:38:33 PM EST
+// Device view-level: 1.2
+// Device view-level: 0.9
+// Device view-level: 0.6
+// Elapsed time: 26 seconds
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // Y
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, controller_v2_b.v]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, controller_v2.v]", 28, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, controller_v2.v]", 28, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 205 seconds
+selectCodeEditor("controller_v2.v", 486, 428); // cd (w, cj)
+// Elapsed time: 38 seconds
+selectCodeEditor("controller_v2.v", 401, 388); // cd (w, cj)
+// Elapsed time: 69 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, controller_v2_b.v]", 6, false); // B (D, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,648 MB. GUI used memory: 110 MB. Current time: 12/22/21 3:44:10 PM EST
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cj) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// e (cj): Close Design: addNotify
+selectButton(PAResourceAtoD.ClosePlanner_YES, "Yes"); // a (e)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,648 MB. GUI used memory: 107 MB. Current time: 12/22/21 3:44:47 PM EST
+// Engine heap size: 2,648 MB. GUI used memory: 108 MB. Current time: 12/22/21 3:44:47 PM EST
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+// bs (cj):  Open Elaborated Design : addNotify
+// Tcl Message: close_design 
+// TclEventType: ELABORATE_START
+dismissDialog("Close Design"); // e (cj)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7vx485tffg1157-1 Top: controller_v2_b 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// [Engine Memory]: 2,759 MB (+84340kb) [01:06:54]
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,759 MB. GUI used memory: 80 MB. Current time: 12/22/21 3:44:58 PM EST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7657.090 ; gain = 0.000 ; free physical = 4538 ; free virtual = 106669 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27] INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'mul16x16_signed' (12#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193] INFO: [Synth 8-256] done synthesizing module 'mul16_unsigned' (13#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'controller_v2_b' (14#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7657.090 ; gain = 0.000 ; free physical = 4550 ; free virtual = 106681 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7657.090 ; gain = 0.000 ; free physical = 4553 ; free virtual = 106684 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 7867.691 ; gain = 210.602 ; free physical = 4334 ; free virtual = 106465 
+// Tcl Message: 36 Infos, 74 Warnings, 19 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 7867.691 ; gain = 210.602 ; free physical = 4334 ; free virtual = 106465 
+// 'dO' command handler elapsed time: 14 seconds
+// M (cj): Critical Messages: addNotify
+// Elapsed time: 11 seconds
+dismissDialog("Open Elaborated Design"); // bs (cj)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (cj)
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[controller_v2_b]", 0, true); // aW (O, cj) - Node
+// Elapsed time: 18 seconds
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2017) ; Vivado Implementation Default Reports (Vivado Implementation 2017) ; xc7vx485tffg1157-1 ;  ; Default settings for Implementation.", 1, (String) null, 5, false); // ax (O, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 96 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aF (Q, cj)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_DIRECTORIES, "Add Directories"); // a (C, c)
+setFolderChooser("/home/jmz8rm/tidenet/verilog/rtl/user_proj_example");
+selectButton("FINISH", "Finish"); // JButton (h, c)
+// 'h' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// bs (cj):  Add Sources  : addNotify
+dismissDialog("Add Sources"); // bs (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cj) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cj) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cj) - Node
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cZ, cj)
+// bs (cj):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7867.691 ; gain = 0.000 ; free physical = 4276 ; free virtual = 106412 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'controller_v2_b' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27] INFO: [Synth 8-256] done synthesizing module 'delay' (1#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 8 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'mul16x16_signed' (12#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193] INFO: [Synth 8-256] done synthesizing module 'mul16_unsigned' (13#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'controller_v2_b' (14#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v:1] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7867.691 ; gain = 0.000 ; free physical = 4311 ; free virtual = 106446 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7867.691 ; gain = 0.000 ; free physical = 4315 ; free virtual = 106450 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 2,872 MB. GUI used memory: 116 MB. Current time: 12/22/21 3:47:21 PM EST
+// Engine heap size: 2,872 MB. GUI used memory: 116 MB. Current time: 12/22/21 3:47:21 PM EST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// [Engine Memory]: 2,924 MB (+28903kb) [01:09:22]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,924 MB. GUI used memory: 84 MB. Current time: 12/22/21 3:47:25 PM EST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers. INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 7994.473 ; gain = 126.781 ; free physical = 4266 ; free virtual = 106402 
+// M (cj): Critical Messages: addNotify
+// Elapsed time: 12 seconds
+dismissDialog("Reloading"); // bs (cj)
+// Elapsed time: 19 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (cj)
+// RDIResource.RDIViews_PROPERTIES: Implementation Run Properties: close view
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, controller_v2_b.v]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, controller_v2_b.v]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, controller_v2_b.v]", 6, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cj): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (h, c)
+selectButton("CANCEL", "Cancel"); // JButton (h, c)
+// 'h' command handler elapsed time: 4 seconds
+dismissDialog("Add Sources"); // c (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z (cj, Popup.HeavyWeightWindow)
+// Elapsed time: 45 seconds
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, controller_v2_b.v]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, controller_v2_b.v]", 6, false, false, false, false, true, false); // B (D, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ac (ai, cj)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// as (cj): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (as)
+dismissDialog("Remove Sources"); // as (cj)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  /home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2_b.v 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cZ, cj)
+// bs (cj):  Reloading : addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: ELABORATE_START
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_FAIL
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 7994.473 ; gain = 0.000 ; free physical = 4239 ; free virtual = 106375 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: ERROR: [Synth 8-439] module 'controller_v2_b' not found 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7994.473 ; gain = 0.000 ; free physical = 4256 ; free virtual = 106392 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7994.473 ; gain = 0.000 ; free physical = 4256 ; free virtual = 106392 
+// Tcl Message: ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.  
+// M (cj): Critical Messages: addNotify
+dismissDialog("Reloading"); // bs (cj)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,988 MB. GUI used memory: 121 MB. Current time: 12/22/21 3:49:45 PM EST
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced]", 24); // B (D, cj)
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced]", 24); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, controller_v2_b.v]", 46, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, controller_v2_b.v]", 46, false, false, false, false, false, true); // B (D, cj) - Double Click
+// ac (cj): Unable to Open File: addNotify
+selectButton(PAResourceOtoP.OpenFileAction_CANCEL, "Cancel"); // a (ac)
+dismissDialog("Unable to Open File"); // ac (cj)
+// Elapsed time: 22 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cZ, cj)
+// bs (cj):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_FAIL
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 8010.488 ; gain = 0.000 ; free physical = 4246 ; free virtual = 106382 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'model' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/model.v:1] INFO: [Synth 8-638] synthesizing module 'ddr_read_delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/ddr_read_delay.v:1] 
+// Tcl Message: 	Parameter IN_WIDTH bound to: 16 - type: integer  	Parameter OUT_WIDTH bound to: 16 - type: integer  	Parameter COM_MUL bound to: 16 - type: integer  	Parameter IN_COUNT bound to: 1 - type: integer  	Parameter OUT_COUNT bound to: 1 - type: integer  	Parameter N bound to: 1568 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'busm2n' (2#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/busm2n.v:1] INFO: [Synth 8-638] synthesizing module 'conv1_layer' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/conv1_layer.v:1] INFO: [Synth 8-638] synthesizing module 'controller_v2' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2.v:1] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'delay' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 5 - type: integer  
+// Tcl Message: INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:27] INFO: [Synth 8-256] done synthesizing module 'delay' (3#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] INFO: [Synth 8-638] synthesizing module 'delay__parameterized0' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 9 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'mul16x16_signed' (14#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:193] INFO: [Synth 8-256] done synthesizing module 'mul16_unsigned' (15#1) [/home/jmz8rm/tidenet/verilog/rtl/user_proj_example/multlib.v:226] INFO: [Synth 8-638] synthesizing module 'delay__parameterized1' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: 	Parameter N bound to: 2 - type: integer  
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'delay__parameterized1' (15#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/delay.v:3] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'controller_v2' (16#1) [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/controller_v2.v:1] 
+// Tcl Message: ERROR: [Synth 8-439] module 'conv1_rm_ram' not found [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/conv1_layer.v:110] ERROR: [Synth 8-285] failed synthesizing module 'conv1_layer' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/conv1_layer.v:1] ERROR: [Synth 8-285] failed synthesizing module 'model' [/home/jmz8rm/tidenet/sim/caravel_mapping/caravel_mapping.srcs/sources_1/imports/user_proj_example/model.v:1] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8010.488 ; gain = 0.000 ; free physical = 4259 ; free virtual = 106395 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8010.488 ; gain = 0.000 ; free physical = 4260 ; free virtual = 106395 
+// Tcl Message: ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.  
+// M (cj): Critical Messages: addNotify
+dismissDialog("Reloading"); // bs (cj)
+// Elapsed time: 25 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (M)
+dismissDialog("Critical Messages"); // M (cj)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, pool2_layer.v]", 48, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, busm2n.v]", 54, false); // B (D, cj)
+// Elapsed time: 11 seconds
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax (aF, cj)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, controller_v2.v]", 52, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, multiplier.v]", 50, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, ip1_layer.v]", 51, false); // B (D, cj)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced, ddr_read_delay.v]", 31, false); // B (D, cj)
+selectButton("PAResourceOtoP.PABaseTab_MANUAL_COMPILE_ORDER_TURNED_OFF_No", "No"); // JButton (A, G)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Unreferenced]", 24); // B (D, cj)
