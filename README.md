@@ -19,6 +19,8 @@ Using DNNBuilder, we generated FPGA-oriented HDL for a pretrained neural network
 
 ![Hardening process (1)](https://user-images.githubusercontent.com/20258533/138537795-bab417b4-c6be-4b17-a5b8-a931fb069f7f.jpeg)
 
+![TIDENet (1)](https://user-images.githubusercontent.com/20258533/179066102-c508ca4e-7f0f-45c2-b357-002fbd7833b1.png)
+
 
 Notes on the process flow:
 
