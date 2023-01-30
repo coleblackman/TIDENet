@@ -69,7 +69,7 @@ DNNBuilder output for our most recent LeNet-1 network:
 
 ## SRAM Requirements
 
-We used OpenRAM to generate SRAM volatile memory registers for each layer. 
+We used OpenRAM to generate SRAM volatile memory registers for each layer. This is done to optimize die area usage, not for performance.
 
 [OpenRAM](https://github.com/VLSIDA/OpenRAM) is an open-source SRAM generator (compiler).  
 We used technology files found here: https://github.com/vsdip/vsdsram_sky130  
